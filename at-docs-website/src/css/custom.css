@@ -39,13 +39,13 @@
 }
 
 .img-center.small img {
-  width: 30%;
+  width: 20%;
 }
 
 .img-center.medium img {
-  width: 60%;
+  width: 50%;
 }
 
 .img-center.large img {
-  width: 100%;
+  width: 80%;
 }

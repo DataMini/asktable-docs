@@ -31,7 +31,7 @@ jobs:
     - name: Build, tag and push Docker image
       uses: docker/build-push-action@v5.0.0
       with:
-        context: at-docs-website # 使用at-web目录作为上下文
+        context: at-docs-website # 作为上下文
         file: at-docs-website/Dockerfile # Dockerfile的位置
         push: true # 推送镜像到阿里云镜像仓库
         tags: |

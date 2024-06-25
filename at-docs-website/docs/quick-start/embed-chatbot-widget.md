@@ -1,6 +1,10 @@
 # 嵌入 ChatBot Widget
 
-AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智能聊天机器人集成到自己的网站或应用中。以下是详细的嵌入步骤：
+AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智能聊天机器人集成到自己的网站或应用中。
+
+![img.png](img.png)
+
+以下是详细的嵌入步骤：
 
 ## 配置 ChatBot Widget
 

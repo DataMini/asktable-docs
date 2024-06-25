@@ -18,6 +18,10 @@
 
 ### 4. 配置数据源连接信息
 
+<div className="img-center medium">
+  <img src="/img/asktable/at_create_ds.png" alt="Logo" />
+</div>
+
 根据选择的数据源类型，填写相应的连接信息：
 - **数据库类型**: 填写数据库的主机地址、端口号、数据库名称、用户名和密码。如果是 PostgreSQL，数据库名称必填。
 - **文件类型**: 上传 Excel 或 CSV 文件。

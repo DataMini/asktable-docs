@@ -4,6 +4,8 @@ AskTable 支持多种类型的数据库和数据源，方便您灵活地集成�
 
 ## 支持的数据源类型
 
+![img.png](img.png)
+
 - **MySQL**: 支持版本 8.0 及以上
 - **PostgreSQL**: 支持版本 13 及以上
 - **TiDB**: 分布式 SQL 数据库，兼容 MySQL 协议
