@@ -28,3 +28,24 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+/* custom.css */
+.img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* 添加一些上下边距 */
+}
+
+.img-center.small img {
+  width: 30%;
+}
+
+.img-center.medium img {
+  width: 60%;
+}
+
+.img-center.large img {
+  width: 100%;
+}
