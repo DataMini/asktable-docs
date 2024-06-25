@@ -1,0 +1,41 @@
+name: AskTable Docs Docker Image
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Login to Aliyun Docker Registry
+      run: echo ${{ secrets.ALIYUN_DOCKER_REGISTRY_PASSWORD }} | docker login --username=${{ secrets.ALIYUN_DOCKER_REGISTRY_USER }} --password-stdin registry.cn-shanghai.aliyuncs.com
+
+
+    # Parse the version from github.ref (e.g., refs/tags/v1.0.0 => v1.0.0)
+    - name: Get the version
+      id: get_version
+      run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+    - name: Build, tag and push Docker image
+      uses: docker/build-push-action@v5.0.0
+      with:
+        context: at-web # 使用at-web目录作为上下文
+        file: at-web/Dockerfile # Dockerfile的位置
+        push: true # 推送镜像到阿里云镜像仓库
+        tags: |
+          registry.cn-shanghai.aliyuncs.com/datamini/asktable-docs:${{ env.VERSION }}
+          registry.cn-shanghai.aliyuncs.com/datamini/asktable-docs:latest
+#        platforms: linux/amd64,linux/arm64
+        platforms: linux/amd64
