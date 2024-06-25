@@ -2,6 +2,11 @@
 
 为了满足对数据隐私和安全有更高要求的企业，AskTable 提供私有化部署服务。企业可以将 AskTable 部署在自己的服务器上，确保数据不离开企业内网。
 
+
+<div className="img-center medium">
+  <img src="/img/asktable/at_private_deployment.png" alt="Logo" />
+</div>
+
 ## 私有化部署服务内容
 
 - **部署支持**：提供 AskTable 在企业服务器上的部署指导和技术支持。

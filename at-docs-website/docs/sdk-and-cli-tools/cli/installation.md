@@ -1,4 +1,3 @@
-markdown
 # CLI 安装指南
 
 ## 介绍
@@ -33,11 +32,31 @@ options:
 
 运行命令 `asktable -t <YOUR_API_TOKEN>`，输入正确的 `API Token` 后，将会登录到 AskTable 服务。
 
+
 ## 使用
 
-登录成功后，进入一个交互式命令行界面，您可以通过输入命令来管理数据源、角色、策略等。例如：
+登录成功后，进入一个交互式命令行界面。
 
-### 数据源命令
+```python
+➜  $ asktable -t <YOUR_API_TOKEN>
+
+-- AskTable 客户端(0.17.8)初始化...
+-- 连接服务器(-a)： https://api.asktable.com
+-- 使用Token (-t)： ******
+-- 您可以使用 'at' 来访问 AskTable，比如：通过 'at.datasources' 来查询数据源列表
+   完整的使用方法，请参考帮助文档：https://docs.asktable.com/
+
+Python 3.11.9 (main, Apr  2 2024, 08:25:04) [Clang 15.0.0 (clang-1500.1.0.2.5)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.18.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: at.datasources
+
+```
+
+接下来，您可以通过输入命令来管理数据源、角色、策略等。例如：
+
+#### 数据源命令
 - **at.datasources**: 列出所有数据源
 - **at.datasources.create**: 创建一个新的数据源
 - **ds = at.datasources.get**: 获取一个数据源

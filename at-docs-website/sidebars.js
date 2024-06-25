@@ -1,5 +1,5 @@
 const sidebars = {
-  tutorialSidebar: [
+  asktableSidebar: [
     {
       type: 'category',
       label: '简介',
@@ -117,9 +117,7 @@ const sidebars = {
       type: 'category',
       label: '附录',
       items: [
-        'appendix/data-format-specifications',
         'appendix/glossary',
-        'appendix/changelog',
       ],
     },
   ],

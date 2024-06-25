@@ -1,43 +1,17 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import React, { useEffect } from 'react';
 
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
+function Home() {
+  useEffect(() => {
+    // 当组件加载后重定向到文档页面
+    window.location.href = '/docs/introduction/what-is-asktable'; // 替换为你的文档页面路径
+  }, []);
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
+    <div>
+      {/* 你可以保留原有的内容或简单展示一个加载指示，因为页面将会重定向 */}
+      <p>Redirecting to documentation...</p>
+    </div>
   );
 }
 
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
-}
+export default Home;
