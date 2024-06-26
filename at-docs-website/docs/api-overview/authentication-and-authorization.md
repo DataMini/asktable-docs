@@ -34,62 +34,6 @@ response = requests.get(url, headers=headers)
 print(response.json())
 ```
 
-## 授权
-
-授权是指控制用户对资源的访问权限。AskTable 通过角色和策略来管理授权。
-
-### 角色
-
-角色是一组权限的集合。通过创建角色并为其分配权限，可以控制用户对资源的访问。
-
-- **创建角色**：使用 `POST /roles` 接口创建一个新角色。
-- **查询角色**：使用 `GET /roles` 接口查询已有角色。
-
-### 策略
-
-策略定义了角色可以执行的具体操作。通过创建和管理策略，可以实现精细的权限控制。
-
-- **创建策略**：使用 `POST /policies` 接口创建一个新策略。
-- **查询策略**：使用 `GET /policies` 接口查询已有策略。
-
-### 示例
-
-以下是一个创建角色和策略的示例：
-
-```python
-import requests
-
-# 创建角色
-role_url = "https://api.asktable.com/v1/roles"
-role_headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN",
-    "Content-Type": "application/json"
-}
-role_data = {
-    "name": "data_viewer",
-    "description": "Can view data"
-}
-role_response = requests.post(role_url, headers=role_headers, json=role_data)
-role_id = role_response.json()["id"]
-
-# 创建策略
-policy_url = "https://api.asktable.com/v1/policies"
-policy_headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN",
-    "Content-Type": "application/json"
-}
-policy_data = {
-    "name": "view_policy",
-    "description": "Allows viewing data",
-    "effect": "allow",
-    "actions": ["read"],
-    "resources": ["data-sources/*"],
-    "role_id": role_id
-}
-policy_response = requests.post(policy_url, headers=policy_headers, json=policy_data)
-print(policy_response.json())
-```
-
 ## 错误处理
 
 在身份验证和授权过程中，可能会遇到以下错误：
