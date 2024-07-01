@@ -6,7 +6,7 @@
   <img src="/img/asktable/at_logo.png" alt="Logo" />
 </div>
 
-AskTable 是一款专为企业设计的智能聊天机器人，通过与企业核心数据库的集成，实现高效的信息查询和数据分析。AskTable 提供了一整套在线服务，包括 HTTP Restful API、基于 API 的云端控制台 (Cloud Web Console)、以及前端可嵌入的 ChatBot widget。
+AskTable 是一款专为企业设计的智能聊天机器人，通过与企业核心系统和数据库的集成，实现高效的任务执行、信息查询和数据分析。AskTable 提供了一整套在线服务，包括 HTTP Restful API、基于 API 的云端控制台 (Cloud Web Console)、以及前端可嵌入的 ChatBot widget。
 
 <div className="img-center large">
   <img src="/img/asktable/at_intro.png" alt="Logo" />
