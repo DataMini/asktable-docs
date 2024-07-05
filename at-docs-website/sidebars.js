@@ -57,6 +57,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'API Calling',
+      items: [
+        'api-calling/introduction',
+        'api-calling/quick-start-with-python-sdk',
+      ],
+    },
+    {
+      type: 'category',
       label: '安全隧道',
       items: [
         'secure-tunnel/introduction',
