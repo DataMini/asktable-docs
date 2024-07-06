@@ -1,6 +1,8 @@
 # 使用 API（SDK）管理 API
 
-2.1 创建 API Endpoint
+## API 说明
+
+1. 创建 API Endpoint
 
 在 AskTable API 中，使用 `extapi` 对象来管理 API Endpoint。要创建一个新的 API Endpoint，可以使用以下代码：
 
@@ -21,7 +23,7 @@ extapi = at.extapis.create(
 print(extapi)
 ```
 
-2.2 更新 API Endpoint
+2. 更新 API Endpoint
 您可以更新 API Endpoint 的名称、base_url 和 headers：
 
 ```python
@@ -38,7 +40,7 @@ extapi = extapi.update(base_url="https://api.example.com/v2")
 print(extapi)
 ```
 
-2.3 获取 API Endpoint
+3. 获取 API Endpoint
 可以通过名称或 ID 获取 API Endpoint：
 
 ```python
@@ -49,7 +51,7 @@ extapi = at.extapis.get(id=extapi.id)
 print(extapi)
 ```
 
-2.4 删除 API Endpoint
+4.  删除 API Endpoint
 删除一个 API Endpoint：
 
 ```python
@@ -57,7 +59,7 @@ extapi.delete()
 ```
 
 
-2.5 创建 API Route
+5. 创建 API Route
 在某个 API Endpoint 下创建新的 Route：
 
 ```python
@@ -72,7 +74,7 @@ route = extapi.routes.create(
 print(route)
 ```
 
-2.6 更新 API Route
+6. 更新 API Route
 可以更新 Route 的名称、路径和查询参数等：
 
 ```python
@@ -89,7 +91,7 @@ route = route.update(query_params="{'filter': 'Updated filter condition'}")
 print(route)
 ```
 
-2.7 获取 API Route
+7. 获取 API Route
 可以通过名称或 ID 获取 Route：
 
 ```python
@@ -100,14 +102,14 @@ route = extapi.routes.get(name="Updated Test Route")
 print(route)
 ```
 
-2.8 删除 API Route
+8. 删除 API Route
 删除一个 Route：
 
 ```python
 route.delete()
 ```
 
-3. 示例代码
+## 示例代码
 完整示例代码：
 
 ```python
