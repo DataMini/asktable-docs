@@ -60,8 +60,8 @@ const sidebars = {
       label: 'API Calling',
       items: [
         'api-calling/introduction',
-        'api-calling/quick-start-with-python-sdk',
         'api-calling/quick-start-with-cloud-console',
+        'api-calling/quick-start-with-python-sdk',
       ],
     },
     {
