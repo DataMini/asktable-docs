@@ -1,5 +1,4 @@
-# 快速开始
-
+# 使用 API（SDK）管理 API
 
 2.1 创建 API Endpoint
 

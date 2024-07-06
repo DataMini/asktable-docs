@@ -4,7 +4,8 @@ AskTable 支持多种类型的数据库和数据源，方便您灵活地集成�
 
 ## 支持的数据源类型
 
-![img.png](img.png)
+
+![img_1.png](img_1.png)
 
 - **MySQL**: 支持版本 8.0 及以上
 - **PostgreSQL**: 支持版本 13 及以上

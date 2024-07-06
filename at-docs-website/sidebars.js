@@ -61,6 +61,7 @@ const sidebars = {
       items: [
         'api-calling/introduction',
         'api-calling/quick-start-with-python-sdk',
+        'api-calling/quick-start-with-cloud-console',
       ],
     },
     {

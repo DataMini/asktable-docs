@@ -1,6 +1,13 @@
 # 在线服务收费标准
 
-AskTable 提供灵活的收费模式，满足不同企业的需求。以下是在线服务的具体收费标准：
+
+
+AskTable 在线服务具有成本低、快速上手等优势，适用于中小企业和个人用户。我们提供免费版和付费版两种服务模式，满足不同用户的需求。
+
+<div className="img-center medium">
+  <img src="/img/asktable/at_atst_intro.png" alt="Logo" />
+</div>
+
 
 ## 免费版
 
