@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'AskTable',
-  tagline: 'AskTable 是一个基于企业核心数据库的前端嵌入式 ChatBot',
+  tagline: 'AskTable 是一款可以接入企业核心数据库，打通营销与生产全流程的智能体',
   favicon: 'img/asktable/at_logo.png',
 
   // Set the production url of your site here
