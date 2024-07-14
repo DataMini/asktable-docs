@@ -6,12 +6,49 @@
 
 身份验证是确保请求来自合法用户的过程。在使用 AskTable API 时，您需要提供 API Token 进行身份验证。
 
-### 获取 API Token
+AskTable API 提供三种不同类型的 Token，用于不同的访问需求和权限控制。本文将详细介绍这些 Token 的用途、获取方式、适用场景以及如何使用它们进行身份验证和授权。
 
-要获取 API Token，请按照以下步骤操作：
+## Token 类型概述
 
-1. **创建账户**：访问 [AskTable 官网](https://www.asktable.com) 并创建一个账户。
-2. **获取 Token**：登录账户后，在个人设置页面生成一个 API Token。
+AskTable 提供以下三种 Token 类型：
+
+--|--|--|--|--
+Token 类型|用途|获取方式|可访问的 API 列表｜有效期
+`admin` Token|用于管理租户内的全部资源，具有最高权限。|访问 [AskTable 官网](https://www.asktable.com) 申请。｜全部 API|长期
+`asker` Token|用于无差别地查询公开数据，适用于公开访问场景。|访问 [AskTable 官网](https://www.asktable.com) 申请。｜见下文 | 长期
+`temp_asker` Token|用于有差别地查询非公开数据，适用于需要细粒度权限控制的场景。| 见下文｜同 `asker` |默认 2 小时
+
+
+1. `asker` 和 `temp_asker` Token 可访问的 API 列表：
+
+```http
+GET /bots/<bot_id>
+GET /chats/<chat_id>
+GET /chats/<chat_id>/messages
+POST /chats
+GET /account/token
+```
+
+
+
+2. 如何获取 `temp_asker` Token：使用 `admin` Token，通过调用以下 API 申请：
+```http
+POST /account/temp_asker_token
+Content-Type: application/json
+Authorization: Bearer <admin_token>
+
+{
+  "user_profile": {
+    "user_id": "123",
+    "user_name": "test_user"
+  },
+  "role_id": "role_123",
+  "role_variables": {
+    "city_id": 345
+  }
+}
+```
+
 
 ### 配置请求头
 
@@ -20,7 +57,9 @@
 - `Authorization`: `Bearer <您的 API Token>`
 - `Content-Type`: application/json
 
+其中，`<您的 API Token>` 可以是以上三种 Token 的任意一种。 
 以下是一个使用 Python 的示例：
+
 
 ```python
 import requests
@@ -33,6 +72,7 @@ headers = {
 response = requests.get(url, headers=headers)
 print(response.json())
 ```
+
 
 ## 错误处理
 
