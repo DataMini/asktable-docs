@@ -40,7 +40,6 @@
           "host": "192.168.3.25",
           "port": 4000,
           "user": "root",
-          "password": "******"
         },
         "sample_questions": null,
         "meta_status": "success",
@@ -57,7 +56,6 @@
           "host": "obmj30-mi.cn-hangzhou.oceanbase.aliyuncs.com",
           "port": 3306,
           "user": "admin",
-          "password": "******"
         },
         "sample_questions": null,
         "meta_status": "failed",
@@ -96,7 +94,6 @@
       "host": "localhost",
       "port": 3306,
       "user": "user",
-      "password": "password"
     }
   }
   ```
