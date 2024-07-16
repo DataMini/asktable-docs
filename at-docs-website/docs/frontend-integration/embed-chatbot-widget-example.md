@@ -18,24 +18,18 @@
   <head>
     <title>嵌入聊天机器人</title>
     <!-- 嵌入此脚本到目标网站 -->
-    <script>
+      <script>
       // 聊天机器人组件的配置
       window.chatbotConfig = {
-        token: 'YOUR_API_TOKEN', // 替换为实际的公开 API Token
-        datasourceId: 'YOUR_DATASOURCE_ID', // 替换为实际的数据源 ID
-        themeColor: 'blue', // 选择主题颜色：'blue', 'green', 'red', 'purple', 'orange', 'black', 'white', 'gray', 'yellow'
-        chatWindowName: '聊天机器人' // 聊天窗口名称
-      };
-
-      // 加载外部聊天机器人脚本
-      (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://static.asktable.com/chatbot.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'chatbot-script'));
+          BotId:'YOUR_BOTID',// 替换为实际的Botid
+          themeColor: 'blue', // 选择主题颜色：'blue', 'green', 'red', 'purple', 'orange', 'black', 'white', 'gray', 'yellow'
+          chatWindowName: 'AskTable 对话机器人',// 聊天窗口名称
+          defaultOpen: false ,// Ensure chat window is open by default in this context
+          reqTokenUrl:'YOUR_REQ_API_Token' //替换为您网站的请求Token的Api
+      }
     </script>
+         <!--加载外部聊天机器人脚本 -->
+     <script src="https://static.asktable.com/chatbot.js"></script>
   </head>
   <body>
     <h1>欢迎使用 AskTable 聊天机器人</h1>
@@ -46,7 +40,7 @@
 
 ### 2. 配置组件
 
-在配置聊天机器人组件时，传入必要的参数，如 `token` 和 `datasourceId`。
+在配置聊天机器人组件时，传入必要的参数，如 `BotI` 和 `reqTokenUrl`。
 
 
 
