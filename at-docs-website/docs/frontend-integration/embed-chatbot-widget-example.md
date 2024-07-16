@@ -18,18 +18,18 @@
   <head>
     <title>嵌入聊天机器人</title>
     <!-- 嵌入此脚本到目标网站 -->
-      <script>
-      // 聊天机器人组件的配置
-      window.chatbotConfig = {
-          BotId:'YOUR_BOTID',// 替换为实际的Botid
-          themeColor: 'blue', // 选择主题颜色：'blue', 'green', 'red', 'purple', 'orange', 'black', 'white', 'gray', 'yellow'
-          chatWindowName: 'AskTable 对话机器人',// 聊天窗口名称
-          defaultOpen: false ,// Ensure chat window is open by default in this context
-          reqTokenUrl:'YOUR_REQ_API_Token' //替换为您网站的请求Token的Api
-      }
+    <script>
+    // 聊天机器人组件的配置
+    window.chatbotConfig = {
+        BotId:'YOUR_BOTID',// 替换为实际的Botid
+        themeColor: 'blue', // 选择主题颜色：'blue', 'green', 'red', 'purple', 'orange', 'black', 'white', 'gray', 'yellow'
+        chatWindowName: 'AskTable 对话机器人',// 聊天窗口名称
+        defaultOpen: false ,// Ensure chat window is open by default in this context
+        reqTokenUrl:'YOUR_REQ_API_Token' //替换为您网站的请求Token的Api
+    }
     </script>
-         <!--加载外部聊天机器人脚本 -->
-     <script src="https://static.asktable.com/chatbot.js"></script>
+    <!--加载外部聊天机器人脚本 -->
+    <script src="https://static.asktable.com/chatbot.js"></script>
   </head>
   <body>
     <h1>欢迎使用 AskTable 聊天机器人</h1>
