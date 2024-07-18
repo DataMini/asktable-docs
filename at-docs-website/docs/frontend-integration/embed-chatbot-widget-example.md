@@ -21,11 +21,12 @@
     <script>
     // 聊天机器人组件的配置
     window.chatbotConfig = {
-        BotId:'YOUR_BOTID',// 替换为实际的Botid
-        themeColor: 'blue', // 选择主题颜色：'blue', 'green', 'red', 'purple', 'orange', 'black', 'white', 'gray', 'yellow'
-        chatWindowName: 'AskTable 对话机器人',// 聊天窗口名称
-        defaultOpen: false ,// Ensure chat window is open by default in this context
-        reqTokenUrl:'YOUR_REQ_API_Token' //替换为您网站的请求Token的Api
+        BotId:'YOUR_BOTID',// 替换为实际的Botid  （必填项）
+        token:'YOUR_TOKEN' // 替换为实际的token  （必填项与reqTokenUrl二选一）
+        reqTokenUrl:'YOUR_REQ_API_Token' //替换为您网站的请求Token的Api （必填项与token二选一）
+        themeColor: 'blue', // 选择主题颜色：'blue', 'green', 'red', 'purple', 'orange', 'black', 'white', 'gray', 'yellow' （非必填项）
+        chatWindowName: 'AskTable 对话机器人',// 聊天窗口名称     （非必填项）
+        defaultOpen: false ,// Ensure chat window is open by default in this context  （非必填项）
     }
     </script>
     <!--加载外部聊天机器人脚本 -->
