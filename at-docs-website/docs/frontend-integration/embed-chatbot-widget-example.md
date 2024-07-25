@@ -27,10 +27,10 @@
        reqTokenUrl: '/api/asktable/temp_token'
      }
     </script>
-    <script src="https://static.asktable.com/chatbot.js"></script><!DOCTYPE html>
+    <script src="https://static.asktable.com/chatbot.js"></script>
   </head>
   <body>
-    <h1>欢迎使用 AskTable 聊天机器人</h1>
+    <h1>欢迎进入示例网站，该网站嵌入了 AskTable 聊天机器人，欢迎使用！</h1>
     <div id="chatbot"></div>
   </body>
 </html>
