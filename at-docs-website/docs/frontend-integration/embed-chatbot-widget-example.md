@@ -17,7 +17,7 @@
 <html lang="en">
   <head>
     <title>示例网站</title>
-    <!-- 嵌入机器人 JS 代码到目标网站 -->
+    <!-- 嵌入机器人 JS 代码到目标网站  BEGIN -->
     <script>
      window.chatbotConfig = {
        botId: 'bot_xxxxxxxxxxxx',
@@ -28,6 +28,7 @@
      }
     </script>
     <script src="https://static.asktable.com/chatbot.js"></script>
+    <!-- 嵌入机器人 JS 代码到目标网站  END -->
   </head>
   <body>
     <h1>欢迎进入示例网站，该网站嵌入了 AskTable 聊天机器人，欢迎使用！</h1>
