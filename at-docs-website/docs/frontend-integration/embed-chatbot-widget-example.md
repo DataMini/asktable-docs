@@ -22,9 +22,11 @@
      window.chatbotConfig = {
        botId: 'bot_xxxxxxxxxxxx',
        //  askTableToken 和 reqTokenUrl 至少有一个必选
-       askTableToken:  'ADMIN_XXXXXXXXXXXXX'
+       askTableToken:  'ADMIN_XXXXXXXXXXXXX',
        //  如果有 askTableToken，则忽略 reqTokenUrl
-       reqTokenUrl: '/api/asktable/temp_token'
+       reqTokenUrl: '/api/asktable/temp_token',
+       //  主题色，默认黑色 black，其他可选：白色 white
+       themeColor: 'black'
      }
     </script>
     <script src="https://static.asktable.com/chatbot.js"></script>
