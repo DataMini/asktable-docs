@@ -5,7 +5,7 @@
 AskTable 在线服务具有成本低、快速上手等优势，适用于中小企业和个人用户。我们提供免费版和付费版两种服务模式，满足不同用户的需求。
 
 <div className="img-center medium">
-  <img src="/img/asktable/at_atst_intro.png" alt="Logo" />
+  <img src="/img/asktable/at_deployment_online.png" alt="Logo" />
 </div>
 
 

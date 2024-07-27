@@ -1,6 +1,14 @@
 # 聊天机器人组件简介
 
-AskTable 提供了一个强大的聊天机器人组件，方便您在前端应用中集成智能对话功能。通过这个组件，用户可以直接在您的网站或应用中与 AI 进行交互，获取智能化的数据分析和处理结果。
+AskTable 提供了一个强大的聊天机器人组件，方便您在Web应用中集成智能对话功能。通过这个组件，用户可以直接在您的网站或应用中与 AI 进行交互，获取智能化的数据分析和处理结果。
+
+示例：
+
+
+<div className="img-center xlarge">
+  <img src="/img/asktable/at_chatbot_case_meeting.png" alt="meeting" />
+</div>
+
 
 ## 主要功能
 
@@ -32,4 +40,4 @@ AskTable 提供了一个强大的聊天机器人组件，方便您在前端应�
 现在，您已经了解了聊天机器人组件的基本功能和快速开始步骤。接下来，请继续阅读以下文档，了解更多详细信息：
 
 - [嵌入聊天机器人组件示例](./embed-chatbot-widget-example.md)
-- [自定义聊天机器人样式](./customize-chatbot-style.md)
+

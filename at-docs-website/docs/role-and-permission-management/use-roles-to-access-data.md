@@ -5,7 +5,7 @@
 ## 使用角色查询数据
 
 <div className="img-center large">
-  <img src="/img/asktable/at_play_role.png" alt="Logo" />
+  <img src="/img/asktable/at_auth_play_role.png" alt="Logo" />
 </div>
 
 以下是一个示例，说明普通用户如何通过角色查询属于自己的数据。

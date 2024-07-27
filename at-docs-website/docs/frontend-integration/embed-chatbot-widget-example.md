@@ -20,9 +20,9 @@
     <!-- 嵌入机器人 JS 代码到目标网站  BEGIN -->
     <script>
      window.chatbotConfig = {
-       botId: 'bot_xxxxxxxxxxxx',
+       botId: 'YOUR_ASKTABLE_BOT_ID',
        //  askTableToken 和 reqTokenUrl 至少有一个必选
-       askTableToken:  'ADMIN_XXXXXXXXXXXXX',
+       askTableToken:  'YOUR_ASKTABLE_API_TOKEN',
        //  如果有 askTableToken，则忽略 reqTokenUrl
        reqTokenUrl: '/api/asktable/temp_token',
        //  主题色，默认黑色 black，其他可选：白色 white
@@ -47,6 +47,3 @@
 
 现在，您已经成功地在网页中嵌入了聊天机器人组件。用户可以通过该组件与 AskTable 进行智能对话，查询和分析数据。
 
-## 下一步
-
-要进一步自定义聊天机器人的样式，请继续阅读 [自定义聊天机器人样式](./customize-chatbot-style.md) 文档。

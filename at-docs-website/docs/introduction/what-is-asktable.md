@@ -1,12 +1,12 @@
-
-
 # 什么是 AskTable
 
 <div className="img-center small">
   <img src="/img/asktable/at_logo.png" alt="Logo" />
 </div>
 
-AskTable 是一款专为企业设计的智能聊天机器人，通过与企业核心系统和数据库的集成，实现高效的任务执行、信息查询和数据分析。AskTable 提供了一整套在线服务，包括 HTTP Restful API、基于 API 的云端控制台 (Cloud Web Console)、以及前端可嵌入的 ChatBot widget。
+AskTable 是一款专为企业设计的智能对话机器人，能够快速集成到现有系统，理解自然语言查询，提供精准的业务数据和自动化任务处理，大幅提升企业效率和客户满意度。
+
+AskTable 提供了一整套在线服务，包括 HTTP Restful API、基于 API 的云端控制台 (Cloud Web Console)、以及前端可嵌入的 ChatBot widget。
 
 <div className="img-center large">
   <img src="/img/asktable/at_intro.png" alt="Logo" />
@@ -16,6 +16,7 @@ AskTable 是一款专为企业设计的智能聊天机器人，通过与企业�
 ## 核心功能
 
 - **智能对话**: AskTable 能够理解自然语言查询，并返回精准的数据和分析结果。
+- **身份识别**: 通过身份识别，AskTable 可以根据用户的身份提供个性化的服务。
 - **多数据源支持**: 支持 MySQL、PostgreSQL、TiDB、Oceanbase 等多种企业常用数据库。
 - **数据可视化**: 支持文本、表格、图表等多种形式的结果展示，还可以提供 Excel 文件下载。
 - **任务自动化**：支持在对话过程中自动完成用户交代的任务，让工作变得更加轻松和高效。
@@ -31,8 +32,8 @@ AskTable 是一款专为企业设计的智能聊天机器人，通过与企业�
 
 ## 适用场景
 
-- **企业内部信息查询**: 员工可以通过 AskTable 快速查询人力资源、财务等信息。
 - **客户服务**: 为客户提供自动化的信息查询服务，提升客户满意度。
-- **数据分析与报表**: 通过自然语言查询，生成各类数据分析报表，辅助决策。
+- **企业内部信息查询**: 员工可以通过 AskTable 快速查询营销、生产等环节的经营数据。
+- **对话式数据分析**: 通过自然语言查询，生成各类数据分析报表，辅助决策。
 
 AskTable 为企业提供了一种全新的数据查询和分析方式，极大地提升了信息获取的效率和准确性。无论是内部管理还是对外服务，AskTable 都是一个强大的助手。

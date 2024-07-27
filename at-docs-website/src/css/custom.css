@@ -49,3 +49,7 @@
 .img-center.large img {
   width: 80%;
 }
+
+.img-center.xlarge img {
+  width: 100%;
+}

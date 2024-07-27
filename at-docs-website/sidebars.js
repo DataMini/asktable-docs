@@ -14,7 +14,7 @@ const sidebars = {
       label: '快速开始',
       items: [
         'quick-start/create-account-and-get-api-token',
-        'quick-start/use-web-console',
+        'quick-start/use-cloud-console',
         'quick-start/embed-chatbot-widget',
       ],
     },
@@ -33,7 +33,6 @@ const sidebars = {
       items: [
         'frontend-integration/chatbot-widget-introduction',
         'frontend-integration/embed-chatbot-widget-example',
-        'frontend-integration/customize-chatbot-style',
       ],
     },
     {

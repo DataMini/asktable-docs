@@ -2,6 +2,20 @@
 
 访问策略是角色和权限管理的核心，通过定义访问策略，可以控制用户对特定资源的访问权限。在 AskTable 中，您可以根据业务需求灵活定义访问策略。
 
+## 访问策略的工作原理
+
+访问策略的工作原理是通过一系列的规则来确定用户对数据的访问权限。这些规则可以基于数据源、表、字段，甚至是数据行。访问策略如何工作的详细解释如下：
+
+- **数据源级别控制**：策略可以指定哪些数据源用户可以访问。
+- **表级别控制**：通过正则表达式匹配表名，策略可以控制用户对特定表的访问。
+- **字段级别控制**：策略可以指定用户是否可以访问特定字段，例如敏感信息字段。
+- **行级别控制**：通过行过滤器，策略可以控制用户对表中特定行数据的访问，通常与用户属性相关联，如用户ID。
+
+
+<div className="img-center large">
+  <img src="/img/asktable/at_auth_how_policy_works.png" alt="Logo" />
+</div>
+
 ## 创建访问策略
 
 1. **登录 AskTable 管理控制台**。
@@ -15,8 +29,9 @@
 
 
 <div className="img-center large">
-  <img src="/img/asktable/at_auth_policy.png" alt="Logo" />
+  <img src="/img/asktable/at_auth_create_policy.png" alt="Logo" />
 </div>
+
 
 ### 权限规则示例
 

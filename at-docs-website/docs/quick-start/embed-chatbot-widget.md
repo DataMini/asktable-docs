@@ -2,7 +2,9 @@
 
 AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智能聊天机器人集成到自己的网站或应用中。
 
-![img.png](img.png)
+<div className="img-center xlarge">
+  <img src="/img/asktable/at_chatbot_case_meeting.png" alt="meeting" />
+</div>
 
 以下是详细的嵌入步骤：
 
@@ -14,24 +16,13 @@ AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智�
 
 ```html
 <!-- Embed this script in the target website -->
-<script>
-  // Configuration for the chatbot widget
-  window.chatbotConfig = {
-    token: 'YOUR_API_TOKEN', // Replace with the actual API token
-    datasourceId: 'YOUR_DATASOURCE_ID', // Replace with the actual datasource ID
-    themeColor: 'blue', // Choose from 'blue', 'green', 'red', 'purple', 'orange', 'black', 'white', 'gray', 'yellow'
-    chatWindowName: 'AskTable ChatBot' // Customize the chat window name
-  };
-
-  // Load the external chatbot script
-  (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://static.asktable.com/chatbot.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'chatbot-script'));
-</script>
+    <script>
+     window.chatbotConfig = {
+       botId: 'YOUR_ASKTABLE_BOT_ID',
+       askTableToken:  'YOUR_ASKTABLE_API_TOKEN',
+     }
+    </script>
+    <script src="https://static.asktable.com/chatbot.js"></script>
 ```
 
 
@@ -59,24 +50,13 @@ AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智�
   <p>Here you can chat with our AskTable ChatBot to get more information.</p>
 
   <!-- Embed this script in the target website -->
-  <script>
-    // Configuration for the chatbot widget
-    window.chatbotConfig = {
-      token: 'YOUR_API_TOKEN', // Replace with the actual API token
-      datasourceId: 'YOUR_DATASOURCE_ID', // Replace with the actual datasource ID
-      themeColor: 'blue', // Choose from 'blue', 'green', 'red', 'purple', 'orange', 'black', 'white', 'gray', 'yellow'
-      chatWindowName: 'AskTable 机器人' // Customize the chat window name
-    };
-
-    // Load the external chatbot script
-    (function(d, s, id){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://static.asktable.com/chatbot.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'chatbot-script'));
-  </script>
+    <script>
+     window.chatbotConfig = {
+       botId: 'YOUR_ASKTABLE_BOT_ID',
+       askTableToken:  'YOUR_ASKTABLE_API_TOKEN',
+     }
+    </script>
+    <script src="https://static.asktable.com/chatbot.js"></script>
 </body>
 </html>
 ```
