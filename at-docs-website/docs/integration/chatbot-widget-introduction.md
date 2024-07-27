@@ -31,9 +31,6 @@ AskTable 提供了一个强大的聊天机器人组件，方便您在Web应用�
 
 在您的 Web 前端项目中嵌入聊天机器人组件，具体步骤请参考 [嵌入聊天机器人组件示例](./embed-chatbot-widget-example.md)。
 
-### 3. 自定义样式
-
-您可以根据需要自定义聊天机器人的样式，具体步骤请参考 [自定义聊天机器人样式](./customize-chatbot-style.md)。
 
 ## 下一步
 

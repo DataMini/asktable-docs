@@ -11,6 +11,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '客户案例',
+      items: [
+        'customer-cases/university-data-analysis',
+        // 'customer-cases/ecommerce-customer-service',
+      ],
+    },
+    {
+      type: 'category',
       label: '快速开始',
       items: [
         'quick-start/create-account-and-get-api-token',
@@ -29,10 +37,11 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '前端集成',
+      label: '前后端集成',
       items: [
-        'frontend-integration/chatbot-widget-introduction',
-        'frontend-integration/embed-chatbot-widget-example',
+        'integration/chatbot-widget-introduction',
+        'integration/embed-chatbot-widget-example',
+        'integration/server-get-temp-token-for-user',
       ],
     },
     {
@@ -42,6 +51,31 @@ const sidebars = {
         'datasource-management/supported-databases',
         'datasource-management/create-datasource',
         'datasource-management/manage-datasources',
+      ],
+    },
+    {
+      type: 'category',
+      label: '对话机器人',
+      items: [
+        'bot-management/bot-introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'AI 数据库',
+      items: [
+        'chat-database/database-query-via-natural-language',
+        'chat-database/generate-sql-from-natural-language',
+      ],
+    },
+    {
+      type: 'category',
+      label: '角色和权限',
+      items: [
+        'role-and-permission-management/introduction',
+        'role-and-permission-management/define-access-policy',
+        'role-and-permission-management/create-and-manage-roles',
+        'role-and-permission-management/use-roles-to-access-data',
       ],
     },
     {
@@ -56,7 +90,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'API Calling',
+      label: '插件（API）',
       items: [
         'api-calling/introduction',
         'api-calling/quick-start-with-cloud-console',
@@ -75,17 +109,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '角色和权限管理',
-      items: [
-        'role-and-permission-management/introduction',
-        'role-and-permission-management/define-access-policy',
-        'role-and-permission-management/create-and-manage-roles',
-        'role-and-permission-management/use-roles-to-access-data',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'SDK 和 CLI 工具',
+      label: 'SDK 和 CLI',
       items: [
         {
           type: 'category',
@@ -104,15 +128,6 @@ const sidebars = {
         },
       ],
     },
-//    {
-//      type: 'category',
-//      label: '常见问题与故障排除',
-//      items: [
-//        'faq-and-troubleshooting/faq',
-//        'faq-and-troubleshooting/troubleshooting-steps',
-//        'faq-and-troubleshooting/contact-support',
-//      ],
-//    },
     {
       type: 'category',
       label: '定价与部署',
