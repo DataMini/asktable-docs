@@ -37,7 +37,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '前后端集成',
+      label: '如何集成',
       items: [
         'integration/chatbot-widget-introduction',
         'integration/embed-chatbot-widget-example',

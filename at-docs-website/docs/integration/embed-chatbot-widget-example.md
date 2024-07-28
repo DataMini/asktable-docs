@@ -1,10 +1,17 @@
-# 嵌入聊天机器人组件示例
+# 聊天机器人集成示例
 
 在本教程中，我们将展示如何在您的网页或应用中嵌入 AskTable 提供的聊天机器人组件，并实现基本的对话功能。无论您的前端是基于 HTML5、React 还是其他框架，都可以按照以下步骤进行集成。
 
 ## 前提条件
 
 - 已经获取了 API Token。具体步骤请参考 [聊天机器人组件简介](./chatbot-widget-introduction.md)。
+
+## 工作流程图
+
+
+<div className="img-center xlarge">
+  <img src="/img/asktable/at_embed_chatbot_flow.png" alt="at_embed_chatbot_flow" />
+</div>
 
 ## 步骤
 
@@ -45,5 +52,8 @@
 
 
 
-现在，您已经成功地在网页中嵌入了聊天机器人组件。用户可以通过该组件与 AskTable 进行智能对话，查询和分析数据。
+## 下一步
 
+现在，您已经成功地在网页中嵌入了聊天机器人组件。用户可以通过该组件与 AskTable 进行智能对话，查询数据或执行任务。接下来，请继续阅读以下文档，了解更多详细信息：
+
+- [AskTable 如何认证与用户身份](./server-get-temp-token-for-user.md)
