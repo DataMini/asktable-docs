@@ -52,7 +52,7 @@
 ```python
 import requests
 
-url = "https://api.asktable.com/sqls"
+url = "https://api.asktable.com/v1/sqls"
 headers = {
     "Authorization": "Bearer YOUR_API_TOKEN",
     "Content-Type": "application/json"
