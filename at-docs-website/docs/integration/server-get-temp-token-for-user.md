@@ -41,7 +41,7 @@ AskTable 服务器根据 Temp-Token 识别用户身份，并返回用户信息�
    reqTokenUrl: '/api/asktable/temp-token'  // 获取 Temp-Token 的后端 API 地址
  }
 </script>
-<script src="https://static.asktable.com/chatbot.js"></script>
+<script src="https://cloud.asktable.com/chatbot.js"></script>
 ```
 
 了解更多详细信息：- [嵌入聊天机器人组件示例](./embed-chatbot-widget-example.md)

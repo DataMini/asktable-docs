@@ -36,7 +36,7 @@
        themeColor: 'black'
      }
     </script>
-    <script src="https://static.asktable.com/chatbot.js"></script>
+    <script src="https://cloud.asktable.com/chatbot.js"></script>
     <!-- 嵌入机器人 JS 代码到目标网站  END -->
   </head>
   <body>

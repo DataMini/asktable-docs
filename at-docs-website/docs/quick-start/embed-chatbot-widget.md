@@ -22,7 +22,7 @@ AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智�
        askTableToken:  'YOUR_ASKTABLE_API_TOKEN',
      }
     </script>
-    <script src="https://static.asktable.com/chatbot.js"></script>
+    <script src="https://cloud.asktable.com/chatbot.js"></script>
 ```
 
 
@@ -56,7 +56,7 @@ AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智�
        askTableToken:  'YOUR_ASKTABLE_API_TOKEN',
      }
     </script>
-    <script src="https://static.asktable.com/chatbot.js"></script>
+    <script src="https://cloud.asktable.com/chatbot.js"></script>
 </body>
 </html>
 ```
