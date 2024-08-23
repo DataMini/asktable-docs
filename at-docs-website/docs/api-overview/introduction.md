@@ -21,15 +21,15 @@ AskTable 的 API 接口主要包括以下几个方面：
 
 ## 快速开始
 
-### 1. 获取 API Token
+### 1. 获取 API-Key
 
-要使用 AskTable API，您首先需要创建一个账户并获取 API Token。具体步骤请参考 [创建账户并获取 API Token](../quick-start/create-account-and-get-api-token.md)。
+要使用 AskTable API，您首先需要创建一个账户并获取 API-Key。具体步骤请参考 [创建账户并获取 API-Key](../quick-start/create-account-and-get-api-token.md)。
 
 ### 2. 配置请求头
 
 在每次请求中，您需要在请求头中包含以下信息：
 
-- `Authorization`: `Bearer <您的 API Token>`
+- `Authorization`: `Bearer <您的 API-Key>`
 - `Content-Type`: application/json
 
 ### 3. 发送请求
@@ -41,7 +41,7 @@ import requests
 
 url = "https://api.asktable.com/v1/data-sources"
 headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN",
+    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
     "Content-Type": "application/json"
 }
 response = requests.get(url, headers=headers)

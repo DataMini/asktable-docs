@@ -19,7 +19,7 @@
 
   ```json
   {
-    "Authorization": "Bearer YOUR_API_TOKEN",
+    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
     "Content-Type": "application/json"
   }
   ```
@@ -81,7 +81,7 @@
 
   ```json
   {
-    "Authorization": "Bearer YOUR_API_TOKEN",
+    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
     "Content-Type": "application/json"
   }
   ```
@@ -112,7 +112,7 @@
 
   ```json
   {
-    "Authorization": "Bearer YOUR_API_TOKEN",
+    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
     "Content-Type": "application/json"
   }
   ```
@@ -155,7 +155,7 @@
 
   ```json
   {
-    "Authorization": "Bearer YOUR_API_TOKEN",
+    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
     "Content-Type": "application/json"
   }
   ```
@@ -193,7 +193,19 @@
 在使用 AskTable API 时，可能会遇到以下错误：
 
 - **400 Bad Request**：请求参数有误，请检查您的请求格式和参数。
-- **401 Unauthorized**：请求未通过身份验证，请检查您的 API Token 是否正确。
+
+  ```json
+  {
+    "code": 1004,
+    "error": "RequestValidationError",
+    "error_detail": {
+    "question": "'question' is a required property"
+  },
+    "message": "400 Bad Request: The browser (or proxy) sent a request that this server could not understand."
+  }
+  ```
+
+- **401 Unauthorized**：请求未通过身份验证，请检查您的 API-Key 是否正确。
 - **403 Forbidden**：请求被拒绝访问资源，请检查您的角色和策略配置。
 - **404 Not Found**：请求的资源不存在，请检查您的 URL 和资源 ID。
 

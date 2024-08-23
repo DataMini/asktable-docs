@@ -10,7 +10,7 @@ AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智�
 
 ## 配置 ChatBot Widget
 
-1. **获取 API Token 和数据源 ID**：确保您已经获取了 API Token，并添加了相应的数据源。记录下数据源的 ID。
+1. **获取 API-Key 和数据源 ID**：确保您已经获取了 API-Key，并添加了相应的数据源。记录下数据源的 ID。
 
 2. **配置 ChatBot**：在您的 HTML 文件中添加以下脚本，并根据需要修改配置参数。
 

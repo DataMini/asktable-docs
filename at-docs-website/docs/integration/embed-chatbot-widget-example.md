@@ -4,7 +4,7 @@
 
 ## 前提条件
 
-- 已经获取了 API Token。具体步骤请参考 [聊天机器人组件简介](./chatbot-widget-introduction.md)。
+- 已经获取了 API-Key。具体步骤请参考 [聊天机器人组件简介](./chatbot-widget-introduction.md)。
 
 ## 工作流程图
 

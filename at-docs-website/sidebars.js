@@ -141,6 +141,8 @@ const sidebars = {
       label: '附录',
       items: [
         'appendix/glossary',
+        'appendix/privacy-policy',
+        'appendix/terms-of-service',
       ],
     },
   ],

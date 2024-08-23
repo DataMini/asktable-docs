@@ -19,15 +19,15 @@ AskTable 是一款能够识别用户身份的智能机器人，但被集成网�
 
 ### 2. AskTable 认证
 浏览器在获得 Session Token 后，唤起 AskTable Bot。
-AskTable Bot **向客户当前的后端服务器**请求获取 AskTable Temp Token。
-后端服务器申请 Temp Token，并将携带用户信息的 Temp Token 返回给 AskTable Bot。
-AskTable Bot 将 Temp Token 发送到**AskTable 服务器**。
-AskTable 服务器记录 Temp Token 并与当前用户绑定，然后返回 Temp Token。
+AskTable Bot **向客户当前的后端服务器**请求获取 AskTable Temp-Token。
+后端服务器申请 Temp-Token，并将携带用户信息的 Temp-Token 返回给 AskTable Bot。
+AskTable Bot 将 Temp-Token 发送到**AskTable 服务器**。
+AskTable 服务器记录 Temp-Token 并与当前用户绑定，然后返回 Temp-Token。
 
 ### 3. 用户使用 AskTable
 用户在 AskTable 中提出问题，例如“我是谁？”。
-浏览器将问题和 Temp Token 发送给 AskTable 服务器。
-AskTable 服务器根据 Temp Token 识别用户身份，并返回用户信息，例如“你是张三”。
+浏览器将问题和 Temp-Token 发送给 AskTable 服务器。
+AskTable 服务器根据 Temp-Token 识别用户身份，并返回用户信息，例如“你是张三”。
 用户可以继续进行类似的交互。
 
 ## 实现步骤
@@ -38,7 +38,7 @@ AskTable 服务器根据 Temp Token 识别用户身份，并返回用户信息�
 <script>
  window.chatbotConfig = {
    botId: 'YOUR_ASKTABLE_BOT_ID',
-   askTableToken: 'YOUR_ASKTABLE_API_TOKEN',
+   reqTokenUrl: '/api/asktable/temp-token'  // 获取 Temp-Token 的后端 API 地址
  }
 </script>
 <script src="https://static.asktable.com/chatbot.js"></script>
@@ -50,14 +50,14 @@ AskTable 服务器根据 Temp Token 识别用户身份，并返回用户信息�
 ### 2. 用户认证
 在用户访问您的网站并成功登录后，您的服务器应生成一个 Session Token 并返回给用户的浏览器。
 
-### 3. 获取 Temp Token
-当 AskTable Bot 被唤起时，浏览器将使用 Session Token 向您的后端服务器请求一个 Temp Token。后端服务器将包含用户信息的 Temp Token 返回给浏览器。
+### 3. 获取 Temp-Token
+当 AskTable Bot 被唤起时，浏览器将使用 Session Token 向您的后端服务器请求一个 Temp-Token。后端服务器将包含用户信息的 Temp-Token 返回给浏览器。
 
-### 4. 发送 Temp Token 到 AskTable 服务器
-浏览器将获取到的 Temp Token 发送到 AskTable 服务器。AskTable 服务器将记录 Temp Token 并将其与当前用户绑定。
+### 4. 发送 Temp-Token 到 AskTable 服务器
+浏览器将获取到的 Temp-Token 发送到 AskTable 服务器。AskTable 服务器将记录 Temp-Token 并将其与当前用户绑定。
 
 ### 5. 用户与 AskTable 交互
-用户可以通过 AskTable Bot 提出问题。浏览器将问题和 Temp Token 一并发送到 AskTable 服务器，后者根据 Temp Token 识别用户身份并返回相应的信息。
+用户可以通过 AskTable Bot 提出问题。浏览器将问题和 Temp-Token 一并发送到 AskTable 服务器，后者根据 Temp-Token 识别用户身份并返回相应的信息。
 
 ## 总结
 通过以上步骤，您可以成功将 AskTable 集成到您的网站，并通过您的用户认证系统完成对用户身份的识别和认证。这样，AskTable 机器人能够为经过认证的用户提供个性化的智能交互服务，提高用户体验和服务质量。

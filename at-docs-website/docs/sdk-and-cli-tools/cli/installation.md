@@ -14,7 +14,7 @@ asktable -h
 
 如果正确安装，将会输出 CLI 的帮助信息。
 ```
-usage: asktable [-h] [-a API_URL] [-t TOKEN]
+usage: asktable [-h] [-a API_URL] [-k API_KEY_or_SESSION_TOKEN]
 
 Interactive CLI for AskTable client.
 
@@ -22,15 +22,15 @@ options:
   -h, --help            show this help message and exit
   -a API_URL, --api_url API_URL
                         The AskTable API URL
-  -t TOKEN, --token TOKEN
-                        The token for authentication.
+  -k API_KEY, --api_key API_KEY_or_SESSION_TOKEN
+                        The key for authentication.
 
 ```
 
 
 ## 登录
 
-运行命令 `asktable -t <YOUR_API_TOKEN>`，输入正确的 `API Token` 后，将会登录到 AskTable 服务。
+运行命令 `asktable -k <API_KEY_or_SESSION_TOKEN>`，输入正确的 `API-Key` 后，将会登录到 AskTable 服务。
 
 
 ## 使用
@@ -38,7 +38,7 @@ options:
 登录成功后，进入一个交互式命令行界面。
 
 ```python
-➜  $ asktable -t <YOUR_API_TOKEN>
+➜  $ asktable -k <API_KEY_or_SESSION_TOKEN>
 
 -- AskTable 客户端(0.17.8)初始化...
 -- 连接服务器(-a)： https://api.asktable.com
@@ -56,6 +56,11 @@ In [1]: at.datasources
 
 接下来，您可以通过输入命令来管理数据源、角色、策略等。例如：
 
+#### 基本
+- **at.me**: 查看当前用户信息
+- **at.version**: 查看当前版本
+- **at.get_token**: 获取一个新的 SESSION_TOKEN
+
 #### 数据源命令
 - **at.datasources**: 列出所有数据源
 - **at.datasources.create**: 创建一个新的数据源
@@ -70,7 +75,12 @@ In [1]: at.datasources
 - **at.policies**: 列出所有策略
 - **at.policies.create**: 创建一个新的策略
 
-#### 对话和消息
+#### 对话聊天
+- **at.bots**: 列出所有机器人
+- **at.bots.create**: 创建一个新的机器人
+- **bot = at.bots.get**: 获取一个机器人
+- **bot.delete**: 删除一个机器人
+- **bot.update**: 更新一个机器人
 - **at.chats**: 列出所有对话
 - **at.chats.create**: 创建一个新的对话
 - **chat = at.chats.get**: 获取一个对话
@@ -78,12 +88,25 @@ In [1]: at.datasources
 - **chat.messages**: 列出对话的消息
 - **chat.delete**: 删除一个对话
 
+
 #### 安全隧道
 - **at.securetunnel**: 列出所有安全隧道
 - **at.securetunnel.create**: 创建一个新的安全隧道
 - **st = at.securetunnel.get**: 获取一个安全隧道
 - **st.delete**: 删除一个安全隧道
 - **st.links**: 列出安全隧道的链接
+
+
+#### 速查
+- **at.q2a.create**: 进行快速查询
+- **at.q2s.create**: 进行快速生成 SQL
+- **at.q2a**: 查看速查结果
+- **at.q2s**: 查看 SQL 结果
+
+
+#### 缓存
+- **at.delete_cache**: 删除缓存
+
 
 通过上述命令，您可以使用 AskTable CLI 工具进行数据源、策略、角色和对话的管理。
 

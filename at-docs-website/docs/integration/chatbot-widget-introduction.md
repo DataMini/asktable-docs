@@ -21,11 +21,11 @@ AskTable 提供了一个强大的聊天机器人组件，方便您在Web应用�
 
 要在您的项目中集成聊天机器人组件，请按照以下步骤操作：
 
-### 1. 获取 API Token
+### 1. 获取 API-Key
 
-要使用聊天机器人组件，您首先需要创建一个账户并获取 API Token。具体步骤请参考 [创建账户并获取 API Token](../quick-start/create-account-and-get-api-token.md)。
+要使用聊天机器人组件，您首先需要创建一个账户并获取 API-Key。具体步骤请参考 [创建账户并获取 API-Key](../quick-start/create-account-and-get-api-token.md)。
 
-注意：如果您的数据是面向所有人公开的话，可以申请一个 `asker` 角色的 Token，这个 Token 只有跟 AI 机器人问答的权限，不用担心泄露，可以在前端直接使用。
+注意：如果您的数据是面向所有人公开的话，可以申请一个 `asker` 角色的 API-Key，这个 API-Key 只有跟 AI 机器人对话的权限，不用担心泄露，可以在前端直接使用。
 
 ### 2. 嵌入组件
 

@@ -54,7 +54,7 @@ import requests
 
 url = "https://api.asktable.com/v1/sqls"
 headers = {
-    "Authorization": "Bearer YOUR_API_TOKEN",
+    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
     "Content-Type": "application/json"
 }
 payload = {

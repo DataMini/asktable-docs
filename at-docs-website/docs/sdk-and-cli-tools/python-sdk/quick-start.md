@@ -15,11 +15,11 @@
     ```python
     from asktable import AskTable
 
-    # 替换为您的 API Token
-    token = 'YOUR_API_TOKEN'
-    api_url = 'https://api.asktable.com'
+    # 替换为您的 API-Key
+    api_key = 'API_KEY_or_SESSION_TOKEN'
+    api_url = 'https://api.asktable.com/v1'
 
-    at = AskTable(token=token, api_url=api_url)
+    at = AskTable(api_key=api_key, api_url=api_url)
     ```
 
 2. **列出数据源**
