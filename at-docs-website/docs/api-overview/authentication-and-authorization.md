@@ -25,9 +25,9 @@ AskTable 提供两种不同类型的 API-Key ，用于不同的访问需求和�
 
 | API 路径 | 方法 | 描述 |
 |---------|------|------|
-| /bots/<bot_id> | GET | 获取指定机器人的信息 |
-| /chats/<chat_id> | GET | 获取指定聊天的详细信息 |
-| /chats/<chat_id>/messages | GET | 获取指定聊天的消息列表 |
+|`/bots/<bot_id>` | GET | 获取指定机器人的信息 |
+| `/chats/<chat_id>` | GET | 获取指定聊天的详细信息 |
+| `/chats/<chat_id>`/messages | GET | 获取指定聊天的消息列表 |
 | /chats | POST | 创建新的聊天会话 |
 | /account/token | GET | 获取账户的访问令牌 |
 | /at-auth/me | GET | 获取当前认证用户的信息 |
