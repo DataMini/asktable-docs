@@ -16,7 +16,7 @@
     from asktable import AskTable
 
     # 替换为您的 API-Key
-    api_key = 'API_KEY_or_SESSION_TOKEN'
+    api_key = 'API_KEY_or_TEMP_TOKEN'
     api_url = 'https://api.asktable.com/v1'
 
     at = AskTable(api_key=api_key, api_url=api_url)

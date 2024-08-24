@@ -19,7 +19,7 @@
 
   ```json
   {
-    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
+    "Authorization": "Bearer API_KEY_or_TEMP_TOKEN",
     "Content-Type": "application/json"
   }
   ```
@@ -81,7 +81,7 @@
 
   ```json
   {
-    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
+    "Authorization": "Bearer API_KEY_or_TEMP_TOKEN",
     "Content-Type": "application/json"
   }
   ```
@@ -112,7 +112,7 @@
 
   ```json
   {
-    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
+    "Authorization": "Bearer API_KEY_or_TEMP_TOKEN",
     "Content-Type": "application/json"
   }
   ```
@@ -155,7 +155,7 @@
 
   ```json
   {
-    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
+    "Authorization": "Bearer API_KEY_or_TEMP_TOKEN",
     "Content-Type": "application/json"
   }
   ```

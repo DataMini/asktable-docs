@@ -5,12 +5,11 @@ AskTable 支持多种类型的数据库和数据源，方便您灵活地集成�
 ## 支持的数据源类型
 
 
-![img_1.png](img_1.png)
-
 - **MySQL**: 支持版本 8.0 及以上
 - **PostgreSQL**: 支持版本 13 及以上
 - **TiDB**: 分布式 SQL 数据库，兼容 MySQL 协议
 - **OceanBase**: 分布式关系数据库，兼容 MySQL 协议
+- **ClickHouse**: 分布式列式数据库，兼容 MySQL 协议
 - **Excel 文件**: 支持 .xlsx/.xls 格式
 - **CSV 文件**: 支持 .csv 格式，常见分割符包括逗号、制表符等都支持。
 

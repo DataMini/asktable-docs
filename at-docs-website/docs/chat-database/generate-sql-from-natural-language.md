@@ -2,10 +2,16 @@
 
 ## 概述
 
-为了让用户可以直接使用 AskTable 的技术生成 SQL 查询，并自行执行查询以避免数据出公司内网，AskTable 提供了一个开放的 API 接口。通过该 API，用户可以利用 AskTable 的自然语言处理能力生成 SQL 查询，从而满足各种复杂的查询需求。
+AskTable 提供了一个用于生成 SQL 的 API 接口。通过该 API，开发者可以利用 AskTable 的自然语言处理能力自动生成 SQL ，从而满足各种特定场景。
+
+适应场景
+1. 开发者不想针对不同的用户需求，实现不同的问答逻辑，想通过一个页面提供统一查询服务
+2. 开发者不想使用 AskTable 的 UI 界面，想自己实现一个 UI 界面
+3. 开发者想自己访问数据库，而不是通过 AskTable 访问数据库。
+
 
 ## API 端点
-**POST** `/sqls`
+**POST** `/single-turn/q2s`
 
 ## 请求 Payload
 请求的 payload 需要包含以下字段：
@@ -34,33 +40,18 @@
 ## 示例请求
 以下是一个示例请求，用于生成 SQL 查询：
 
-```json
-{
-  "datasource_ids": [
-    "example_datasource_id"
-  ],
-  "role_id": 1,
-  "role_variables": {
-    "user_id": 123
-  },
-  "question": "获取所有在2021年销售超过1000件的产品"
-}
-
-```
-
 ### 请求示例代码 (Python)
 ```python
 import requests
 
-url = "https://api.asktable.com/v1/sqls"
+url = "https://api.asktable.com/v1/single-turn/q2s"
 headers = {
-    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
+    "Authorization": "Bearer API_KEY_or_TEMP_TOKEN",
     "Content-Type": "application/json"
 }
 payload = {
-    "datasource_ids": ["example_datasource_id"],
+    "datasource_id": "example_datasource_id",
     "role_id": 1,
-    "role_name": "data_analyst",
     "role_variables": {"user_id": 123},
     "question": "获取所有在2021年销售超过1000件的产品"
 }
@@ -91,6 +82,7 @@ print(response.json())
 - `prepared_statement`: 生成的 SQL 查询字符串。
 - `parameters`: SQL 查询中使用的参数。
 - `header`: 查询结果的描述信息，例如字段的解释。
+- 更多字段请参考 [API 文档](https://api.asktable.com/)
 
 
 

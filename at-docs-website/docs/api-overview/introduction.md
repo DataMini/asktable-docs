@@ -41,7 +41,7 @@ import requests
 
 url = "https://api.asktable.com/v1/data-sources"
 headers = {
-    "Authorization": "Bearer API_KEY_or_SESSION_TOKEN",
+    "Authorization": "Bearer API_KEY_or_TEMP_TOKEN",
     "Content-Type": "application/json"
 }
 response = requests.get(url, headers=headers)
