@@ -9,14 +9,14 @@ const sidebars = {
         'introduction/use-cases',
       ],
     },
-    {
-      type: 'category',
-      label: '客户案例',
-      items: [
-        'customer-cases/university-data-analysis',
-        // 'customer-cases/ecommerce-customer-service',
-      ],
-    },
+//    {
+//      type: 'category',
+//      label: '客户案例',
+//      items: [
+//        'customer-cases/university-data-analysis',
+//        // 'customer-cases/ecommerce-customer-service',
+//      ],
+//    },
     {
       type: 'category',
       label: '快速开始',
@@ -66,6 +66,7 @@ const sidebars = {
       items: [
         'chat-database/database-query-via-natural-language',
         'chat-database/generate-sql-from-natural-language',
+        'chat-database/generate-answer-from-natural-language',
       ],
     },
     {
