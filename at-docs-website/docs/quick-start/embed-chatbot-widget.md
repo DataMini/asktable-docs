@@ -19,7 +19,7 @@ AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智�
     <script>
      window.chatbotConfig = {
        botId: 'YOUR_ASKTABLE_BOT_ID',
-       askTableToken:  'YOUR_ASKTABLE_API_TOKEN',
+       askTableAPIKey:  'YOUR_ASKTABLE_API_KEY',
      }
     </script>
     <script src="https://cloud.asktable.com/chatbot.js"></script>
@@ -53,7 +53,7 @@ AskTable 提供了一个前端可嵌入的 ChatBot widget，方便企业将智�
     <script>
      window.chatbotConfig = {
        botId: 'YOUR_ASKTABLE_BOT_ID',
-       askTableToken:  'YOUR_ASKTABLE_API_TOKEN',
+       askTableAPIKey:  'YOUR_ASKTABLE_API_KEY',
      }
     </script>
     <script src="https://cloud.asktable.com/chatbot.js"></script>
