@@ -1,5 +1,5 @@
 
-# API Calling 简介
+# API Calling（API 工具） 简介
 
 ## 1. 背景
 API Calling 功能旨在为 AskTable 用户提供在 ChatBot 中执行外部任务的能力。通过此功能，用户可以轻松管理和调用外部 API，以便在 ChatBot 中集成和执行各种外部服务。无论是订会议室、企业流程审批，还是预订酒店房间，API Calling 功能都能使这些操作变得高效和便捷。

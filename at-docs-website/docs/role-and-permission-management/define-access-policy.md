@@ -28,10 +28,6 @@
 2. **权限规则**：定义具体的权限规则，包括允许或拒绝的操作类型和资源。
 
 
-<div className="img-center large">
-  <img src="/img/asktable/at_auth_create_policy.png" alt="Logo" />
-</div>
-
 
 ### 权限规则示例
 

@@ -1,7 +1,8 @@
 # 通过控制台管理 API
 
 ## 查看 API Endpoint
-![at-extapi-list.png](..%2F..%2Fstatic%2Fimg%2Fasktable%2Fat-extapi-list.png)
+
+
 在 API 接口管理页面，您可以查看、创建、编辑和删除 API Endpoint。该页面采用表格形式展示了所有已定义的 API Endpoint。每个 API Endpoint 都包含以下信息：
 
 * **ID:** 唯一标识符。
@@ -30,13 +31,10 @@
 
 HTTP 头（Header）: HTTP 请求头信息，用户可以按键值对方式输入多个 Header。每个 Header 行后面都有一个删除按钮，用户可以删除不需要的 Header。
 
-<div className="img-center medium">
-  <img src="/img/asktable/at-extapi-create.png" alt="extapi-create" />
-</div>
 
 
 ## 查看 API Route 
-![at-apiroute-list.png](..%2F..%2Fstatic%2Fimg%2Fasktable%2Fat-apiroute-list.png)
+
 在 API Route 管理页面，您可以查看、创建、编辑和删除 API Route。该页面采用表格形式展示了所有已定义的 API Route。每个 API Route 都包含以下信息：
 
 * **名称:** API Route 的名称。
@@ -62,6 +60,3 @@ HTTP 头（Header）: HTTP 请求头信息，用户可以按键值对方式输�
 * **查询参数描述:** 查询参数的描述信息。
 * **请求体参数描述:** 请求体参数的描述信息，支持 JSON 格式。
 
-<div className="img-center large">
-  <img src="/img/asktable/at-apiroute-create.png" alt="apiroute-create" />
-</div>

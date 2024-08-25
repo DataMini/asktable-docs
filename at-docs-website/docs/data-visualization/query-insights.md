@@ -4,50 +4,96 @@
 
 ## 示例
 
-以下是一个返回包含查询步骤的示例响应：
-
 ```json
 {
-  "status": "OK",
-  "elapsed_time": 7,
-  "text": "最晚入职的员工是陈敏，员工编号为5，联系电话为13800000001。",
-  "files": null,
-  "charts": null,
-  "query_insights": [
-    {
-      "question": "查询数据库中最晚入职的员工信息。\r\n\r",
-      "datasource": "ds_1pv7aHX64ECI",
-      "results": [
+    "status": "OK",
+    "elapsed_time": 6,
+    "text": "共有206个国家。",
+    "files": null,
+    "charts": null,
+    "query_insights": [
         {
-          "query": "SELECT employee_id, name, phone_number FROM test.employees ORDER BY employee_id DESC LIMIT 1",
-          "result_info": {
-            "row_count": 1,
-            "column_count": 3,
-            "columns": ["employee_id", "name", "phone_number"]
-          },
-          "query_time_ms": 38
+            "datasource_id": "ds_32r3zkHMPKn21O6SMPlF0u",
+            "question": "有多少国家？",
+            "step": "generate",
+            "insight": [
+                {
+                    "name": "get_cache",
+                    "duration": 0.3,
+                    "detail": {
+                        "cached_query": {
+                            "prepared_statement": "SELECT COUNT(*) FROM olympics2024.athletes",
+                            "params": {}
+                        },
+                        "cache_id": "74550b5a-0538-516a-804d-7d8615bd358f"
+                    }
+                },
+                {
+                    "name": "rewrite_cache",
+                    "duration": 1.8,
+                    "detail": {
+                        "rewritten_query": {
+                            "prepared_statement": "SELECT COUNT(DISTINCT country) FROM olympics2024.athletes",
+                            "params": {}
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "datasource_id": "ds_32r3zkHMPKn21O6SMPlF0u",
+            "question": "有多少国家？",
+            "step": "execute",
+            "insight": [
+                {
+                    "name": "exec_query",
+                    "duration": 0.1,
+                    "detail": {}
+                },
+                {
+                    "name": "save_cache",
+                    "duration": 0.1,
+                    "detail": {
+                        "cache_id": "7a620814-e4fd-5314-b30d-080aaf8f6416"
+                    }
+                }
+            ]
         }
-      ],
-      "query_time": 3
+    ],
+    "payload": {
+        "recognized_addresses": null,
+        "error_type": "",
+        "error_msg": ""
     }
-  ],
-  "payload": {
-    "recognized_addresses": null,
-    "error_type": "",
-    "error_msg": ""
-  }
 }
 ```
 
+
 ## 查询步骤字段解释
 
-- **question**: 用户提出的查询问题。
-- **datasource**: 使用的数据源 ID。
-- **results**: 查询的详细结果，包括执行的 SQL 语句、结果信息和查询时间。
-  - **query**: 执行的 SQL 语句。
-  - **result_info**: 结果信息，包括行数、列数和列名。
-  - **query_time_ms**: 查询时间，单位为毫秒。
-- **query_time**: 总查询时间，单位为秒。
+其中，query_insights 即查询步骤字段。
+query_insights 字段包含了查询执行过程中的详细步骤信息。每个步骤都包含以下属性：
+
+1. **datasource_id**：数据源的唯一标识符。
+
+2. **question**：用户提出的原始问题。
+
+3. **step**：当前执行的步骤名称，如 "rewrite"（重写查询）或 "execute"（执行查询）。
+
+4. **insight**：一个数组，包含了该步骤的详细信息。每个 insight 项目包括：
+
+   a. **name**：具体操作的名称，如 "parse_cache"、"rewrite_cache"、"exec_query" 等。
+   
+   b. **duration**：该操作的执行时间（以秒为单位）。
+   
+   c. **detail**：操作的详细信息，可能包含以下内容：
+      - **prepared_statement**：准备执行的 SQL 语句。
+      - **params**：SQL 语句的参数（如果有）。
+      - **cache_id**：缓存的唯一标识符（如果使用了缓存）。
+      - **rewritten_query**：重写后的查询（如果进行了查询重写）。
+
+通过这些详细的步骤信息，用户可以深入了解查询的执行过程，包括查询重写、缓存使用、实际执行等各个阶段的情况。
+
 
 ## 使用查询步骤
 
