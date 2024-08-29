@@ -139,6 +139,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '解决方案',
+      items: [
+        // 一体机
+        'solutions/excel-ai-one-box',
+      ],
+    },
+    {
+      type: 'category',
       label: '附录',
       items: [
         'appendix/glossary',
