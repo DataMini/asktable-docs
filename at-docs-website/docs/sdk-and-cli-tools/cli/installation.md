@@ -64,6 +64,7 @@ In [1]: at.datasources
 #### 数据源命令
 - **at.datasources**: 列出所有数据源
 - **at.datasources.create**: 创建一个新的数据源
+- **at.datasources.create_from_local_file**: 从本地文件创建一个新的数据源
 - **ds = at.datasources.get**: 获取一个数据源
 - **ds.delete**: 删除一个数据源
 - **ds.meta**: 查看数据源的元数据
