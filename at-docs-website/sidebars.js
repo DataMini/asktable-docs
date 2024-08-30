@@ -6,7 +6,6 @@ const sidebars = {
       items: [
         'introduction/what-is-asktable',
         'introduction/core-features',
-        'introduction/use-cases',
       ],
     },
 //    {
