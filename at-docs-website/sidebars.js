@@ -4,6 +4,7 @@ const sidebars = {
       type: 'category',
       label: '简介',
       items: [
+        'introduction/table-of-contents',
         'introduction/what-is-asktable',
         'introduction/core-features',
       ],
