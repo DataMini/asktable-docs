@@ -5,6 +5,7 @@ const sidebars = {
       label: '简介',
       items: [
         'introduction/table-of-contents',
+        'introduction/why-asktable',
         'introduction/what-is-asktable',
         'introduction/core-features',
       ],

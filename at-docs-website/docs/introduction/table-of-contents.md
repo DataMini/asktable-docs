@@ -5,6 +5,7 @@
 本节介绍 AskTable 的基本概念、核心功能和使用场景。
 
 - [目录](/docs/introduction/table-of-contents)
+- [AskTable 诞生](/docs/introduction/why-asktable)
 - [什么是 AskTable](/docs/introduction/what-is-asktable)
 - [核心功能](/docs/introduction/core-features)
 

@@ -6,9 +6,9 @@
 
 
 
-AskTable 是一款专为企业设计的智能对话机器人，能够快速集成到现有系统，理解自然语言查询，提供精准的业务数据和自动化任务处理，大幅提升企业效率和客户满意度。
+AskTable 是一款专为企业设计的结构化数据 AI 搜索和分析助手，配套的对话机器人能够快速集成到现有系统，理解自然语言查询，提供精准的业务数据和自动化任务处理，大幅提升企业效率和客户满意度。
 
-AskTable 提供了一整套在线服务，包括 HTTP Restful API、基于 API 的云服务 (Cloud Service)、以及前端可嵌入的 ChatBot widget。
+AskTable 为用户提供了一个全面的解决方案，涵盖了 HTTP Restful API、SDK、基于 API 的云服务 (SaaS) 等多种形式的集成方式。此外，AskTable 还提供了可以嵌入到主流知识库、AI 平台、BI 平台以及行业应用中的 ChatBot 插件和工具，满足不同场景下的需求。更重要的是，AskTable 支持本地私有化部署，确保企业数据的安全和隐私。
 
 <div className="img-center large">
   <img src="/img/asktable/at_intro.png" alt="intro" />
