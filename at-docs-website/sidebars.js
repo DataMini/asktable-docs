@@ -132,6 +132,15 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '在Coze中使用',
+      items: [
+        'coze-use/coze-installation',
+        'coze-use/coze-Case1',
+        'coze-use/coze-Case2',
+      ],
+    },
+    {
+      type: 'category',
       label: '定价与部署',
       items: [
         'pricing-and-deployment/online-service-pricing',
@@ -152,7 +161,7 @@ const sidebars = {
       items: [
         'appendix/glossary',
         'appendix/privacy-policy',
-        'appendix/terms-of-service',
+      
       ],
     },
   ],
