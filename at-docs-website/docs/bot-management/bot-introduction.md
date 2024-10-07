@@ -29,7 +29,7 @@ Bot，即聊天机器人，是一种能够与用户进行自然语言对话的�
 
 ## 使用 Bot
 
-1. 在您的网站或应用中嵌入 AskTable 的 ChatBot Widget，具体步骤请参考[嵌入聊天机器人组件示例](../integration/embed-chatbot-widget-example.md)。
+1. 在您的网站或应用中嵌入 AskTable 的 ChatBot Widget，具体步骤请参考[嵌入聊天机器人组件示例](../integration/website/embed-chatbot-widget-example.md)。
 2. 用户访问您的网站时，ChatBot 将显示在页面上。
 3. 用户可以通过与 ChatBot 进行自然语言交流来获取信息、执行操作或解决问题。
 

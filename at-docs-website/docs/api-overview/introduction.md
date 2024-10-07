@@ -14,7 +14,7 @@ AskTable 的 API 接口主要包括以下几个方面：
 
 ## API 基本信息
 
-- **API 基础 URL**：[`https://api.asktable.com`](https://api.asktable.com)
+- **API 基础 URL**：[`https://api.asktable.com`](https://api.asktable.com)（也可以查阅我们托管在 [Apipost 上的 API 文档](https://doc.apipost.net/docs/detail/34d9c0938004000?target_id=0)）
 - **API 版本**：v1
 - **请求格式**：所有请求均采用 `JSON` 格式
 - **响应格式**：所有响应均为 `JSON` 格式

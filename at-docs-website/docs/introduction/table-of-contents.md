@@ -1,4 +1,3 @@
-
 # 目录
 
 ## 简介
@@ -15,20 +14,6 @@
 - [创建账户并获取 API 令牌](/docs/quick-start/create-account-and-get-api-token)
 - [使用云控制台](/docs/quick-start/use-cloud-console)
 - [嵌入聊天机器人小部件](/docs/quick-start/embed-chatbot-widget)
-
-## API 概述
-详细介绍 AskTable API 的使用方法、身份验证和常见请求响应。
-
-- [介绍](/docs/api-overview/introduction)
-- [身份验证和授权](/docs/api-overview/authentication-and-authorization)
-- [常见请求和响应](/docs/api-overview/common-requests-and-responses)
-
-## 如何集成
-指导用户如何将 AskTable 集成到自己的应用程序中。
-
-- [聊天机器人小部件介绍](/docs/integration/chatbot-widget-introduction)
-- [嵌入聊天机器人小部件示例](/docs/integration/embed-chatbot-widget-example)
-- [服务器为用户获取临时令牌](/docs/integration/server-get-temp-token-for-user)
 
 ## 数据源管理
 介绍如何管理和配置 AskTable 支持的各种数据源。
@@ -65,7 +50,7 @@
 - [Excel 文件下载](/docs/data-visualization/excel-file-download)
 - [查询洞察](/docs/data-visualization/query-insights)
 
-## 插件（API）
+## 外部插件
 介绍如何使用 AskTable 的 API 插件功能扩展应用程序的能力。
 
 - [介绍](/docs/api-calling/introduction)
@@ -80,16 +65,6 @@
 - [使用 ATST 注册数据源](/docs/secure-tunnel/register-datasource-with-atst)
 - [维护和管理 ATST](/docs/secure-tunnel/maintain-and-manage-atst)
 
-## SDK 和 CLI
-提供 AskTable 的 SDK 和命令行工具的使用指南。
-
-### Python SDK
-- [安装](/docs/sdk-and-cli-tools/python-sdk/installation)
-- [快速开始](/docs/sdk-and-cli-tools/python-sdk/quick-start)
-
-### 命令行工具 CLI（Python）
-- [安装](/docs/sdk-and-cli-tools/cli/installation)
-
 ## 定价与部署
 介绍 AskTable 的定价模式和不同的部署选项。
 
@@ -101,10 +76,35 @@
 
 - [Excel AI 一体机](/docs/solutions/excel-ai-one-box)
 
+## API 和 SDK
+提供 AskTable 的 API 和 SDK 的使用指南。
+
+### Restful API
+- [介绍](/docs/api-overview/introduction)
+- [认证与授权](/docs/api-overview/authentication-and-authorization)
+- [常见请求与响应](/docs/api-overview/common-requests-and-responses)
+
+### Python SDK
+- [安装](/docs/sdk/python-sdk/installation)
+- [快速开始](/docs/sdk/python-sdk/quick-start)
+
+## 如何集成
+指导用户如何将 AskTable 集成到自己的应用程序中。
+
+### 网站
+- [聊天机器人小部件介绍](/docs/integration/website/chatbot-widget-introduction)
+- [嵌入聊天机器人小部件示例](/docs/integration/website/embed-chatbot-widget-example)
+- [服务器为用户获取临时令牌](/docs/integration/website/server-get-temp-token-for-user)
+
+### 扣子（Coze）
+- [Coze 安装](/docs/integration/coze/coze-installation)
+- [Coze 案例 1](/docs/integration/coze/coze-Case1)
+- [Coze 案例 2](/docs/integration/coze/coze-Case2)
+
 ## 附录
 提供补充信息，包括术语解释、隐私政策和服务条款。
 
 - [术语表](/docs/appendix/glossary)
 - [隐私政策](/docs/appendix/privacy-policy)
 - [服务条款](/docs/appendix/terms-of-service)
-
+  
