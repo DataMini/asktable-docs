@@ -151,6 +151,7 @@ const sidebars = {
             'integration/coze/coze-installation',
             'integration/coze/coze-Case1',
             'integration/coze/coze-Case2',
+            'integration/coze/coze-releasenotes',
           ],
         },
       ],
