@@ -24,7 +24,7 @@ AskTable 的 Python SDK 允许您通过简单的 Python 代码与 AskTable 的 A
 3. 验证安装是否成功：
 
     ```bash
-    python -c "import asktable; print(asktable.AskTable.version)"
+    python -c "import asktable; print(asktable.__version__)" # 输出版本号
     ```
 
     如果正确安装，将会输出 SDK 的版本号。

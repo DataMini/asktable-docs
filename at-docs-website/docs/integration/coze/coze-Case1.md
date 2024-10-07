@@ -8,7 +8,7 @@
 
 1. 访问 [AskTable 官网](https://cloud.asktable.com/) 注册账号
 2. 创建项目并获取 API Key(用于访问插件)
-3. 上传 Excel 表格并获取 datasource_id(用于指定数据源)
+3. 上传 Excel 表格,表格的内容是关于班级成绩情况的,并获取 datasource_id(用于指定数据源)
 
 ### 开发步骤
 

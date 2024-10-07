@@ -19,14 +19,14 @@
     api_key = 'API_KEY_or_TEMP_TOKEN'
     api_url = 'https://api.asktable.com/v1'
 
-    at = AskTable(api_key=api_key, api_url=api_url)
+    at = Asktable(api_key=api_key, base_url=api_url)
     ```
 
 2. **列出数据源**
 
     ```python
     datasources = at.datasources.list()
-    for ds in datasources:
+    for ds in datasources.items:
         print(f"ID: {ds.id}, Name: {ds.name}")
     ```
 
@@ -34,53 +34,46 @@
 
     ```python
     new_datasource = at.datasources.create(
-        name='New DataSource',
-        engine='mysql',
+        name='NewDataSource',
+        engine='excel',
         access_config={
-            'host': 'your-database-host',
-            'port': 3306,
-            'user': 'your-database-user',
-            'password': 'your-database-password',
-            'db': 'your-database-name',
+            "location_url": "your-excel-file-url",
+            "location_type": "http",
+            "engine": "excel"
         }
     )
     print(f"Created DataSource ID: {new_datasource.id}")
     ```
-
-4. **创建角色和策略**
+4. **创建bot**
 
     ```python
-    policy = at.policies.create(
-        permission='allow',
-        name='allow_myself',
-        dataset_config={
-            "datasource_ids": new_datasource.id,
-            "rows_filters": {
-                new_datasource.id: [
-                    '*.*.employee_id = {{employee_id}}',
-                ]
-            }
-        }
+    bot=at.bots.create(
+        datasource_ids=datasource_ids,
+        name="testt",
     )
-
-    role = at.roles.create(
-        name='comm_user',
-        policy_ids=[policy.id]
-    )
+    print(bot.id)
     ```
 
-5. **创建对话并查询**
+5. **创建chat**
 
     ```python
-    chat = at.chats.create(
-        datasource_ids=[new_datasource.id],
-        role_name='comm_user',
-        role_variables={'employee_id': 2}
+    chat=at.chats.create(
+        bot_id=bot.id,
+        name="test",
+        role_id="",
+        role_variables={},
+        user_profile={},
     )
+    print(chat.id)
+    ```
+6. **查询**
 
-    question = "李娜24年五月份是否有请过假"
-    response = chat.ask(question)
-    print(response['text'])  # 输出：是，请过假。
+    ```python
+    msg=at.chats.messages.create(
+        chat_id=chat.id,
+        question="第一名的成绩是多少",
+    )
+    print(msg.content['text'])
     ```
 
 通过上述步骤，您可以快速入门并使用 AskTable 的 Python SDK 进行基本操作。

@@ -25,13 +25,21 @@ AskTable 提供两种不同类型的 API-Key ，用于不同的访问需求和�
 
 | API 路径 | 方法 | 描述 |
 |---------|------|------|
+| `/auth/me` | GET | 获取当前认证用户的信息 |
+| `/auth/tokens` | POST | 创建新的认证令牌 |
+| `/datasource` | POST | 创建数据源 |
+| `/datasource/upload_file` | POST | 上传文件 |
+| `/single-turn/q2a` | POST | 发起查询请求 |
+| `/single-turn/q2s` | POST | 发起生成sql请求 |
 |`/bots/<bot_id>` | GET | 获取指定机器人的信息 |
-| `/chats/<chat_id>` | GET | 获取指定聊天的详细信息 |
+|  `/chats`  | POST | 创建新的聊天对话 |
+| `/chats/<chat_id>` | GET | 获取指定对话 |
 | `/chats/<chat_id>`/messages | GET | 获取指定聊天的消息列表 |
-| /chats | POST | 创建新的聊天会话 |
-| /account/token | GET | 获取账户的访问令牌 |
-| /at-auth/me | GET | 获取当前认证用户的信息 |
-| /at-auth/tokens | POST | 创建新的认证令牌 |
+| `/chats/{chat_id}/messages/{message_id}` | GET | 查询某条消息 |
+| `/chats/{chat_id}` | DELETE |删除某个对话(包含消息) |
+
+
+
 
 ### Temp-Token
 
@@ -40,7 +48,7 @@ Temp-Token 是一种临时的身份验证令牌，用于在一段时间内访问
 生成 Temp-Token 的 API 如下：
 
 ```http
-POST /at-auth/tokens
+POST /auth/tokens
 Content-Type: application/json
 Authorization: Bearer <API_KEY>
 
@@ -73,7 +81,7 @@ Authorization: Bearer <API_KEY>
 ```python
 import requests
 
-url = "https://api.asktable.com/v1/at-auth/me"
+url = "https://api.asktable.com/v1/auth/me"
 headers = {
     "Authorization": "Bearer API_KEY_or_TEMP_TOKEN",
     "Content-Type": "application/json"

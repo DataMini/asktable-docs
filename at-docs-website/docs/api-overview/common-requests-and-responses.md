@@ -150,7 +150,7 @@
 - **请求**
 
   ```http
-  POST /v1/chats/chat_123456/messages
+  POST /v1/chats/{chat_id}/messages
   ```
 
   ```json
