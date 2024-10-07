@@ -2,7 +2,7 @@
 
 ## 介绍
 
-[Coze](https://www.coze.cn/) 是一款基于 AI 的智能工作流构建平台，可帮助用户快速构建和部署智能工作流。我们开发了 AskTable 并在 Coze 中提供服务，用户可以在 Coze 上轻松使用 AskTable 的功能。
+[Coze](https://www.coze.cn/) 是一款基于 AI 的智能工作流构建平台，可帮助用户快速构建和部署智能工作流。我们开发了 AskTable 并在 Coze 中提供服务，用户可以在 Coze 上使用 AskTable 访问自己的 Excel 或者数据库。
 
 ## 插件
 
@@ -12,7 +12,7 @@ AskTable 插件面向开发者提供服务，开发者可以在自己的项目�
 add_data                 # 添加数据源
 question_to_sql          # 将问题转换为 SQL
 question_to_answer       # 根据问题查询数据并返回给用户
-fast_add_excel_and_ask   # 快速添加 Excel 并提问
+fast_add_and_ask   # 快速添加 Excel 并提问
 ```
 
 关于插件的更多详细信息，请访问 [AskTable 插件页面](https://www.coze.cn/store/plugin/7407079384349343784)。
