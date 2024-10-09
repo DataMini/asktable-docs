@@ -26,7 +26,7 @@ AskTable 在线服务具有成本低、快速上手等优势，适用于中小�
 ## 如何获取更多信息
 
 如果您对 AskTable 的收费标准有任何疑问或需要获取详细的报价信息，请通过以下方式联系我们：
-- **电子邮件**：contact@datamini.ai
+- **电子邮件**：hi@datamini.ai
 - **官网**：[www.asktable.com](https://www.asktable.com)
 
 我们的销售团队将竭诚为您提供专业的咨询和服务，帮助您选择最适合的收费模式和服务方案。

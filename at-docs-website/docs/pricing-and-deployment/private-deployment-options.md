@@ -33,7 +33,7 @@
 ## 如何获取更多信息
 
 如果您对 AskTable 的私有化部署选项有任何疑问或需要获取详细的报价信息，请通过以下方式联系我们：
-- **电子邮件**：contact@datamini.ai
+- **电子邮件**：hi@datamini.ai
 - **官网**：[www.asktable.com](https://www.asktable.com)
 
 我们的销售团队将竭诚为您提供专业的咨询和服务，帮助您选择最适合的私有化部署方案。
