@@ -38,8 +38,7 @@
         engine='excel',
         access_config={
             "location_url": "your-excel-file-url",
-            "location_type": "http",
-            "engine": "excel"
+            "location_type": "http"
         }
     )
     print(f"Created DataSource ID: {new_datasource.id}")
