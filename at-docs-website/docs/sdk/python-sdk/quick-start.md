@@ -43,10 +43,17 @@
     )
     print(f"Created DataSource ID: {new_datasource.id}")
     ```
+    
 4. **快速查询**
+   ```python
+   answer = client.single_turn.q2a.create(
+        question="your-question",
+        datasource_id="your-datasource-id"
+    )
+   print(answer.text)
+   ```
    
-   
-6. **创建bot**
+5. **创建bot**
 
     ```python
     datasource_ids = ['ds_1']
@@ -57,7 +64,7 @@
     print(bot.id)
     ```
 
-7. **创建chat**
+6. **创建chat**
 
     ```python
     chat=at.chats.create(
@@ -66,7 +73,8 @@
     )
     print(chat.id)
     ```
-8. ** 对话查询**
+    
+7. **对话查询**
 
     ```python
     msg=at.chats.messages.create(
