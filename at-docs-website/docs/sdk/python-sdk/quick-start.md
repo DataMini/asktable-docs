@@ -43,9 +43,13 @@
     )
     print(f"Created DataSource ID: {new_datasource.id}")
     ```
-4. **创建bot**
+4. **快速查询**
+   
+   
+6. **创建bot**
 
     ```python
+    datasource_ids = ['ds_1']
     bot=at.bots.create(
         datasource_ids=datasource_ids,
         name="testt",
@@ -53,19 +57,16 @@
     print(bot.id)
     ```
 
-5. **创建chat**
+7. **创建chat**
 
     ```python
     chat=at.chats.create(
         bot_id=bot.id,
         name="test",
-        role_id="",
-        role_variables={},
-        user_profile={},
     )
     print(chat.id)
     ```
-6. **查询**
+8. ** 对话查询**
 
     ```python
     msg=at.chats.messages.create(
