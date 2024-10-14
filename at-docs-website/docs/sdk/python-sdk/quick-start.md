@@ -38,15 +38,25 @@
         engine='excel',
         access_config={
             "location_url": "your-excel-file-url",
-            "location_type": "http",
-            "engine": "excel"
+            "location_type": "http"
         }
     )
     print(f"Created DataSource ID: {new_datasource.id}")
     ```
-4. **创建bot**
+    
+4. **快速查询**
+   ```python
+   answer = client.single_turn.q2a.create(
+        question="your-question",
+        datasource_id="your-datasource-id"
+    )
+   print(answer.text)
+   ```
+   
+5. **创建bot**
 
     ```python
+    datasource_ids = ['ds_1']
     bot=at.bots.create(
         datasource_ids=datasource_ids,
         name="testt",
@@ -54,19 +64,17 @@
     print(bot.id)
     ```
 
-5. **创建chat**
+6. **创建chat**
 
     ```python
     chat=at.chats.create(
         bot_id=bot.id,
         name="test",
-        role_id="",
-        role_variables={},
-        user_profile={},
     )
     print(chat.id)
     ```
-6. **查询**
+    
+7. **对话查询**
 
     ```python
     msg=at.chats.messages.create(
