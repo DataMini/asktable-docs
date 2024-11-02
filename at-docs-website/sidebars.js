@@ -20,6 +20,13 @@ const sidebars = {
 //    },
     {
       type: 'category',
+      label: '解决方案',
+      items: [
+        'solutions/chat-bi',
+      ],
+    },
+    {
+      type: 'category',
       label: '快速开始',
       items: [
         'quick-start/create-account-and-get-api-token',
@@ -95,16 +102,9 @@ const sidebars = {
       type: 'category',
       label: '定价与部署',
       items: [
+        'pricing-and-deployment/all-deployment-options',
         'pricing-and-deployment/online-service-pricing',
         'pricing-and-deployment/private-deployment-options',
-      ],
-    },
-    {
-      type: 'category',
-      label: '解决方案',
-      items: [
-        // 一体机
-        'solutions/excel-ai-one-box',
       ],
     },
     {
