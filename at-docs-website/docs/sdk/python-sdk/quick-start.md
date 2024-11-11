@@ -2,18 +2,19 @@
 
 ## 介绍
 
-通过 AskTable 的 Python SDK，您可以快速开始与 AskTable 进行交互。本指南将引导您完成一些基本操作。
+通过 AskTable 的 Python SDK，您可以快速开始与 AskTable 进行交互。本指南将引导您完成一些基本操作，完整文档请参考 [SDK 代码仓库](https://github.com/DataMini/asktable-python)。
 
 ## 前提条件
 
 - 已安装 AskTable 的 Python SDK。请参考[安装指南](./installation.md)。
+
 
 ## 快速入门示例
 
 1. **初始化 SDK**
 
     ```python
-    from asktable import AskTable
+    from asktable import Asktable
 
     # 替换为您的 API-Key
     api_key = 'API_KEY_or_TEMP_TOKEN'
