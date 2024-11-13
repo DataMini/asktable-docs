@@ -33,8 +33,8 @@
 ### 启动新容器
 
 ```docker run -d -P \
-  -e ASKTABLE_TOKEN=your_asktable_token \
-  -e SECURETUNNEL_ID=your_securetunnel_id \
+  -e API_KEY=your_asktable_api_key \
+  -e ATST_ID=your_atst_id \
   registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel
 ```
 
@@ -89,8 +89,8 @@
 在新服务器上，使用与旧服务器相同的配置启动 ATST 容器：
 
 ```docker run -d -P \
-  -e ASKTABLE_TOKEN=your_asktable_token \
-  -e SECURETUNNEL_ID=your_securetunnel_id \
+  -e API_KEY=your_asktable_api_key \
+  -e ATST_ID=your_atst_id \
   registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel
 ```
 

@@ -22,8 +22,8 @@ ATST 是一个 Docker 镜像，您可以从 Docker Hub 或者阿里云镜像仓�
 
 在启动 ATST 容器之前，需要配置一些环境变量：
 
-- `ASKTABLE_TOKEN`：您的 AskTable 令牌。
-- `SECURETUNNEL_ID`：安全隧道 ID，可以在 AskTable 管理控制台创建。
+- `API_KEY`：您的 AskTable API 密钥。
+- `ATST_ID`：安全隧道 ID，可以在 AskTable 管理控制台创建。
 
 ### 配置示例
 
@@ -31,8 +31,8 @@ ATST 是一个 Docker 镜像，您可以从 Docker Hub 或者阿里云镜像仓�
 
 ```docker
 docker run -d -P \
-  -e ASKTABLE_TOKEN=your_asktable_token \
-  -e SECURETUNNEL_ID=your_securetunnel_id \
+  -e API_KEY=your_asktable_api_key \
+  -e ATST_ID=your_atst_id \
   registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel
 ```
 
@@ -41,7 +41,7 @@ docker run -d -P \
 使用上面的配置命令启动 ATST 容器。启动后，ATST 会自动建立一个加密的隧道，允许 AskTable 访问内网数据库。
 
 ```
-➜  $ docker run -d -P -e ASKTABLE_TOKEN=asktable_token -e SECURETUNNEL_ID=atst_1e9PisC2 registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel
+➜  $ docker run -d -P -e API_KEY=asktable_api_key -e ATST_ID=atst_1e9PisC2 registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel
 Unable to find image 'registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel:latest' locally
 latest: Pulling from datamini/asktable-secure-tunnel
 91e301773f03: Already exists 
