@@ -6,6 +6,11 @@ AskTable 的 Python SDK 允许您通过简单的 Python 代码与 AskTable 的 A
 
 ## 安装
 
+### 其他参考资料
+
+- [SDK 详细文档](https://github.com/DataMini/asktable-python)
+- [SDK Pypi仓库](https://pypi.org/project/asktable/)
+
 ### 环境要求
 
 - Python 版本：3.9 或更高
