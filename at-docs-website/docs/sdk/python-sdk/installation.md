@@ -8,8 +8,8 @@ AskTable 的 Python SDK 允许您通过简单的 Python 代码与 AskTable 的 A
 
 ### 其他参考资料
 
-- [SDK 详细文档](https://github.com/DataMini/asktable-python)
-- [SDK Pypi仓库](https://pypi.org/project/asktable/)
+- [AskTable Python SDK 详细文档](https://github.com/DataMini/asktable-python)
+- [AskTable Python SDK Pypi仓库](https://pypi.org/project/asktable/)
 
 ### 环境要求
 
