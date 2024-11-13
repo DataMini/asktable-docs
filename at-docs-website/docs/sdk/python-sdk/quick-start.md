@@ -5,8 +5,8 @@
 通过 AskTable 的 Python SDK，您可以快速开始与 AskTable 进行交互，本指南将引导您完成一些基本操作。
 
 其他参考：
-- [SDK 详细文档](https://github.com/DataMini/asktable-python)
-- [SDK Pypi仓库](https://pypi.org/project/asktable/)
+- [AskTable Python SDK 详细文档](https://github.com/DataMini/asktable-python)
+- [AskTable Python SDK Pypi仓库](https://pypi.org/project/asktable/)
 
 ## 前提条件
 
