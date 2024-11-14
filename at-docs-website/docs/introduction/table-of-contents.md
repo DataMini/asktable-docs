@@ -97,7 +97,6 @@
 - [服务器为用户获取临时令牌](/docs/integration/website/server-get-temp-token-for-user)
 
 ### 扣子（Coze）
-- [Coze 安装](/docs/integration/coze/coze-installation)
 - [Coze 案例 1](/docs/integration/coze/coze-Case1)
 - [Coze 案例 2](/docs/integration/coze/coze-Case2)
 
