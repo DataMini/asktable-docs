@@ -148,10 +148,8 @@ const sidebars = {
           type: 'category',
           label: '扣子（Coze）',
           items: [
-            'integration/coze/coze-installation',
             'integration/coze/coze-Case1',
             'integration/coze/coze-Case2',
-            'integration/coze/coze-releasenotes',
           ],
         },
       ],
