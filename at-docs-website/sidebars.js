@@ -52,7 +52,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'AI 数据库',
+      label: 'AI 问数',
       items: [
         'chat-database/database-query-via-natural-language',
         'chat-database/generate-sql-from-natural-language',
