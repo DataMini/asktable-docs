@@ -5,16 +5,11 @@ AskTable 提供了强大的 API 接口，方便开发者集成和使用数据查
 
 ## 主要功能
 
-AskTable 的 API 接口主要包括以下几个方面：
-
-- **数据源管理**：添加、删除、更新和查询数据源信息。
-- **AI 对话**：创建和管理对话，与 AI 进行交互，获取智能化的数据分析结果。
-- **权限管理**：定义和管理角色与策略，控制数据访问权限。
-- **安全隧道**：创建和管理安全隧道，实现与内网数据库的安全通信。
+AskTable 所有的功能都可以通过 API 接口来使用。
 
 ## API 基本信息
 
-- **API 基础 URL**：[`https://api.asktable.com`](https://api.asktable.com)（也可以查阅我们托管在 [Apipost 上的 API 文档](https://doc.apipost.net/docs/detail/34d9c0938004000?target_id=0)）
+- **API 基础 URL**：[`https://api.asktable.com`](https://api.asktable.com)
 - **API 版本**：v1
 - **请求格式**：所有请求均采用 `JSON` 格式
 - **响应格式**：所有响应均为 `JSON` 格式
