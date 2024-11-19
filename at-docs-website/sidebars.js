@@ -81,7 +81,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '术语库',
+      label: '业务术语库',
       items: [
         'glossary/introduction',
         'glossary/manage-glossary',      
