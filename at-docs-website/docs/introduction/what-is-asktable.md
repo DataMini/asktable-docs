@@ -13,7 +13,7 @@ AskTable 为用户提供了一个全面的解决方案，涵盖了 Restful API�
 更重要的是，AskTable 支持本地私有化部署，确保企业数据的安全和隐私。
 
 <div className="img-center large">
-  <img src="/img/asktable/at_intro.png" alt="intro" />
+  <img src="/img/asktable/at_intro_1_page.jpg" alt="intro" />
 </div>
 
 
