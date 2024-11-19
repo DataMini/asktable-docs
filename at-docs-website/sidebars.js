@@ -81,11 +81,10 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '外部插件',
+      label: '术语库',
       items: [
-        'api-calling/introduction',
-        'api-calling/quick-start-with-cloud-console',
-        'api-calling/quick-start-with-python-sdk',
+        'glossary/introduction',
+        'glossary/manage-glossary',      
       ],
     },
     {
@@ -96,6 +95,15 @@ const sidebars = {
         'secure-tunnel/install-and-configure-atst',
         'secure-tunnel/register-datasource-with-atst',
         'secure-tunnel/maintain-and-manage-atst',
+      ],
+    },
+    {
+      type: 'category',
+      label: '外部插件',
+      items: [
+        'api-calling/introduction',
+        'api-calling/quick-start-with-cloud-console',
+        'api-calling/quick-start-with-python-sdk',
       ],
     },
     {
