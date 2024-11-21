@@ -48,4 +48,4 @@ datasource_id: datasource_id
 </div>
 
 
-这有我们已经创建好的[姓氏查询智能体](https://www.coze.cn/space/7349455355564310554/bot/7436997739965612083)供您参考。
+这有我们已经创建好的[姓氏查询智能体](https://www.coze.cn/s/iDJdudyN/)供您参考。
