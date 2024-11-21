@@ -36,4 +36,4 @@
   <img src="/img/asktable/coze_bot_result_2.png" alt="问答结果" />
 </div>
 
-这有我们已经创建好的[Excel/CSV 问答助手智能体](https://www.coze.cn/space/7349455355564310554/bot/7436977983639830563)供您参考。
+这有我们已经创建好的[Excel/CSV 问答助手智能体](https://www.coze.cn/s/iDJR6joR/)供您参考。
