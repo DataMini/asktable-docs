@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'AskTable',
-  tagline: 'AskTable 是一款可以接入企业核心数据库，打通营销与生产全流程的智能体',
+  tagline: 'AskTable 人工智能驱动的数据问答解决方案',
   favicon: 'img/asktable/at-logo-mini.jpg',
 
   // Set the production url of your site here
@@ -129,6 +129,9 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      metadata: [
+        { name: 'baidu-site-verification', content: 'codeva-kkrhvRf3at' },
+      ],
     }),
 };
 
