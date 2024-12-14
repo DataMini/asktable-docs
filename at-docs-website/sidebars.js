@@ -10,14 +10,16 @@ const sidebars = {
         'introduction/core-features',
       ],
     },
-//    {
-//      type: 'category',
-//      label: '客户案例',
-//      items: [
-//        'customer-cases/university-data-analysis',
-//        // 'customer-cases/ecommerce-customer-service',
-//      ],
-//    },
+   {
+     type: 'category',
+     label: '客户案例',
+     items: [
+      //  'customer-cases/university-data-analysis',
+       'customer-cases/financial-insights',
+       'customer-cases/educational-excellence',
+       // 'customer-cases/ecommerce-customer-service',
+     ],
+   },
     {
       type: 'category',
       label: '解决方案',
@@ -52,7 +54,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'AI 问数',
+      label: '问数 AI',
       items: [
         'chat-database/database-query-via-natural-language',
         'chat-database/generate-sql-from-natural-language',
@@ -61,7 +63,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '角色和权限',
+      label: '数据访问权限',
       items: [
         'role-and-permission-management/introduction',
         'role-and-permission-management/define-access-policy',
