@@ -83,10 +83,9 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '业务术语库',
+      label: '业务知识',
       items: [
-        'glossary/introduction',
-        'glossary/manage-glossary',      
+        'business-knowledge/introduction',   
       ],
     },
     {
