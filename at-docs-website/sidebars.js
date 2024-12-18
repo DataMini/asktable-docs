@@ -91,6 +91,13 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'AI 搜索',
+      items: [
+        'ai-search/introduction',
+      ],
+    },
+    {
+      type: 'category',
       label: '安全隧道',
       items: [
         'secure-tunnel/introduction',
