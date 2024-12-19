@@ -132,7 +132,7 @@ http://localhost:8000
    REDIS_PORT: 6379
    REDIS_PASSWORD: your-redis-password
    ```
-3. ** LLM（OpenAI） Proxy 代理**：
+3. **LLM（OpenAI） Proxy 代理**：
    如果需要使用 OpenAI，则可能需要 Proxy 代理，您可以配置以下参数：
 
    ```yaml
