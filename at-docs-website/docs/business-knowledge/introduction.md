@@ -3,11 +3,17 @@
 
 AskTable 的业务知识库是用来帮助 AskTable AI 更好地理解企业或组织的业务，从而提高回答的准确性。
 
-您可以有四种方式来丰富业务知识。
+您可以有以下四种方式来丰富业务知识：
+
+1. 术语库
+2. 训练师
+3. 专属偏好
+4. 元数据
 
 <div className="img-center xlarge">
   <img src="/img/asktable/business_knowledge_1.png" alt="业务知识" />
 </div>
+
 
 
 ## 一、术语库
@@ -16,24 +22,30 @@ AskTable 的业务知识库是用来帮助 AskTable AI 更好地理解企业或�
 当 AskTable 接收到包含业务术语的查询请求时，会根据术语库中的定义，将术语转换为相应的业务含义，然后进行数据分析。
 
 <div className="img-center large">
-  <img src="/img/asktable/business_knowledge_glossary.png" alt="术语库" />
+  <img src="/img/asktable/business_knowledge_2.png" alt="术语库" />
 </div>
 
 
-## 二、训练数据集
-训练数据集是 AskTable AI 从经验中学习的数据集合，由一对对的问题（Question）和 SQL 查询（Q&S）组成。
+## 二、训练师
 
-在数据查询时，AskTable 会参考这些 Q&S 对来提高查询的准确性。当用户在对话页面对 AI 的回答进行点赞时，AskTable 会将该回答视为准确，并自动采集 Q&S 对，添加到训练数据集中。通过不断积累和学习，系统会变得越来越智能。
+AskTable AI 能通过用户的点赞反馈，不断优化答案生成过程，提升回答质量。您也可以直接添加训练数据，帮助 AskTable AI 更快地学习。训练数据由用户问题和正确的 SQL 组成。
+
+<div className="img-center large">
+  <img src="/img/asktable/business_knowledge_training_data.png" alt="训练数据集" />
+</div>
 
 
-
-
-## 三、默认偏好
-
-默认偏好是用来帮助 AskTable AI 更好地理解用户提问的意图，从而提升回答质量。比如，数据库中有历年的数据，用户可能需要查询最近一年的数据，可以通过偏好设置来告诉 AI 只查询最近一年的数据。
 
 <div className="img-center medium">
-  <img src="/img/asktable/business_knowledge_preference.png" alt="默认偏好" />
+  <img src="/img/asktable/business_knowledge_training_data_2.png" alt="训练数据集" />
+</div>
+
+## 三、专属偏好
+
+专属偏好是用来帮助 AskTable AI 更好地理解用户提问的意图，从而提升回答质量。比如，数据库中有历年的数据，用户可能需要查询最近一年的数据，可以在这里告诉 AI 只查询最近一年的数据。
+
+<div className="img-center medium">
+  <img src="/img/asktable/business_knowledge_preference.png" alt="专属偏好" />
 </div>
 
 
