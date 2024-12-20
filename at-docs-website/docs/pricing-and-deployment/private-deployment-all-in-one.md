@@ -120,7 +120,7 @@ http://localhost:8000
    如果您希望使用独立的向量数据库，您可以通过以下配置进行设置：
 
    ```yaml
-   QDRANT_ADDRESS: https://public.qdrant.dminfra.cn
+   QDRANT_ADDRESS: http://your-qdrant-host:6333
    QDRANT_API_KEY: your-api-key-here
    ```
 
@@ -128,7 +128,7 @@ http://localhost:8000
    如果需要缓存，您可以配置 Redis：
 
    ```yaml
-   REDIS_HOST: private.redis.dminfra.cn
+   REDIS_HOST: your-redis-host
    REDIS_PORT: 6379
    REDIS_PASSWORD: your-redis-password
    ```
@@ -148,9 +148,9 @@ http://localhost:8000
    ```
    注意：请使用 LLM 供应商支持的模型名称。
 
-5. **关闭日志采集**：
-   AskTable 通过 Trace 功能收集日志，用于定位问题和改进产品。AskTable 不会搜集您的敏感信息，并承诺不会用于任何商业用途。
-   如果您希望关闭日志采集，您可以配置以下参数：
+5. **关闭诊断日志**：
+   AskTable 会收集诊断日志，用于定位问题和改进产品。AskTable 不会收集您的敏感信息，并承诺不会用于任何商业用途。
+   如果您希望关闭诊断日志，您可以配置以下参数：
    ```yaml
    AT_TRACE_ENABLE: false
    ```
