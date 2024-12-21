@@ -73,7 +73,9 @@
    > 通过 `Docker-compose` 拉起的 MySQL 会自动初始化用户和数据库，如果使用已有的 MySQL，请自行创建数据库，并设置好用户名和密码。
 
 3. **LLM API 配置**：
+   
    大模型的地址和 API 密钥。如果您没有自己的大模型 API 服务，可在 [AskTable 官网](https://cloud.asktable.com) 登录后，右上角点击【免费下载 AskTable】申请。
+   
    - **LLM_BASE_URL**: LLM API 地址。 若使用 AskTable 提供的 API 服务，则该参数不用配置。
    - **LLM_API_KEY**： LLM API 密钥。 
 
