@@ -40,7 +40,7 @@
          MYSQL_USER: asktable                     # MySQL 数据库用户名
          MYSQL_PASSWORD: asktable                 # MySQL 数据库密码
          MYSQL_DB: asktable                       # MySQL 数据库名称
-         LLM_API_KEY: your_api_key_here      # 在 AskTable 官网登录后申请的 API 密钥
+         LLM_API_KEY: your_api_key_here      # 在 AskTable 官网登录后，页面右上角点击 **免费下载 AskTable** 申请 LLM_API_KEY 密钥
      
      asktable_mysql:
        image: cr2.fit2cloud.com/library/mysql:8.0
@@ -96,7 +96,7 @@ docker-compose up -d
 http://127.0.0.1:8000
 ```
 
-在这里，您可以使用刚才设置的管理员账号（默认管理员账号为 `admin@asktable.com`，密码为 `admin`）登录，并开始探索应用。
+在这里，您可以使用默认管理员（账号为 `admin@asktable.com`，密码为 `admin`）登录，并开始探索应用。
 
 
 ## **探索 AskTable**
