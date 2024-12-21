@@ -1,6 +1,6 @@
 # 单机版部署指南
 
-🚀 这篇指南将帮助您在本地环境快速部署 AskTable，并让您可以结合自己的内部数据来使用我们的产品 💪
+🚀 这篇指南将帮助您在本地环境快速部署 AskTable，并让您可以结合自己的内部数据来使用我们的产品。它非常适合用于个人、团队以及企业数据分析，希望您能在使用 AskTable 的过程中获得丰厚的收获！💪
 
 ## **前提条件**
 
@@ -20,7 +20,7 @@
 需要安装以下软件：
    1. **Docker Desktop**：是 macOS 桌面电脑上的应用程序，包含 Docker 和 Docker Compose。[安装文档](https://docs.docker.com/desktop/setup/install/mac-install/)。
 
-## **软件配置**
+## **快速部署**
 
 将以下内容保存为 `docker-compose.yml` 文件：
 
@@ -40,10 +40,7 @@
          MYSQL_USER: asktable                     # MySQL 数据库用户名
          MYSQL_PASSWORD: asktable                 # MySQL 数据库密码
          MYSQL_DB: asktable                       # MySQL 数据库名称
-         LLM_BASE_URL: https://api.openai.com/v1  # OPENAI LLM API 地址
-         LLM_API_KEY: your_api_key_here      # OPENAI LLM API 密钥
-         AUTH_EMAIL_INIT_ADMIN_EMAIL: admin@asktable.com    # AskTable 初始管理员邮箱
-         AUTH_EMAIL_INIT_ADMIN_PASSWORD: admin              # AskTable 初始管理员密码
+         LLM_API_KEY: your_api_key_here      # 在 AskTable 官网登录后申请的 API 密钥
      
      asktable_mysql:
        image: cr2.fit2cloud.com/library/mysql:8.0
@@ -73,13 +70,8 @@
    - **MYSQL_PASSWORD**：设置 MySQL 用户的密码。
    - **MYSQL_DB**：指定 MySQL 数据库名称。
 
-3. **管理员账号配置**：
-   - **AUTH_EMAIL_INIT_ADMIN_EMAIL**：设置初始管理员的邮箱地址，默认 `admin@asktable.com`。
-   - **AUTH_EMAIL_INIT_ADMIN_PASSWORD**：设置初始管理员的密码，默认 `admin`。
-
-4. **LLM API 配置**：
-   - **LLM_BASE_URL**：设置大语言模型（LLM）API 地址，默认`https://api.openai.com/v1`。
-   - **LLM_API_KEY**：输入 LLM API 密钥。可以通过 AskTable 或其他 API 服务提供。
+3. **LLM API 配置**：
+   - **LLM_API_KEY**：输入 LLM API 密钥。可以在 AskTable 官网登录后申请。
 
 
 ## **运行 AskTable**
@@ -87,6 +79,8 @@
 配置完成后，就可以通过 Docker Compose 来启动 AskTable 了：
 
 1. **构建并启动容器**
+
+在 `docker-compose.yml` 文件所在目录下，运行以下命令：
 
 ```bash
 docker-compose up -d
@@ -99,7 +93,7 @@ docker-compose up -d
 现在，AskTable 已经启动，您可以在浏览器中访问：
 
 ```
-http://localhost:8000
+http://127.0.0.1:8000
 ```
 
 在这里，您可以使用刚才设置的管理员账号（默认管理员账号为 `admin@asktable.com`，密码为 `admin`）登录，并开始探索应用。
@@ -114,9 +108,16 @@ http://localhost:8000
 - 自定义业务知识：根据需要配置术语库、训练数据集和默认偏好，以适应您的业务场景。
 
 
-## **高级配置**
+## **高级配置（可选）**
+1. **设置管理员账号**：
+   如果您希望设置管理员账号，您可以配置以下参数：
 
-1. **Qdrant 向量数据库**：
+   ```yaml
+   AUTH_EMAIL_INIT_ADMIN_EMAIL: admin@asktable.com
+   AUTH_EMAIL_INIT_ADMIN_PASSWORD: admin
+   ```
+
+2. **Qdrant 向量数据库**：
    如果您希望使用独立的向量数据库，您可以通过以下配置进行设置：
 
    ```yaml
@@ -132,19 +133,22 @@ http://localhost:8000
    REDIS_PORT: 6379
    REDIS_PASSWORD: your-redis-password
    ```
-3. **LLM（OpenAI） Proxy 代理**：
-   如果需要使用 OpenAI，则可能需要 Proxy 代理，您可以配置以下参数：
+3. **使用 OpenAI API**：
+   如果需要使用 OpenAI，您可以配置以下参数：
 
    ```yaml
    LLM_BASE_URL: https://api.openai.com/v1
-   LLM_HTTP_PROXY: http://127.0.0.1:7890
+   LLM_API_KEY: your_openai_api_key_here
+   LLM_HTTP_PROXY: http://127.0.0.1:7890  # 如果需要使用代理，则配置代理地址
    ```
 
-4. **使用非 GPT 模型**：
-   AskTable 默认使用 GTP-4o 模型，如果您没有 GPT 模型，您可以配置以下参数强制使用其他模型：
+4. **使用其他 LLM 模型**：
+   AskTable 提供的 LLM 服务，会使用 GPT、Qwen等模型，如果您想在本地使用其他模型，则可以配置以下参数：
 
    ```yaml
-   AT_FORCE_LLM_MODEL: Qwen2.5-72B-Instruct-128K
+   LLM_BASE_URL: https://api.siliconflow.cn/v1  # 您自己的 LLM 服务地址（这里是硅流科技的 API 地址）
+   LLM_API_KEY: your_dashscope_api_key_here  # 您自己的 LLM 服务 API 密钥
+   AT_FORCE_LLM_MODEL: Qwen2.5-72B-Instruct-128K  # 强制使用的模型名字
    ```
    注意：请使用 LLM 供应商支持的模型名称。
 
@@ -157,26 +161,14 @@ http://localhost:8000
    ```
 
 
-## **停止 AskTable**
-
-如果您想停止正在运行的容器，可以运行以下命令：
-
-```bash
-docker-compose down
-```
-
-这条命令会停止并删除容器，但数据会保留在本地。
-
 ## **注意事项**
 
-- 该一键部署模式适用于快速体验 AskTable，但不适用于生产环境，性能和稳定性无法保证。若有更高需求，请与我们联系。
+该部署模式适用于快速体验 AskTable，但不适用于生产环境，性能和稳定性无法保证。若有更高需求，请与我们联系。
+
 
 ## **遇到问题？**
 
 我们设计 AskTable 时尽量让它简单易用，但如果您有任何疑问或者遇到问题，欢迎随时联系我们或者查阅我们的 [文档](https://docs.asktable.com/)。我们将尽最大努力帮助您解决问题。
 
-## **总结**
-
-通过这份指南，您应该能够顺利地将 AskTable 部署到您的本地环境中。它非常适合用于个人、团队以及企业数据分析。希望您能在使用 AskTable 的过程中获得丰厚的收获！
 
 再次感谢您的使用，祝您好运！🚀
