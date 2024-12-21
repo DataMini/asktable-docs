@@ -40,7 +40,7 @@
          MYSQL_USER: asktable                     # MySQL 数据库用户名
          MYSQL_PASSWORD: asktable                 # MySQL 数据库密码
          MYSQL_DB: asktable                       # MySQL 数据库名称
-         LLM_API_KEY: your_api_key_here      # 在 AskTable 官网登录后，页面右上角点击 **免费下载 AskTable** 申请 LLM_API_KEY 密钥
+         LLM_API_KEY: your_api_key_here      #LLM API KEY，用于访问大模型。
      
      asktable_mysql:
        image: cr2.fit2cloud.com/library/mysql:8.0
@@ -71,7 +71,8 @@
    - **MYSQL_DB**：指定 MySQL 数据库名称。
 
 3. **LLM API 配置**：
-   - **LLM_API_KEY**：输入 LLM API 密钥。可以在 AskTable 官网登录后申请。
+   - **LLM_BASE_URL**: LLM API 地址。 默认是`https://aiproxy.asktable.com/v1`，由 AskTable 提供，你也可以自行修改。
+   - **LLM_API_KEY**： LLM API 密钥。在 AskTable 官网（https://cloud.asktable.com）登录后，右上角点击“免费下载 AskTable”申请试用 LLM_API_KEY。
 
 
 ## **运行 AskTable**
