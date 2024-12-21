@@ -120,8 +120,8 @@ const sidebars = {
       items: [
         'pricing-and-deployment/all-deployment-options',
         'pricing-and-deployment/online-service-pricing',
-        'pricing-and-deployment/private-deployment-options',
         'pricing-and-deployment/private-deployment-all-in-one',
+        'pricing-and-deployment/private-deployment-options',
       ],
     },
     {
