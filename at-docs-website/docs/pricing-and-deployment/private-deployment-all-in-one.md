@@ -1,6 +1,8 @@
 # 单机版部署指南
 
-🚀 这篇指南将帮助您在本地环境快速部署 AskTable，并让您可以结合自己的内部数据来使用我们的产品。它非常适合用于个人、团队以及企业数据分析，希望您能在使用 AskTable 的过程中获得丰厚的收获！💪
+🚀 这篇指南将帮助您在本地环境快速部署 AskTable，并让您可以结合自己的内部数据来使用我们的产品。它非常适合用于个人、团队以及企业数据分析，希望您能在使用 AskTable 的过程中获得愉快的体验！💪
+
+>继续下载、安装和使用 AskTable 即表示您已阅读并同意 [《软件下载安装及使用协议》](../appendix/software-end-user-license-agreement.md)。
 
 ## **前提条件**
 
@@ -75,7 +77,7 @@
 3. **LLM API 配置**：
    
    大模型的地址和 API 密钥。如果您没有自己的大模型 API 服务，可在 [AskTable 官网](https://cloud.asktable.com) 登录后，右上角点击【免费下载 AskTable】申请。
-   
+
    - **LLM_BASE_URL**: LLM API 地址。 若使用 AskTable 提供的 API 服务，则该参数不用配置。
    - **LLM_API_KEY**： LLM API 密钥。 
 
