@@ -178,6 +178,7 @@ const sidebars = {
         'appendix/glossary',
         'appendix/privacy-policy',
         'appendix/terms-of-service',
+        'appendix/software-end-user-license-agreement',
       ],
     },
   ],
