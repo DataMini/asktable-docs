@@ -122,6 +122,7 @@ const sidebars = {
         'pricing-and-deployment/online-service-pricing',
         'pricing-and-deployment/private-deployment-all-in-one',
         'pricing-and-deployment/private-deployment-options',
+        'pricing-and-deployment/deploy-on-sealos',
       ],
     },
     {
@@ -150,7 +151,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '如何集成',
+      label: '集成AskTable',
       items: [
         {
           type: 'category',
