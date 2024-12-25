@@ -51,3 +51,6 @@ AskTable 已经上架 Sealos 应用商店，您可以在 Sealos 上快速部署 
 4. **打开“公网地址”，即可访问 AskTable**
 
 
+  <div className="img-center large">
+    <img src="/img/asktable/deploy_on_sealos_7.png" alt="intro" />
+  </div>
