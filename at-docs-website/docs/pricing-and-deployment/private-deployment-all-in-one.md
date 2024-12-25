@@ -30,7 +30,8 @@
    services:
      asktable:
        # AskTable
-       image: registry.cn-shanghai.aliyuncs.com/datamini/asktable-all-in-one:latest
+       image: registry.cn-shanghai.aliyuncs.com/datamini/asktable-all-in-one:latest  # 中国大陆地区
+       # image: datamini/asktable-all-in-one:latest   # 其他地区
        container_name: asktable
        depends_on:
          - asktable_mysql
