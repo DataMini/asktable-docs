@@ -6,13 +6,15 @@ AskTable 支持多种类型的数据库和数据源，方便您灵活地集成�
 
 
 - **MySQL**: 支持版本 8.0 及以上
-- **PostgreSQL**: 支持版本 13 及以上
+- **PostgreSQL**: 支持版本 15 及以上
 - **TiDB**: 分布式 SQL 数据库，支持版本 8.1.0 及以上
 - **OceanBase**: 分布式关系数据库（MySQL 兼容），支持版本 4.2 及以上
 - **ClickHouse**: 分布式列式数据库，支持版本 22.12 及以上
-- **StarRocks**: 分布式分析型数据库，支持版本 3.0 及以上
+- **StarRocks**: 分布式分析型数据库，支持 3.x 版本
+- **Hive**：分布式分析型数据库，支持 3.x 版本
 - **Excel 文件**: 支持 .xlsx/.xls 格式
 - **CSV 文件**: 支持 .csv 格式，支持常见分割符包括逗号、制表符等
+
 
 如果您的数据库不在上述列表中，请通过 [联系我们](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf) 告知我们，我们将尽快添加支持。
 
