@@ -2,8 +2,8 @@ name: AskTable Docs Docker Image
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
 
 jobs:
   docker:
@@ -35,7 +35,6 @@ jobs:
         file: at-docs-website/Dockerfile # Dockerfile的位置
         push: true # 推送镜像到阿里云镜像仓库
         tags: |
-          registry.cn-shanghai.aliyuncs.com/datamini/asktable-docs:${{ env.VERSION }}
           registry.cn-shanghai.aliyuncs.com/datamini/asktable-docs:latest
 #        platforms: linux/amd64,linux/arm64
         platforms: linux/amd64
