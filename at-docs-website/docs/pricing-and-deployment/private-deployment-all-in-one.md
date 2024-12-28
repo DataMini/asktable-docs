@@ -45,7 +45,7 @@
          MYSQL_DB: asktable                       # MySQL 数据库名称
          LLM_API_KEY: your_api_key_here      #LLM API KEY，用于访问大模型。
        volumes:
-         - ./asktable_data:/asktable_data
+         - ./asktable_data:/asktable
      
      asktable_mysql:
        image: cr2.fit2cloud.com/library/mysql:8.0
