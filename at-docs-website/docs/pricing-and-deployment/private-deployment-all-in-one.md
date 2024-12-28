@@ -94,7 +94,8 @@
 在 `docker-compose.yml` 文件所在目录下，运行以下命令：
 
 ```bash
-docker-compose up -d
+docker compose up -d
+# 或者 docker-compose up -d
 ```
 
 这条命令会在后台启动 AskTable 应用和 MySQL 数据库容器。
