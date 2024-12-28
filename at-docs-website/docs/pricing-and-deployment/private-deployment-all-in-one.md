@@ -44,6 +44,8 @@
          MYSQL_PASSWORD: asktable                 # MySQL 数据库密码
          MYSQL_DB: asktable                       # MySQL 数据库名称
          LLM_API_KEY: your_api_key_here      #LLM API KEY，用于访问大模型。
+       volumes:
+         - ./asktable_data:/asktable_data
      
      asktable_mysql:
        image: cr2.fit2cloud.com/library/mysql:8.0
@@ -77,10 +79,10 @@
 
 3. **LLM API 配置**：
    
-   大模型的地址和 API 密钥。如果您没有自己的大模型 API 服务，可在 [AskTable 官网](https://cloud.asktable.com) 登录后，右上角点击【免费下载 AskTable】申请。
+   推荐在 [AskTable 官网](https://cloud.asktable.com) 登录后，右上角点击【免费下载 AskTable】申请。
 
-   - **LLM_BASE_URL**: LLM API 地址。 若使用 AskTable 提供的 API 服务，则该参数不用配置。
-   - **LLM_API_KEY**： LLM API 密钥。 
+   - **LLM_BASE_URL**: LLM API 地址。 若使用 AskTable 提供的 AI 模型服务，则不用配置。
+   - **LLM_API_KEY**： LLM API 密钥。
 
 
 ## **运行 AskTable**
