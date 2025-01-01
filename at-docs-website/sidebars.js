@@ -4,7 +4,6 @@ const sidebars = {
       type: 'category',
       label: '简介',
       items: [
-        'introduction/table-of-contents',
         'introduction/why-asktable',
         'introduction/what-is-asktable',
         'introduction/core-features',
@@ -38,7 +37,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '数据源管理',
+      label: '数据管理',
       items: [
         'datasource-management/supported-databases',
         'datasource-management/create-datasource',
