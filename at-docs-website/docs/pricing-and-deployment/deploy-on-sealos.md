@@ -1,4 +1,4 @@
-# 在 Sealos 上部署 AskTable
+# 在 Sealos 部署
 
 ## 什么是 Sealos？
 > Sealos 是一个无需云计算专业知识，就能在几秒钟内部署、管理和扩展应用的云操作系统。

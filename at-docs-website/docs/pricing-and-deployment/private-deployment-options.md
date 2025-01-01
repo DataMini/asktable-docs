@@ -1,15 +1,15 @@
-# 本地私有化部署
+# 本地私有部署
 
 为了满足对数据隐私和安全有更高要求的企业，AskTable 提供灵活的私有化部署服务。企业可以选择将 AskTable 部署在自己的服务器上，确保数据不离开企业内网，或者使用在线的大模型来满足不同的业务需求。
 
 ## 私有化部署架构图
 
-- **本地敏捷版**：
+- **本地部署 1：线上模型 API**：
 <div className="img-center medium">
   <img src="/img/asktable/at_deployment_offline_1.png" alt="Logo" />
 </div>
 
-- **本地版**：
+- **本地部署 2：携带模型本地部署**：
 <div className="img-center medium">
   <img src="/img/asktable/at_deployment_offline_2.png" alt="Logo" />
 </div>
