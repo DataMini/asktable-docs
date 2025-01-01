@@ -4,10 +4,6 @@
 AskTable 为企业用户提供四种产品模式，满足不同场景需求：
 
 
-<div className="img-center xlarge">
-  <img src="/img/asktable/at_deployment_options.png" alt="Logo" />
-</div>
-
 
 
 | 产品模式 | 功能与服务 | 硬件要求 | 适用场景 | 交付周期 |
