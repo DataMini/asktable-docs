@@ -84,8 +84,8 @@
    
    推荐在 [AskTable 官网](https://cloud.asktable.com) 登录后，右上角点击【免费下载 AskTable】申请。
 
-   - **LLM_BASE_URL**: LLM API 地址。比如：`https://api.openai.com/v1` 若使用 AskTable 提供的 AI 模型服务，则不用配置。
-   - **LLM_API_KEY**： LLM API 密钥。
+   - **LLM_BASE_URL**: LLM API 地址。比如：`https://api.openai.com/v1` 若使用 AskTable 提供的 AI 模型服务，则无需配置。
+   - **LLM_API_KEY**： LLM API 密钥。如果无密钥认证，则无需配置。
 
 
 ## **运行 AskTable**
