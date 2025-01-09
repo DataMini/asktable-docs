@@ -46,7 +46,7 @@
          MYSQL_USER: asktable                     # MySQL 数据库用户名
          MYSQL_PASSWORD: asktable                 # MySQL 数据库密码
          MYSQL_DB: asktable                       # MySQL 数据库名称
-         LLM_API_KEY: your_api_key_here      #LLM API KEY，用于访问大模型。
+         LLM_API_KEY: your_api_key_here      # 大模型 API 密钥，在AskTable 官网(https://cloud.asktable.com) 登录后申请。
        volumes:
          - ./asktable_data:/asktable
      
@@ -65,27 +65,7 @@
          - ./mysql_data:/var/lib/mysql
    ```
 
-
-在运行 AskTable 之前，您需要了解一些配置项，以下是 `docker-compose.yml` 中主要配置项的说明：
-
-
-1. **BASE_URL**：指定 AskTable 服务对外暴露的地址（即从外部比如浏览器访问的地址）。
-
-2. **MySQL 配置**：
-   - **MYSQL_HOST**：指定 MySQL 数据库的地址。
-   - **MySQL_PORT**：指定 MySQL 数据库的端口，默认 3306。
-   - **MYSQL_USER**：设置 MySQL 用户名。
-   - **MYSQL_PASSWORD**：设置 MySQL 用户的密码。
-   - **MYSQL_DB**：指定 MySQL 数据库名称。
-  
-   > 通过 `Docker-compose` 拉起的 MySQL 会自动初始化用户和数据库，如果使用已有的 MySQL，请自行创建数据库，并设置好用户名和密码。
-
-3. **LLM API 配置**：
-   
-   推荐在 [AskTable 官网](https://cloud.asktable.com) 登录后，右上角点击【免费下载 AskTable】申请。
-
-   - **LLM_BASE_URL**: LLM API 地址。比如：`https://api.openai.com/v1` 若使用 AskTable 提供的 AI 模型服务，则无需配置。
-   - **LLM_API_KEY**： LLM API 密钥。如果无密钥认证，则无需配置。
+   > 上述配置将同时部署 AskTable 和 MySQL 数据库。您也可以只部署 AskTable，然后使用已有的 MySQL 数据库服务。
 
 
 ## **运行 AskTable**
@@ -148,8 +128,8 @@ http://127.0.0.1:8000
    REDIS_PORT: 6379
    REDIS_PASSWORD: your-redis-password
    ```
-3. **使用 OpenAI API**：
-   如果需要使用 OpenAI，您可以配置以下参数：
+3. **使用 OpenAI（GPT）**：
+   如果需要使用 OpenAI 的模型，您可以配置以下参数：
 
    ```yaml
    LLM_BASE_URL: https://api.openai.com/v1
@@ -157,30 +137,19 @@ http://127.0.0.1:8000
    LLM_HTTP_PROXY: http://127.0.0.1:7890  # 如果需要使用代理，则配置代理地址
    ```
 
-4. **使用其他 LLM 模型**：
-   AskTable 提供的 LLM 服务，会使用 GPT、Qwen等模型，如果您想在本地使用其他模型，则可以配置以下参数：
-
+4. **使用本地 LLM 模型**：
+   如果您想使用本地的模型，假设已经部署了模型推理服务，则可以配置以下参数：
+   
    ```yaml
-   LLM_BASE_URL: https://api.siliconflow.cn/v1  # 您自己的 LLM 服务地址（这里是硅流科技的 API 地址）
-   LLM_API_KEY: your_dashscope_api_key_here  # 您自己的 LLM 服务 API 密钥
+   LLM_BASE_URL: http://10.10.0.3:11434/v1  # 本地LLM 服务地址（这里是硅基流动的 API 地址）
+   LLM_API_KEY: your_api_key_here  # 本地LLM 服务的 API 密钥（如果无密钥认证，则无需配置）
    AT_FORCE_LLM_MODEL: Qwen2.5-72B-Instruct-128K  # 强制使用的模型名字
-   ```
-   注意：请使用 LLM 供应商支持的模型名称。
-
-
-5. **关闭诊断日志**：
-   AskTable 会收集诊断日志，用于定位问题和改进产品。AskTable 不会收集您的敏感信息，并承诺不会用于任何商业用途。
-   如果您希望关闭诊断日志，您可以配置以下参数：
-   ```yaml
-   AT_TRACE_ENABLE: false
    ```
 
 
 ## **注意事项**
 
-该部署模式适用于快速体验 AskTable，但不适用于生产环境，性能和稳定性无法保证。若有更高需求，请与我们联系。
-
-
+该部署模式适用于快速体验 AskTable，但不适用于生产环境，性能、准确性与稳定性无法保证。若有更高要求，请与我们联系。
 
 
 再次感谢您的使用，祝您好运！🚀
