@@ -141,7 +141,7 @@ http://127.0.0.1:8000
    如果您想使用本地的模型，假设已经部署了模型推理服务，则可以配置以下参数：
    
    ```yaml
-   LLM_BASE_URL: http://10.10.0.3:11434/v1  # 本地LLM 服务地址（这里是硅基流动的 API 地址）
+   LLM_BASE_URL: http://10.10.0.3:11434/v1  # 本地LLM 服务地址
    LLM_API_KEY: your_api_key_here  # 本地LLM 服务的 API 密钥（如果无密钥认证，则无需配置）
    AT_FORCE_LLM_MODEL: Qwen2.5-72B-Instruct-128K  # 强制使用的模型名字
    ```
