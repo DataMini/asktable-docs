@@ -128,19 +128,8 @@ http://127.0.0.1:8000
    REDIS_PORT: 6379
    REDIS_PASSWORD: your-redis-password
    ```
-3. **使用 OpenAI（GPT）**：
-   如果需要使用 OpenAI 的模型，您可以配置以下参数：
-   :::warning 警告
-   使用非 AskTable 官方提供的模型可能无法保证效果，建议在 [https://cloud.asktable.com](https://cloud.asktable.com) 申请。
-   :::
 
-   ```yaml
-   LLM_BASE_URL: https://api.openai.com/v1
-   LLM_API_KEY: your_openai_api_key_here
-   LLM_HTTP_PROXY: http://127.0.0.1:7890  # 如果需要使用代理，则配置代理地址
-   ```
-
-4. **使用本地 LLM 模型**：
+3. **使用本地 LLM 模型**：
    如果您想使用本地的模型，假设已经部署了模型推理服务，则可以配置以下参数：
    :::warning 警告
    使用非 AskTable 官方提供的模型可能无法保证效果，建议在 [https://cloud.asktable.com](https://cloud.asktable.com) 申请。
