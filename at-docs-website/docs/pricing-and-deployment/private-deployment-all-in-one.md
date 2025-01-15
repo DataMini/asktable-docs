@@ -140,6 +140,15 @@ http://127.0.0.1:8000
    AT_FORCE_LLM_MODEL: Qwen2.5-72B-Instruct-128K  # 强制使用的模型名字
    ```
 
+## **更新版本**
+
+若需更新到最新版本，请在 `docker-compose.yml` 文件所在目录下，执行以下命令：
+
+```bash
+docker compose pull
+docker compose down
+docker compose up -d
+```
 
 ## **注意事项**
 
