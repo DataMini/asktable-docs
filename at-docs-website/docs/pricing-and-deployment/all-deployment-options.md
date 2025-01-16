@@ -12,7 +12,7 @@
 
 
 :::note 注释
-1️⃣ 因为单机版资源有限，无法提供 [AI 搜索](https://docs.asktable.com/docs/ai-search/introduction)，因此准确性和性能未充分优化
+1️⃣ 因为资源有限，单机版只提供基础功能，无法支持 [AI 搜索](https://docs.asktable.com/docs/ai-search/introduction)，因此准确性未充分优化。
 
 2️⃣ **199 元/月** 含 `1000` 次查询，超过 `1000` 次查询按 **0.2 元/次** 收费。
    
