@@ -46,7 +46,7 @@
          MYSQL_USER: asktable                     # MySQL 数据库用户名
          MYSQL_PASSWORD: asktable                 # MySQL 数据库密码
          MYSQL_DB: asktable                       # MySQL 数据库名称
-         LLM_API_KEY: your_api_key_here      # 大模型 API 密钥，在AskTable 官网(https://cloud.asktable.com) 登录后申请。
+         LLM_API_KEY: your_api_key_here      # AI 模型令牌，在AskTable 官网(https://cloud.asktable.com) 登录后申请。
        volumes:
          - ./asktable_data:/asktable
      
@@ -66,6 +66,15 @@
    ```
 
    > 上述配置将同时部署 AskTable 和 MySQL 数据库。您也可以只部署 AskTable，然后使用已有的 MySQL 数据库服务。
+
+其中，以下配置须按照实际情况修改：
+
+- `BASE_URL`：容器对外暴露的地址（即从外部比如浏览器访问的地址）
+- `LLM_API_KEY`：AI 模型令牌，在AskTable 官网(https://cloud.asktable.com) 登录后申请。
+
+<div className="img-center medium">
+  <img src="/img/asktable/deploy_all_in_one_1.png" alt="intro" />
+</div>
 
 
 ## **运行 AskTable**
@@ -136,7 +145,7 @@ http://127.0.0.1:8000
    :::
    ```yaml
    LLM_BASE_URL: http://10.10.0.3:11434/v1  # 本地LLM 服务地址
-   LLM_API_KEY: your_api_key_here  # 本地LLM 服务的 API 密钥（如果无密钥认证，则无需配置）
+   LLM_API_KEY: your_api_key_here  # 本地LLM 服务的 API Key（如果无密钥认证，则无需配置）
    AT_FORCE_LLM_MODEL: Qwen2.5-72B-Instruct-128K  # 强制使用的模型名字
    ```
 
