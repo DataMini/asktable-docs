@@ -1,5 +1,13 @@
 # 安装和配置 ATST
 
+## ATST 技术架构
+
+在 AskTable 中，安全隧道（ATST）是连接内网数据库和 AskTable 的桥梁。ATST 通过 Docker 容器化部署，并使用 AskTable 提供的 API 密钥进行身份验证。
+<div className="img-center large">
+  <img src="/img/asktable/at_atst_2.png" alt="Logo" />
+</div>
+
+
 在使用 AskTable 安全隧道（ATST）之前，需要进行安装和配置。以下步骤将指导您如何安装和配置 ATST。
 
 ## 步骤 1：获取 ATST

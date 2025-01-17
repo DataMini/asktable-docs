@@ -3,7 +3,7 @@
 AskTable 的安全隧道（ATST，AskTable Secure Tunnel）允许 AskTable 安全地访问部署在内网的数据库。通过创建安全隧道，用户可以确保数据传输的安全性，同时避免暴露内网资源。
 
 <div className="img-center medium">
-  <img src="/img/asktable/at_deployment_online.png" alt="Logo" />
+  <img src="/img/asktable/at_atst_1.png" alt="Logo" />
 </div>
 
 ## 功能和优势
