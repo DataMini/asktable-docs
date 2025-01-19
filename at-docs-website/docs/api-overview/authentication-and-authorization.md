@@ -16,8 +16,8 @@ AskTable 提供两种不同类型的 API-Key ，用于不同的访问需求和�
 
 | API-Key  类型    | 用途                      | 获取方式                                             | 可访问的 API 列表                   | 有效期      |
 |---------------|-------------------------|--------------------------------------------------|-----------------------------------|-------------|
-| `admin`    | 用于管理项目内的全部资源，具有最高权限。    | 通过 [AskTable 云服务](https://cloud.asktable.com) 创建 | 全部 API                          | 长期        |
-| `asker`    | 用于查询公开数据，适用于公开访问场景。 | 通过 [AskTable 云服务](https://cloud.asktable.com) 创建   | 见下文                             | 长期        |
+| `admin`    | 用于管理项目内的全部资源，具有最高权限。    | 通过 [AskTable SaaS](https://cloud.asktable.com) 创建 | 全部 API                          | 长期        |
+| `asker`    | 用于查询公开数据，适用于公开访问场景。 | 通过 [AskTable SaaS](https://cloud.asktable.com) 创建   | 见下文                             | 长期        |
 
 
 
