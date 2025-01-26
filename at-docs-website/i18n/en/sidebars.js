@@ -1,8 +1,8 @@
 const sidebars = {
-  zhSidebar: [
+englishSidebar: [
     {
       type: 'category',
-      label: '简介',
+      label: 'Introduction',
       items: [
         'introduction/why-asktable',
         'introduction/what-is-asktable',
@@ -11,7 +11,7 @@ const sidebars = {
     },
    {
      type: 'category',
-     label: '客户案例',
+     label: 'Customer Cases',
      items: [
       //  'customer-cases/university-data-analysis',
        'customer-cases/financial-insights',
@@ -21,14 +21,14 @@ const sidebars = {
    },
     {
       type: 'category',
-      label: '解决方案',
+      label: 'Solutions',
       items: [
         'solutions/chat-bi',
       ],
     },
     {
       type: 'category',
-      label: '快速开始',
+      label: 'Quick Start',
       items: [
         'quick-start/create-account-and-get-api-token',
         'quick-start/use-cloud-console',
@@ -37,7 +37,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '数据管理',
+      label: 'Data Management',
       items: [
         'datasource-management/supported-databases',
         'datasource-management/create-datasource',
@@ -46,14 +46,14 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '对话机器人',
+      label: 'Chatbot',
       items: [
         'bot-management/bot-introduction',
       ],
     },
     {
       type: 'category',
-      label: '问数 AI',
+      label: 'AskTable AI',
       items: [
         'chat-database/database-query-via-natural-language',
         'chat-database/generate-sql-from-natural-language',
@@ -62,7 +62,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '数据访问权限',
+      label: 'Data Access Permissions',
       items: [
         'role-and-permission-management/introduction',
         'role-and-permission-management/define-access-policy',
@@ -72,7 +72,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '数据可视化',
+      label: 'Data Visualization',
       items: [
         'data-visualization/text-responses',
         'data-visualization/chart-display',
@@ -82,21 +82,21 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '业务知识',
+      label: 'Business Knowledge',
       items: [
         'business-knowledge/introduction',   
       ],
     },
     {
       type: 'category',
-      label: 'AI 搜索',
+      label: 'AI Search',
       items: [
         'ai-search/introduction',
       ],
     },
     {
       type: 'category',
-      label: '安全隧道',
+      label: 'Secure Tunnel',
       items: [
         'secure-tunnel/introduction',
         'secure-tunnel/install-and-configure-atst',
@@ -106,7 +106,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '外部插件',
+      label: 'External Plugins',
       items: [
         'api-calling/introduction',
         'api-calling/quick-start-with-cloud-console',
@@ -115,7 +115,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '定价与部署',
+      label: 'Pricing and Deployment',
       items: [
         'pricing-and-deployment/all-deployment-pricing',
         'pricing-and-deployment/private-deployment-all-in-one',
@@ -125,7 +125,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'API 和 SDK',
+      label: 'API and SDK',
       items: [
 
         {
@@ -149,11 +149,11 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '集成AskTable',
+      label: 'Integrate AskTable',
       items: [
         {
           type: 'category',
-          label: '网站',
+          label: 'Website',
           items: [
             'integration/website/chatbot-widget-introduction',
             'integration/website/embed-chatbot-widget-example',
@@ -162,7 +162,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '扣子（Coze）',
+          label: 'Coze',
           items: [
             'integration/coze/coze-Case1',
             'integration/coze/coze-Case2',
@@ -172,7 +172,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '附录',
+      label: 'Appendix',
       items: [
         'appendix/glossary',
         'appendix/privacy-policy',

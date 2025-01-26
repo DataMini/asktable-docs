@@ -30,8 +30,20 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh', // 默认语言
+    locales: ['zh', 'en'], // 支持的语言列表
+    localeConfigs: {
+      zh: {
+        label: '中文',
+        direction: 'ltr',
+        htmlLang: "zh-Hans",
+      },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: "en-GB",
+      },
+    },
   },
 
   presets: [
@@ -40,7 +52,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          // path: 'docs',
+          // routeBasePath: '',
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -72,6 +86,10 @@ const config = {
           src: 'img/asktable/at_logo.png',
         },
         items: [
+          {
+            type: 'localeDropdown', // 启用语言切换下拉菜单
+            position: 'right',
+          },
 //          {
 //            type: 'docSidebar',
 //            sidebarId: 'asktableSidebar',
@@ -80,51 +98,6 @@ const config = {
 //          },
         ],
       },
-//      footer: {
-//        style: 'dark',
-//        links: [
-//          {
-//            title: 'Docs',
-//            items: [
-//              {
-//                label: 'Tutorial',
-//                to: '/docs/intro',
-//              },
-//            ],
-//          },
-//          {
-//            title: 'Community',
-//            items: [
-//              {
-//                label: 'Stack Overflow',
-//                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-//              },
-//              {
-//                label: 'Discord',
-//                href: 'https://discordapp.com/invite/docusaurus',
-//              },
-//              {
-//                label: 'Twitter',
-//                href: 'https://twitter.com/docusaurus',
-//              },
-//            ],
-//          },
-//          {
-//            title: 'More',
-//            items: [
-//              {
-//                label: 'Blog',
-//                to: '/blog',
-//              },
-//              {
-//                label: 'GitHub',
-//                href: 'https://github.com/facebook/docusaurus',
-//              },
-//            ],
-//          },
-//        ],
-//        copyright: `Copyright © ${new Date().getFullYear()} DataMini, Inc. Built with Docusaurus.`,
-//      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
