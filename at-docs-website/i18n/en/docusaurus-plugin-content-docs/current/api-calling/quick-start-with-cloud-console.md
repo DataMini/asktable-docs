@@ -1,62 +1,55 @@
-# 通过控制台管理 API
+# Managing the API via Console
 
-## 查看 API Endpoint
+## View API Endpoint
 
+On the API endpoint management page, you can view, create, edit, and delete API endpoints. This page lists all defined API endpoints in a table format. Each API endpoint includes the following information:
 
-在 API 接口管理页面，您可以查看、创建、编辑和删除 API Endpoint。该页面采用表格形式展示了所有已定义的 API Endpoint。每个 API Endpoint 都包含以下信息：
+* **ID:** Unique identifier.
+* **Name:** Name of the API endpoint.
+* **Root URL:** Base URL of the external API.
+* **HTTP Headers:** HTTP request headers displayed as key-value pairs.
+* **Creation Time:** The time the API endpoint was created.
+* **Modification Time:** The last time the API endpoint was modified.
 
-* **ID:** 唯一标识符。
-* **名称:** API Endpoint 的名称。
-* **根 URL:** 外部 API 的基础 URL。
-* **HTTP 头:** HTTP 请求头信息，以键值对形式展示。
-* **创建时间:** API Endpoint 创建的时间。
-* **修改时间:** API Endpoint 最近一次修改的时间。
+**Functions:**
 
+* **Create API Endpoint:** Clicking the "Create API Endpoint" button brings up a dialog that allows users to input the Name, Root URL, and Headers.
+* **Edit API Endpoint:** Clicking the edit button for an API endpoint in the table brings up a dialog allowing users to modify the existing endpoint.
+* **Delete API Endpoint:** Clicking the delete button for an API endpoint in the table deletes the corresponding API endpoint.
+* **View Routes:** Clicking on a row for an ExtAPI opens a drawer to the right, displaying all API routes under that ExtAPI.
 
-**功能：**
+## Creating and Editing API Endpoints
 
-* **创建 API Endpoint:** 点击“创建 API Endpoint”按钮，弹出一个对话框，允许用户输入名称、根 URL 和 Headers 信息。
-* **编辑 API Endpoint:** 点击表格中某个 API Endpoint 的编辑按钮，弹出一个对话框，允许用户修改已有的 API Endpoint 。
-* **删除 API Endpoint:** 点击表格中某个 API Endpoint 的删除按钮，删除对应的 API Endpoint。
-* **查看 Routes:** 点击表格中某个 ExtAPI 行，右侧会滑出一个抽屉，显示该 ExtAPI 下的所有 API Route。
+In the dialog for creating or editing an API endpoint, users need to input the following information:
 
+* **Name:** Name of the API endpoint.
+* **Root URL:** Base URL of the external API.
+* **HTTP Headers:** HTTP request headers displayed as key-value pairs.
 
-## 创建和编辑 API Endpoint
+HTTP Headers: HTTP request header information, where users can input multiple headers in key-value format. Each header row has a delete button that users can use to remove any unnecessary headers.
 
-在创建或编辑 API Endpoint 的对话框中，用户需要输入以下信息：
+## View API Route 
 
-* **名称:** API Endpoint 的名称。
-* **根 URL:** 外部 API 的基础 URL。
-* **HTTP 头:** HTTP 请求头信息，以键值对形式展示。
+On the API route management page, you can view, create, edit, and delete API routes. This page lists all defined API routes in a table format. Each API route includes the following information:
 
-HTTP 头（Header）: HTTP 请求头信息，用户可以按键值对方式输入多个 Header。每个 Header 行后面都有一个删除按钮，用户可以删除不需要的 Header。
+* **Name:** Name of the API route.
+* **Method:** HTTP request method, such as GET, POST, PUT, DELETE.
+* **Path:** API path.
+* **Action:** Includes edit and delete buttons.
 
+Page functions:
 
+* **Create Route:** Clicking the "Create Route" button brings up a dialog, allowing users to input the Name, Method, Path, and descriptions for path parameters, query parameters, and request body parameters.
+* **Edit Route:** Clicking the edit button for a route in the table brings up a dialog allowing users to modify the existing route information.
+* **Delete Route:** Clicking the delete button for a route in the table deletes the corresponding API route.
 
-## 查看 API Route 
+## Creating and Editing API Routes
 
-在 API Route 管理页面，您可以查看、创建、编辑和删除 API Route。该页面采用表格形式展示了所有已定义的 API Route。每个 API Route 都包含以下信息：
+In the dialog for creating or editing an API route, users need to input the following information:
 
-* **名称:** API Route 的名称。
-* **方法:** HTTP 请求方法，如 GET、POST、PUT、DELETE。
-* **路径:** API 路径。
-* **操作:** 包含编辑和删除按钮。
-
-页面功能：
-
-* **创建 Route:** 点击“创建 Route”按钮，弹出一个对话框，允许用户输入名称、方法、路径以及路径参数、查询参数和请求体参数的描述信息。
-* **编辑 Route:** 点击表格中某个 Route 的编辑按钮，弹出一个对话框，允许用户修改已有的 Route 信息。
-* **删除 Route:** 点击表格中某个 Route 的删除按钮，删除对应的 API Route。
-
-
-## 创建和编辑 API Route
-
-在创建或编辑 API Route 的对话框中，用户需要输入以下信息：
-
-* **名称:** API Route 的名称。
-* **方法:** HTTP 请求方法，用户可以从下拉菜单中选择 GET、POST、PUT 或 DELETE。
-* **路径:** API 路径，支持路径参数。
-* **路径参数描述:** 路径参数的描述信息。
-* **查询参数描述:** 查询参数的描述信息。
-* **请求体参数描述:** 请求体参数的描述信息，支持 JSON 格式。
-
+* **Name:** Name of the API route.
+* **Method:** HTTP request method, users can select from the dropdown menu (GET, POST, PUT, DELETE).
+* **Path:** API path, supporting path parameters.
+* **Path Parameter Description:** Description of the path parameters.
+* **Query Parameter Description:** Description of the query parameters.
+* **Request Body Parameter Description:** Description of the request body parameters, supporting JSON format.

@@ -1,40 +1,36 @@
-# 角色和访问策略管理简介
+# Introduction to Role and Access Policy Management
 
-在 AskTable 中，角色和权限管理是确保数据访问控制和安全性的关键部分。通过定义和管理角色及其对应的访问策略，您可以精确控制用户对数据的访问权限，从而保护敏感信息并确保数据的合规性。
+In AskTable, role and permission management is a critical component for ensuring data access control and security. By defining and managing roles along with their corresponding access policies, you can precisely control user access permissions to data, thereby protecting sensitive information and ensuring data compliance.
 
-## 角色和访问策略的概念
+## Concepts of Roles and Access Policies
 
+### Role
 
+A role is a collection of permissions representing the responsibilities and functions of a user or a group of users within the system. By assigning different roles to users, you can control their access and operational permissions to system resources.
 
-### 角色
+### Access Policy
 
-角色是指一组权限的集合，代表一个用户或一组用户在系统中的职责和功能。通过为用户分配不同的角色，可以控制他们对系统资源的访问和操作权限。
+An access policy refers to the rights a user has to access certain resources within the system. By defining access policies, you can control the level of access users have to specific resources.
 
+### Example
 
-### 访问策略
-
-访问策略是指用户对系统中某些资源的访问权利。通过定义访问策略，可以控制用户对特定资源的访问级别。
-
-
-### 示例
-
-下图中的 “管理员”、“华东负责人”和“客服”是角色，P0，P1，P2，P3 和 P4 是策略。
-每个角色都有不同的访问策略，例如“管理员”可以访问所有数据，而“华东负责人”只能访问华东地区的数据，并且他们都不允许访问密码字段。
+In the image below, "Administrator," "East China Manager," and "Customer Service" are roles, while P0, P1, P2, P3, and P4 are policies.
+Each role has different access policies; for example, an "Administrator" can access all data, whereas an "East China Manager" can only access data from the East China region, and neither can access the password field.
 
 <div className="img-center large">
-  <img src="/img/asktable/at_auth_role_policy.png" alt="Logo" />
+  <img src="/img/asktable/at_auth_role_policy.png" alt="Role and Policy Diagram" />
 </div>
 
-## 角色和访问策略的应用场景
+## Application Scenarios for Roles and Access Policies
 
-1. **数据保护**：确保只有授权用户可以访问敏感数据，防止未经授权的访问。
-2. **职责分离**：根据用户的职责分配不同的角色，确保每个用户只能访问与其工作相关的数据。
-3. **合规性要求**：满足法律法规和行业标准的要求，确保数据访问的合规性。
+1. **Data Protection**: Ensure that only authorized users can access sensitive data, preventing unauthorized access.
+2. **Duty Separation**: Assign different roles based on user responsibilities to ensure that each user can only access data relevant to their work.
+3. **Compliance Requirements**: Meet legal regulations and industry standards to ensure compliance in data access.
 
-## 角色和访问策略管理的优势
+## Advantages of Role and Access Policy Management
 
-- **灵活性**：可以根据业务需求灵活定义和调整角色及其权限。
-- **安全性**：通过精细的权限控制，保护数据的安全性和完整性。
-- **可管理性**：简化了权限管理的复杂性，提高了系统的可管理性。
+- **Flexibility**: You can flexibly define and adjust roles and their permissions according to business needs.
+- **Security**: Protect data security and integrity through fine-grained permission controls.
+- **Manageability**: Simplifies the complexity of permission management, enhancing the system's manageability.
 
-在接下来的文档中，我们将详细介绍如何在 AskTable 中定义访问策略、创建和管理角色，以及如何使用角色来访问数据。
+In the following documentation, we will delve into how to define access policies, create and manage roles, and use roles to access data in AskTable.

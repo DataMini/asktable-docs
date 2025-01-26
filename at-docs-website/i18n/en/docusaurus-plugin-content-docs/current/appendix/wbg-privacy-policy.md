@@ -1,221 +1,171 @@
-# 问表哥 隐私政策
+# BigHead Brother Privacy Policy
 
-**更新日期：2024年【10】月【11】日**
-**生效日期：2024年【10】月【11】日**
-杭州大头与你科技有限公司及其关联方（简称”我们“）作为问表哥的运营者，非常重视用户信息的保护，并且将勤勉和审慎地保护用户信息安全。你在注册、登录、使用（以下统称“使用”）问表哥网站及相关客户端及应用（前述网站、客户端及应用统称为“官网”）及相关产品、服务、解决方案（“服务”）时，我们收集的你主动提供的信息，以及我们通过自动化手段收集你在使用官网及相关服务过程中产生的信息，称为“用户信息”，包括但不限于用户向官网提供的个人信息。我们将按照本隐私政策的相关规定收集、使用、存储、转移及保护你的个人信息。我们希望通过本隐私政策向你介绍我们对你的个人信息的处理方式，因此我们建议你认真完整阅读并理解本隐私政策的所有内容。**其中，限制、免除责任的条款以加粗的形式提示你注意，请你重点阅读。**
+**Updated Date: October 11, 2024**
+**Effective Date: October 11, 2024**
 
-**如果你不同意本隐私政策，我们无法为你提供完整的服务，你应当立即停止使用官网及相关服务。当你选择使用官网及相关服务时，将视为你接受和认可我们按照本隐私政策对你的相关信息进行处理。**
+Hangzhou BigHead Technology Co., Ltd. and its related entities (collectively referred to as "we") operate BigHead Brother and are committed to protecting user information. When you register, log in, or use the BigHead Brother website, related client applications, and services (collectively referred to as the "Website" and “Services”), we will collect both the information you voluntarily provide and the information generated during your use of the Website and Services, known as "user information". This may include, but is not limited to, personal information you provide to the Website. We will collect, use, store, transfer, and protect your personal information in accordance with the相关规定 of this privacy policy. We hope to introduce to you how we handle your personal information through this privacy policy, so we recommend that you carefully read and understand all aspects of this privacy policy. **Specifically, terms limiting or exempting liability are marked in bold to draw your attention, and we recommend that you focus on reading these sections.**
 
-**本政策适用对象和阶段为访问、注册、登录官网的访问者（以下统称“问表哥 用户”）在官网内的活动。**
+**If you do not agree with this privacy policy, we cannot provide you with comprehensive services, and you should immediately stop using the Website and related services. When you choose to use the Website and related services, it will be considered that you accept and recognize our processing of your information in accordance with this privacy policy.**
 
-**如你利用官网和服务创建聊天机器人（Bot）后，将聊天机器人（Bot）发布至官网外的其他平台，则你应以自己名义为最终用户提供服务并作为这一阶段的个人信息处理者。**
- 
-本隐私政策将帮助你了解：
-一、我们如何收集和使用个人信息 
-二、对Cookie和同类技术的使用 
-三、我们如何存储个人信息 
-四、数据使用过程中涉及的合作方以及转移、公开个人信息 
-五、我们如何保护用户信息安全 
-六、个人信息的管理 
-七、未成年人使用条款 
-八、隐私政策的修订和通知 
-九、适用范围 
-十、如何联系我们 
- 
-一、我们如何收集和使用个人信息
+**This policy applies to visitors who access, register, or log in to the Website during their activities on the Website (collectively referred to as "BigHead Brother Users").**
 
-1. 我们直接收集与使用的个人信息
-我们会在如下场景和业务活动中收集你在使用官网及相关服务时主动提供的用户信息，以及我们通过自动化手段收集你在使用官网及相关服务过程中产生的用户信息，包括但不限于用户向官网提供的个人信息。 
-特别提示你注意，如信息无法单独或结合其他信息识别到你的个人身份且与你无关，其不属于法律意义上你的个人信息；当你的信息可以单独或结合其他信息识别到你的个人身份或与你有关时，或我们将无法与任何特定个人信息建立联系的数据与其他你的个人信息结合使用时，则在结合使用期间，这些信息将作为你的个人信息按照本隐私政策处理与保护。需要澄清的是，个人信息不包括经匿名化处理后的信息。
+**If you create a chatbot (Bot) by utilizing the Website and services and subsequently publish the chatbot (Bot) to other platforms outside the Website, then it is your responsibility to operate as the data controller for the final users.**
 
-    1.1 你注册、认证、登录官网账号时
+This privacy policy will help you understand the following:
 
-        a. 当你注册、登录问表哥及相关服务时，你可以通过手机号创建账号并完成注册。手机号码是履行国家法律法规关于网络实名制要求的必要信息，如果你不提供手机号码用于注册、登录，我们可能无法为你提供创建聊天机器人（Bot）等功能。 
+1. How we collect and use personal information
+2. Use of Cookies and similar technologies
+3. How we store personal information
+4. Cooperation with third parties, and transfer and disclosure of personal information
+5. How we protect user information security
+6. Management of personal information
+7. Terms for minors' use 
+8. Revision and notification of privacy policy
+9. Scope of application
+10. How to contact us
 
-        b. 你可以使用第三方账号登录并使用问表哥，经过你的同意，我们将获取你在第三方平台注册的公开信息（头像、昵称以及你授权的其他信息），用于与问表哥账号绑定，使你可以直接登录并使用本产品和相关服务。 
+### 1. How we collect and use personal information
 
-    1.2 你使用官网及相关服务时
+1.1 Information we directly collect and use
 
-        (1) 我们致力于为你提供安全、可信的产品与使用环境，提供优质而可靠的服务与信息是我们的核心目标。为了维护我们服务的正常运行，保护你或其他用户或公众的合法利益免受损失，我们会收集用于维护产品或服务安全稳定运行的必要信息。
+We collect user information you actively provide and information collected through automated means during your use of the Website and Services. This includes, but is not limited to, the personal information you provide to the Website. 
 
-        (2) 当你浏览或使用官网时，为了保障网站和服务的正常运行及运营安全，预防网络攻击、侵入风险，更准确地识别违反法律法规或问表哥相关协议、服务规则的情况，我们会收集你的操作系统类型及操作系统版本号、IP地址、浏览器类型及浏览器版本、时区和语言等设备信息、网页浏览记录。请你了解，这些信息是我们提供服务和保障服务正常运行和网络安全所必须收集的基本信息。 
+**Note: If the collected information cannot identify your personal identity and is unrelated to you when used alone or combined with other information, it does not legally constitute your personal information. However, if the information can identify your personal identity either alone or when combined with other information, or if combined with data that cannot be linked to specific personal information, it will be processed and protected as personal information in accordance with this privacy policy. Personal information does not include data that has been anonymized.**
 
-        (3) 为让你体验到更好的服务，并保障你的使用安全，我们可能记录网络日志信息，以及使用官网及相关服务的频率、崩溃数据、使用情况及相关性能数据信息。 
+    1.1.1 When you register, authenticate, or log into the Website account
 
-        (4) 当你通过官网创建聊天机器人（Bot）时，官网会留存你为创建聊天机器人（Bot）而输入的信息（主要是你的指令信息）。 
+                a. When you register or log in to BigHead Brother and related services, you can create an account via your phone number for registration. A phone number is necessary information to fulfill the legal and regulatory requirements for online real-name systems. If you do not provide a phone number for registration or login, we may be unable to provide you with functions such as creating a chatbot (Bot).
 
-        (5) 我们可能收集你使用官网及相关服务而产生的用户咨询记录、报障记录和针对用户故障的排障过程（如通信或通话记录），我们将通过记录、分析这些信息以便更及时响应你的帮助请求，以及用于改进服务。 
+                b. You can use third-party accounts to log in and use BigHead Brother. With your agreement, we will obtain public information you registered on third-party platforms (such as avatar, nickname, and any other information you authorize) and associate it with your BigHead Brother account, enabling you to log in and use the product and related services directly.
 
-        (6) 你知悉并同意，对于你在使用产品及/或服务的过程中提供的你的联系方式（即联系电话），我们在运营中可能会向其中的一种或多种发送通知，用于用户消息告知、身份验证、安全验证、用户使用体验调研等用途；此外，我们也可能会向在前述过程中收集的手机号码通过短信、电话的方式，为你提供你可能感兴趣的服务、功能或活动等商业性信息的用途，但请你放心，如你不愿接受这些信息，你可以通过手机短信中提供的退订方式进行退订，也可以直接与我们联系进行退订。 
+    1.1.2 When you use the Website and related services
 
-        (7) 根据适用的法律法规，我们可能会对你的个人信息进行技术处理，使得根据该信息无法精确识别到用户个人，并对技术处理后的信息进行匿名化的学术研究或统计分析（包括使用你在创建聊天机器人（Bot）时输入的指令信息），以便不断改进算法模型的识别和响应的速度和质量、提高服务的智能性和对你输入内容的理解能力。 
-    **我们将信息用于本政策未载明的其他用途，或者将基于特定目的收集而来的信息用于其他目的时，会事先征求你的同意。**
- 
-2. 我们可能从第三方获得的个人信息
-   
-    为了给你提供更好、更优、更加个性化的服务，或共同为你提供服务，或为了预防互联网欺诈的目的，我们的关联公司、合作伙伴会依据法律规定或与你的约定或征得你同意前提下，向我们分享你的个人信息。我们会根据相关法律法规规定和/或该身份认证功能所必需，采用行业内通行的方式及尽最大的商业努力来保护你个人信息的安全。 
- 
-3. 收集、使用个人信息目的变更的处理 
-   
-   请你了解，随着我们业务的发展，我们提供的功能或服务可能有所调整变化。原则上，当新功能或服务与我们当前提供的功能或服务相关时，收集与使用的个人信息将与原处理目的具有直接或合理关联。在与原处理目的无直接或合理关联的场景下，我们收集、使用你的个人信息，会再次按照法律法规及国家标准的要求以页面提示、交互流程、协议确认方式另行向你进行告知说明，并征得你的同意。 
- 
-4. 问表哥 用户数据 
-   
-   请你理解，你的问表哥 用户数据（包含其中涉及的个人信息）不同于上文所述个人信息，官网将按如下方式处理： 
+                (1) We are dedicated to providing a safe and reliable product and use environment. To ensure the normal operation of our services and protect your or other users' legitimate interests, we will collect necessary information for the security and stable operation of the product or service.
 
-    4.1 “问表哥 用户数据”指：(1）你利用问表哥功能/服务获得或创建聊天机器人（Bot）时上传的全部数据（例如数据库信息、问表哥 用户上传的插件/api信息），以及（2）你发布聊天机器人（Bot）后该bot运行期间经由问表哥处理的所有数据，包括所有文本、声音、视频或图像文件以及软件，也包括你因使用问表哥产品或服务而衍生的问表哥 用户可自主控制和管理的数据（如配置数据、运维数据等）。 
-    
-    4.2 你完全拥有你的问表哥 用户数据。我们作为中立的技术服务提供者，只会严格执行你的指示处理你的问表哥 用户数据，除非法律法规另有规定、依据特定产品规则另行约定或基于你的要求为你提供技术协助进行故障排除或解决技术问题，我们不会访问你的问表哥 用户数据，亦不会对你的问表哥 用户数据进行任何非授权的使用或披露。 
-    
-    4.3 你应对你的问表哥 用户数据来源及内容负责，我们提示你谨慎判断数据来源及内容的合法性。你应保证有权使用官网及服务对该等数据进行处理，且前述处理活动均符合相关法律法规的要求，不存在任何违法违规、侵权或违反与第三方合同约定的情形，亦不会将数据用于违法违规目的，因你的问表哥 用户数据内容及你的数据处理行为违反法律法规、部门规章或国家政策而造成的全部结果及责任均由你自行承担。 
-    
-    4.4 受限于前款规定，对于问表哥 用户数据内包含的任何个人信息，你应当依法提前向相关个人信息主体履行告知义务，并取得相关个人信息主体的单独同意，并保证： 
-    (1) 根据我们要求的方式，就个人信息来源及其合法性提供书面说明和确认； 
-    (2) 在我们要求时，提供个人信息处理的授权同意范围，包括使用目的，个人信息主体同意你使用官网对其个人信息进行处理； 
-    (3) 如你使用官网及相关服务所需进行的个人信息处理活动超出该等个人信息的授权同意范围的，应在提供个人信息后的合理期限内或在我们处理个人信息前，由你负责征得个人信息主体的明示同意并在我们要求时向我们提供书面证明。 
-    
-    **你理解并同意，除非满足上述条件及法律要求的其他义务，你不得向我们提供包含个人信息的问表哥 用户数据。如你违反上述义务，或未按照要求向我们提供合理满意的证明，或我们收到个人信息主体举报或投诉，我们有权单方决定拒绝传输你的相关数据（根据实际情形，包括通过限制相关服务功能，冻结、注销或收回账号等方式），或拒绝按照你的指令处理相关个人信息及其相关的数据，由此产生的全部责任均由你自行承担。**
-    
-    4.5 你理解并同意，针对你的问表哥 用户数据，我们向你提供一项免费的数据托管服务，但我们没有义务存储你的数据或信息，亦不对你的数据存储工作或结果承担任何责任。 
- 
-二、对Cookie和同类技术的使用
+                (2) To ensure the normal operation and security of the website and services, and to prevent network attacks and risks, we will collect device information such as operating system type, version number, IP address, browser type, browser version, time zone, and language, as well as browsing records. Please understand that these are basic information required for providing and ensuring the normal operation of the service and network security.
 
-Cookie和同类技术是互联网中的通用常用技术。当你使用官网时，我们可能会使用相关技术向你的设备发送一个或多个Cookie或匿名标识符，以收集和存储你的账号信息、搜索记录信息以及登录状态信息。通过Cookie和同类技术可以帮助你省去重复填写特定信息、输入搜索内容的步骤和流程，还可以帮助我们改进服务效率、提升登录和响应速度。 
-你可以通过浏览器设置拒绝或管理Cookie。但请注意，如果停用Cookie，你有可能无法享受最佳的服务体验，某些功能的可用性可能会受到影响。我们承诺，我们不会将通过Cookie或同类技术收集到的你的个人信息用于本隐私政策所述目的之外的任何其他用途。 
- 
-三、我们如何存储个人信息
+                (3) To enhance your service experience and ensure your usage safety, we may record network log information, as well as usage frequency, crash data, usage scenarios, and performance information.
 
-1. 信息存储的地点
-   
-    我们依照法律法规的规定，将在境内运营过程中收集和产生的你的个人信息存储于中华人民共和国境内。目前，我们不会将上述信息传输至境外，如果我们向境外传输，会严格遵守中国的相关法律、监管政策，并会遵循相关国家规定或者征求你的同意。 
+                (4) When you create a chatbot (Bot) via the Website, the Website will retain the information you input to create the chatbot (primarily your command information).
 
-2. 存储期限
+                (5) We may collect user query records, malfunction records, and troubleshooting processes (such as communication records) generated from your use of the Website and Services. We will record and analyze these pieces of information to respond more promptly to your requests for assistance and improve our service.
 
-    2.1 我们将仅在为提供官网及相关服务之目的所必需的期间内保留你的个人信息，但你理解并认可基于不同的服务及其功能需求，必要存储期限可能会有所不同。我们用于确定存储期限的标准包括： 
-    (1) 完成该业务目的需要留存个人信息的时间，包括提供服务，依据法律要求维护相应的交易及业务记录，保证系统和服务的安全，应对可能的用户查询或投诉、问题定位等； 
-    (2) 用户同意的更长的留存期间； 
-    (3) 法律、合同等对保留个人信息的特殊要求等。 
+                (6) You acknowledge and agree that for the contact information (telephone number) you provide during the use of the product or services, we may send notices for the purposes of message notifications, identity verification, security verification, user experience surveys, etc., via one or more of these contact methods during our operations. Additionally, we may provide you with commercial messages, features, or activities of interest via SMS or phone calls. However, if you do not wish to receive these messages, you can unsubscribe according to the opt-out instructions in the received SMS, or directly contact us to unsubscribe.
 
-    2.2 在你未撤回授权同意、删除或注销账号期间，我们会保留相关信息。超出必要期限后，我们将对你的信息进行删除或匿名化处理，但法律法规另有规定的除外。 
- 
-四、数据使用过程中涉及的合作方以及转移、公开个人信息
+                (7) According to applicable laws and regulations, we may process your personal information using technical means to prevent precise identification of individuals from the data and conduct anonymized academic research or statistical analysis (including the data you input when creating a chatbot (Bot)) in order to continuously improve the recognition and response speed and quality of our algorithm models, and enhance the intelligence of services and our understanding of your inputs.
+**We will use the information for purposes not specified in this policy or use information collected for specific purposes for other purposes, only after obtaining your prior consent.**
 
-1. 数据使用过程中涉及的合作方
-1.1 原则 
-(1) 合法原则：与合作方合作过程中涉及数据使用活动的，必须具有合法目的、符合法定的合法性基础。如果合作方使用信息不再符合合法原则，则其不应再使用你的个人信息，或在获得相应合作性基础后再行使用。 
-(2) 正当与最小必要原则：数据使用必须具有正当目的，且应以达成目的必要为限。 
-(3) 安全审慎原则：我们将审慎评估合作方使用数据的目的，对这些合作方的安全保障能力进行综合评估，并要求其遵循合作法律协议。我们会对合作方获取信息的软件工具开发包（SDK）、应用程序接口（API）进行严格的安全监测，以保护数据安全。 
-1.2 委托处理 
-对于委托处理个人信息的场景，我们会与受托合作方根据法律规定签署相关处理协议，并对其个人信息使用活动进行监督。 
-1.3 共同处理 
-对于共同处理个人信息的场景，我们会与合作方根据法律规定签署相关协议并约定各自的权利和义务，确保在使用相关个人信息的过程中遵守法律的相关规定、保护数据安全。 
-1.4 合作方的范围 
-若具体功能和场景中涉及由我们的关联方、第三方提供服务，则合作方范围包括我们的关联方与第三方。 
+2. Personal Information We May Obtain from Third Parties
 
-2. 个人信息共同数据处理或数据委托处理的情形
-2.1 官网及相关服务功能中的某些具体模块或功能由合作方提供，对此你理解并同意，如我们与任何合作方合作，我们仅会基于合法、正当、必要原则，在为提供服务所必需的范围内向其提供你的个人信息，并且我们将努力确保合作方在使用你的信息时遵守本隐私政策及我们要求其遵守的其他适当的保密和安全措施，承诺不得将你的信息用于其他任何用途。 
-2.2 为保障服务安全与分析统计的数据使用 
-(1) 保障使用安全：我们非常重视账号与服务安全，为保障你和其他用户的账号与财产安全，使你和我们的正当合法权益免受不法侵害，我们和我们的合作方需要使用必要的设备、账号及日志信息。 
-(2) 分析服务使用情况：为分析我们服务的使用情况，提升用户使用的体验，我们和我们的合作方需要使用你的服务使用情况（崩溃、闪退）的统计性数据，这些数据难以与其他信息结合识别你的身份或与你的身份相关联。 
-2.3支付功能（若有）由与我们合作的第三方支付机构（支付宝、微信支付等）向你提供服务。第三方支付机构为提供功能将使用你的姓名、银行卡类型及卡号、有效期、身份证号码及手机号码。这些信息是支付功能所必需的信息，拒绝上述使用将导致你无法使用该功能，但不影响其他功能的正常使用。 
+To provide you with better, more optimized, and personalized services, our related companies, partners may share your personal information with us based on legal provisions or agreements with you, or with your consent. We will follow relevant laws and regulations to protect your personal information safety through industry-standard practices and exert our best efforts to ensure security.
 
-3. 个人信息的转移
-我们不会转移你的个人信息给任何其他第三方，但以下情形除外： 
-3.1 基于你的书面请求，并符合国家网信部门规定条件的，我们会向你提供转移的途径。 
-3.2 获得你的明确同意后，我们会向其他第三方转移你的个人信息。 
-3.3 在涉及官网运营主体变更、合并、收购或破产清算时，如涉及到个人信息转移，我们会依法向你告知有关情况，并要求新的持有你的信息的公司、组织继续接受本隐私政策的约束或按照不低于本隐私政策所要求的安全标准继续保护你的信息，否则我们将要求该公司、组织重新向你征求授权同意。**如发生破产且无数据承接方的，我们将对你的信息做删除处理。**
+3. Handling of Changes in Collection and Usage Purposes
 
-4. 个人信息的公开披露
-4.1 原则上我们不会公开披露你的个人信息，除非获得你明确同意或遵循国家法律法规规定的披露。 
-    (1) 获得你明确同意或基于你的主动选择，我们可能会公开披露你的个人信息； 
-    (2) 为保护问表哥用户或公众的人身财产安全免遭侵害，我们可能根据适用的法律或问表哥相关协议、规则披露关于你的个人信息。 
-    4.2 征得授权同意的例外 
-    请你理解，请你理解，在下列情形中，根据法律法规及相关国家标准，我们收集和使用你的个人信息不必事先征得你的授权同意： 
-    (1) 与我们履行法律法规规定的义务相关的； 
-    (2) 与国家安全、国防安全直接相关的； 
-    (3) 与公共安全、公共卫生、重大公共利益直接相关的； 
-    (4) 与刑事侦查、起诉、审判和判决执行等直接相关的； 
-    (5) 出于维护你或他人的生命、财产等重大合法权益但又很难得到本人授权同意的； 
-    (6) 你自行向社会公众公开的个人信息； 
-    (7) 根据个人信息主体要求签订和履行合同所必需的； 
-    (8) 从合法公开披露的信息中收集的你的个人信息的，如合法的新闻报道、政府信息公开等渠道； 
-    (9) 用于维护软件及相关服务的安全稳定运行所必需的，例如发现、处置软件及相关服务的故障； 
-    (10) 为开展合法的新闻报道所必需的； 
-    (11) 为学术研究机构，基于公共利益开展统计或学术研究所必要，且对外提供学术研究或描述的结果时，对结果中所包含的个人信息进行去标识化处理的； 
-    (12) 法律法规规定的其他情形。 
-**特别提示你注意，如信息无法单独或结合其他信息识别到你的个人身份，其不属于法律意义上你的个人信息；当你的信息可以单独或结合其他信息识别到你的个人身份时或我们将无法与任何特定个人信息建立联系的数据与其他你的个人信息结合使用时，这些信息在结合使用期间，将作为你的个人信息按照本隐私政策处理与保护。**
- 
- 
-五、我们如何保护用户信息安全
+As our services develop, they may undergo adjustments. Generally, when new features or services are related to our current offerings, the collection and use of personal information will be directly or reasonably associated with the original purpose. In cases where there is no direct or reasonable association with the original purpose, we will inform you through page prompts, interactive processes, or agreement confirmations, and seek your consent again.
 
-1. 我们非常重视用户信息的安全，将努力采取合理的安全措施（包括技术方面和管理方面）来保护你的信息，防止你提供的信息被不当使用或未经授权的情况下被访问、公开披露、使用、修改、损坏、丢失或泄漏。 
-2. 我们会使用不低于行业通行的加密技术、匿名化处理等合理可行的手段保护你的信息，并使用安全保护机制尽可能地降低你的信息遭到恶意攻击的可能性。 
-3. 我们会建立专门的安全部门、安全管理制度、数据安全流程保障你的信息安全。我们采取严格的数据使用和访问制度，确保只有授权人员才可访问你的信息，并根据公司相关内部管理制度适时对数据和技术进行安全审计。 
-4. **尽管已经采取了上述合理有效措施，并已经遵守了相关法律规定要求的标准，但请你理解，由于技术的限制以及可能存在的各种恶意手段，在互联网行业，即便竭尽所能加强安全措施，也不可能始终保证信息百分之百的安全，我们将尽力确保你提供给我们的信息的安全性。你知悉并理解，你接入我们的服务所用的系统和通讯网络，有可能因我们可控范围外的因素而出现问题。因此，我们强烈建议你采取积极措施保护用户信息的安全，包括但不限于使用复杂密码、定期修改密码、不将自己的账号密码等信息透露给他人。**
-5. 我们会制定应急处理预案，并在发生用户信息安全事件时立即启动应急预案，努力阻止该等安全事件的影响和后果扩大。一旦发生用户信息安全事件（泄露、丢失等）后，我们将按照法律法规的要求，及时向你告知：安全事件的基本情况和可能的影响、我们已经采取或将要采取的处置措施、你可自主防范和降低风险的建议、对你的补救措施等。我们将及时将事件相关情况以推送通知、邮件、信函或短信等形式告知你，难以逐一告知时，我们会采取合理、有效的方式发布公告。同时，我们还将按照相关监管部门要求，上报用户信息安全事件的处置情况。 
-8. **我们谨此特别提醒你，本隐私政策提供的用户信息保护措施仅适用于官网及相关服务。一旦你离开官网及相关服务，浏览或使用其他网站、产品、服务及内容资源，我们即没有能力及义务保护你在官网及相关服务之外的软件、网站提交的任何信息，无论你登录、浏览或使用上述软件、网站是否基于官网的链接或引导。**
- 
-六、个人信息的管理
+4. BigHead Brother User Data
 
-我们非常重视对个人信息的管理，并依法保护你对于你信息的查阅、复制、更正、补充、删除以及撤回授权同意、注销账号、投诉举报等权利，以使你有能力保障你的隐私和信息安全。 
+Your BigHead Brother User Data (including personal information) is handled as follows:
 
-1. 你在个人信息处理活动中的权利
-1.1 如果你或其他有权主体对相关法律法规赋予的个人信息权利的行使，有任何主张、要求或者疑问，你可以通过【hi@datamini.ai】与我们联系，我们将尽快审核所涉问题，并在验证你的用户身份后的十五个工作日内回复。 
+    4.1 BigHead Brother User Data refers to:
+    (1) All data (e.g., database information, plugins/API information uploaded by you) that you upload when using BigHead Brother features/services to create a chatbot (Bot).
+    (2) All data processed by BigHead Brother during the running period after the chatbot (Bot) is published, including all text, audio, video, or image files, and software, along with data you can autonomously control and manage due to using BigHead Brother products or services (such as configuration and operational data).
 
-2. 注销你的账号
-你可以通过【hi@datamini.ai】联系我们，申请注销你的账号。你知悉并理解，注销账号的行为是不可逆的行为，当你注销账号后，我们将停止为你提供任何服务，并删除有关你账号的一切信息或对相关信息进行匿名化处理，因法律法规规定需要留存个人信息的，我们承诺将其单独存储，并不会将该等信息用于日常业务活动中。 
+    4.2 You fully own your BigHead Brother User Data. As a neutral technology service provider, we strictly adhere to your instructions for processing your BigHead Brother User Data. We will not access or use or disclose your BigHead Brother User Data without authorization, except as required by law, specific product rules, or to provide technical assistance at your request.
 
-3. 撤回或改变你授权同意的范围
-3.1 你理解并同意，某些功能可能需要一些基本个人信息方得以完成。除为实现业务功能收集的基本个人信息外，对于额外收集的个人信息的收集和使用，你可以选择撤回你的授权，或改变你的授权范围。你也可以通过注销账号的方式，撤回我们继续收集你个人信息的全部授权。 
-3.2 你理解并同意，当你撤回同意或授权后，将无法继续使用与撤回的同意或授权所对应的服务，且官网也不再处理你相应的个人信息。但你撤回同意或授权的决定，不会影响此前基于你的授权而开展的个人信息处理。 
+    4.3 You are responsible for the source and content of your BigHead Brother User Data. We suggest you carefully assess the legality of the data source and content. You must ensure the legal right to use the Website and services to process this data, and all processing activities must comply with relevant laws and regulations, avoiding any illegal, infringing, or contract-breaching activities, and the data should not be used for illegal purposes. You are solely responsible for all consequences and liabilities arising from the violation of laws, regulations, or policies due to the content of your BigHead Brother User Data or your processing activities.
 
-4. 如何获取你的个人信息副本
-我们将根据你的书面请求，为你提供以下类型的个人信息副本：你的基本资料、用户身份信息。但请注意，我们为你提供的信息副本仅以我们直接收集的信息为限。 
+    4.4 With respect to any personal information contained in your BigHead Brother User Data, you should comply with legal obligations by informing and obtaining explicit consent from the relevant individuals prior to providing us with the data. You must provide written explanations and confirmations on the data sources and legality upon our request, specify the scope of personal information processing permissible usage, and when such processing exceeds the authorized consent, you must obtain explicit consent from the individual and provide us written proof upon request.
 
-5. 约束信息系统自动决策
-在某些业务功能中，我们可能仅依据信息系统、算法等在内的非人工自动决策机制做出决定。如果这些决定显著影响你的合法权益，你有权通过“问表哥-首页”联系我们做出反馈，我们也将视实际情况向你提供适当的救济方式，如对自主决策结果进行人工复核或终止使用自动决策机制作出相关决定。 
+**You understand and agree that unless you meet the aforementioned conditions and other legal obligations, you should not provide us with BigHead Brother User Data containing personal information. If you violate these obligations, fail to provide satisfactory proof, or receive complaints or reports from individuals, we have the right to unilaterally decide to refuse transmission of related data (such as through restricting service functions, freezing, canceling, or recovering account rights), or refuse to further process related personal information and associated data based on your instructions, and all liabilities will be borne by you.**
 
-6. 投诉举报
-你可以按照我们公示的制度进行投诉或举报。如果你认为你的信息权利可能受到侵害，或者发现侵害你信息权利的线索，你可以通过“问表哥-首页”提交相关信息和权利证明材料来与我们联系。我们核查后会及时反馈你的投诉与举报。 
+    4.5 You understand and agree that we provide you with a free data storage service for your BigHead Brother User Data, but we are not obligated to store your data and will not be responsible for any storage efforts or outcomes.
 
-7. 响应你的上述请求
-为保障安全，你可能需要提供书面请求，并以其它方式证明你的身份。我们可能会先要求你根据相关规则验证身份，然后再处理你的请求。如你对答复不满意，还可以通过上述途径投诉举报。 
-对于你合理的请求，我们原则上不收取费用。但对多次重复、超出合理限度的请求，我们将视具体情形收取一定成本费用。对于那些无端重复、需要过多技术手段（例如，需要开发新系统或从根本上改变现行惯例）、给他人合法权益带来风险或者不切实际（例如，涉及备份磁带上存放的信息）的请求，我们可能会予以拒绝。 
+### 2. Use of Cookies and Similar Technologies
 
-你理解并认可，在以下情形中，我们将无法响应你的请求： 
-(1) 与我们履行法律法规规定的义务相关的 
-(2) 与国家安全、国防安全直接相关的； 
-(3) 与公共安全、公共卫生、重大公共利益直接相关的； 
-(4) 与刑事侦查、起诉、审判和执行判决等直接相关的； 
-(5) 我们有充分证据表明个人信息主体存在主观恶意或滥用权利的； 
-(6) 出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人同意的； 
-(7) 响应个人信息主体的请求将导致个人信息主体或其他个人、组织的合法权益受到严重损害的； 
-(8) 涉及商业秘密的。 
-12. 停止运营向你告知
-如我们停止运营，我们将停止收集你的个人信息，并将停止运营的通知以逐一送达或公告等商业上可行的形式通知你，并对我们所持有的你的个人信息进行删除或匿名化处理。 
- 
-七、未成年人使用条款
+Cookies and similar technologies are commonly used on the Internet. When you use the Website, we may use these technologies to send one or more Cookies or anonymous identifiers to your device to collect and store your account information, search records, and login status information. Cookies help you avoid repeatedly entering specific information and streamline search processes, as well as improve service efficiency and response times. 
 
-**我们的服务主要面向成年人或企业。如果没有父母或监护人的同意，未成年人（不满十八周岁）不应创建任何账户或使用官网及其服务。如果我们发现在未事先获得可证实的监护人同意的情况下收集了未成年人的个人信息，则会设法尽快删除相关信息。**
- 
-八、隐私政策的修订和通知
+You can manage or disable Cookies in your browser settings. However, disabling Cookies may affect your experience and the availability of certain features. We commit to using Cookies solely for purposes outlined in this privacy policy and not for other uses.
 
-1. 为了给你提供更好的服务，官网及相关服务将不时更新与变化，我们会适时对本隐私政策进行修订，该等修订构成本隐私政策的一部分并具有等同于本隐私政策的效力。但未经你明确同意，我们不会削减你依据当前生效的隐私政策所应享受的权利。 
-2. 本隐私政策更新后，我们会在官网公布更新版本，并在更新后的条款生效前通过官方网站公告或其他适当的方式提醒你更新的内容，以便你及时了解本隐私政策的最新版本。如你继续使用官网及相关服务，视为你同意接受修订后的本隐私政策的全部内容。
-3. **对于重大变更，我们还会提供更为显著的通知（包括但不限于电子邮件、短信、系统消息或在浏览页面做特别提示等方式），向你说明本隐私政策的具体变更。**
-4. 本隐私政策所指的重大变更包括但不限于： 
-(1) 我们的服务模式发生重大变化。如处理个人信息的目的、处理个人信息的类型、个人信息的使用方式等； 
-(2) 我们在所有权结构、组织架构等方面发生重大变化。如业务调整、破产并购等引起的所有变更等； 
-(3) 个人信息传输、转移或公开披露的主要对象发生变化； 
-(4) 你参与个人信息处理方面的权利及其行使方式发生重大变化； 
-(5) 我们的联络方式及投诉渠道发生变化时。 
- 
-九、适用范围
+### 3. How We Store Personal Information
 
-1. 本隐私政策适用于官网提供产品、服务、解决方案以及公司后续可能不时推出的纳入服务范畴内的其他产品、服务或解决方案。 
-2. 本隐私政策不适用于有单独的隐私政策且未纳入本隐私政策的第三方通过官网向你提供的产品或服务（“第三方服务”）。你使用这些第三方服务（包括你向这些第三方提供的任何含个人信息在内的信息），将受这些第三方的服务条款及隐私政策约束（而非本隐私政策），并通过其建立的个人信息主体请求和投诉等机制，提出相关请求、投诉举报，具体规定请你仔细阅读第三方的条款。请你妥善保护自己的个人信息，仅在必要的情况下向第三方提供。
-3. 需要特别说明的是，作为官网的用户，若你利用官网的技术服务，为你的用户再行提供服务（例如将创建的聊天机器人（Bot）提供给最终用户使用），你应当与你的用户自行约定隐私政策，本隐私政策不作为你与你的用户之间的隐私政策的替代。
- 
-十、如何联系我们
+1. Location of Storage
 
-**如对本隐私政策内容有任何疑问、意见或建议，你可通过【hi@datamini.ai】与我们联系。一般情况下，我们将在15日予以回复。**
+According to relevant laws and regulations, we will store the personal information collected and generated within the People's Republic of China domestically within our operations. Currently, we do not transfer such information overseas. If we transfer personal information overseas, we will strictly comply with Chinese laws, regulations, and applicable laws in relevant countries or seek your consent.
+
+2. Retention Period
+
+  3.1 We will retain your personal information only for as long as necessary to provide the Website and related services. Depending on different services and functional needs, necessary retention may differ. Standards for determining retention periods include:
+  (1) The time needed to maintain personal information for a business purpose, including service provision, retention of transaction records in accordance with legal requirements, maintaining system and service safety, addressing possible user inquiries or complaints, and issue resolution.
+  (2) Any longer retention period as agreed by the user.
+  (3) Special requirements by law, contract, etc., for retaining personal information.
+
+  3.2 While you do not withdraw consent, delete, or cancel your account, we will retain your relevant information. After the necessary period, we will delete or anonymize the information, except where otherwise required by law.
+
+### 4. Cooperating Parties and Transfer, Public Disclosure of Personal Information
+
+1. Cooperating Parties in Data Usage
+
+  1.1 Principles
+  (1) Legal Principle: Data usage with cooperating parties must be based on legal purposes and legally permissible grounds. If usage no longer conforms to legal principles, it should cease or resume with a valid legal basis.
+  (2) Reasonable Necessity Principle: Data usage must serve a legitimate purpose and be limited to what is necessary to achieve that purpose.
+  (3) Security Precaution Principle: We will evaluate carefully the data usage purposes of cooperating parties, comprehensively assess their security capabilities, and require them to adhere to cooperative legal agreements. We will conduct strict security monitoring of the SDKs and APIs that cooperating parties use to obtain information to protect data security.
+
+  1.2 Entrusted Processing
+  For entrusted processing of personal information, we will sign processing agreements with the entrusted parties as required by law and supervise their use activities.
+
+  1.3 Joint Processing
+  For joint processing of personal information, we will sign agreements and define respective rights and obligations with the parties as required by law to ensure compliance and data security.
+
+  1.4 Scope of Cooperating Parties
+  If specific functions and scenarios involve services provided by our affiliates or third parties, the scope of cooperating parties includes our affiliates and third parties.
+
+2. Situations Involving Joint or Entrusted Processing of Personal Information
+
+  2.1 Certain modules or functionalities within the Website and related services are provided by cooperating parties. You understand and agree that if we collaborate with any cooperating party, we will provide your personal information to them based on the principles of legality, rationality, and necessity, limited to what is necessary for the provision of the services. We will ensure that the cooperating parties comply with this privacy policy and other confidentiality and security measures we require, and prohibit the use of your information for any other purposes.
+
+  2.2 Protection of Service Safety and Data Analysis:
+  (1) Service Safety: We prioritize account and service safety. To ensure the security of your account and assets, and to safeguard our legitimate interests, we and our cooperating parties need to use necessary device, account, and log information.
+  (2) Service Usage Analysis: To analyze the usage of our services and enhance user experience, we and our cooperating parties will use your service usage statistics (such as crashes, app exits), which are difficult to link back to your identity.
+
+  2.3 Payment Function: The payment functionality, if provided, is handled by a third-party payment institution (e.g., Alipay, WeChat Pay). To provide this service, the third-party payment institution will use your name, credit card type and number, validity period, ID number, and phone number. This information is required for the payment function. Refusal to use this information will prevent you from using the payment feature, but will not affect the use of other functions.
+
+3. Transfer of Personal Information
+
+We will not transfer your personal information to any other third party, except where:
+  3.1 Based on your written request and meeting national internet information department regulations, we will provide a method for the transfer.
+  3.2 Upon obtaining your explicit consent, we will transfer your personal information to another third party.
+  3.3 In cases involving a change in the operating entity of the Website, merger, acquisition, or bankruptcy liquidation, and where personal information transfer is involved, we will inform you according to the law and require the new entity holding your information to continue adhering to this privacy policy or to protect your information at least to the same security level as required by this policy. Otherwise, we will require the entity to seek your authorization. If there is a bankruptcy with no承接方 (data承接方) capabilities, we will delete your information.
+
+4. Public Disclosure of Personal Information
+
+In principle, we will not disclose your personal information unless expressly consented by you or required by national laws and regulations.
+
+  4.1 With your express consent, we may disclose your personal information. We may disclose your information based on applicable laws or Website agreements or rules to protect the physical and property safety of Website users or the public.
+  4.2 Exceptions to Authorization
+  Please understand that, according to laws, regulations, and relevant national standards, we may collect and use your personal information without your consent in the following situations:
+  (1) When related to the fulfillment of our obligations under laws and regulations
+  (2) When directly related to national security and national defense security
+  (3) When directly related to public security, public health, and major public interest
+  (4) When directly related to criminal investigation, prosecution, trial, and execution
+  (5) To protect your or others' significant legal and personal rights and interests, where obtaining consent is difficult
+  (6) Self-disclosure by you to the public
+  (7) Necessary for the conclusion and execution of contracts according to your requirements
+  (8) Collecting personal information from legally publicized information sources, such as legal media reports, government information disclosure channels, etc.
+  (9) Necessary for the secure and stable operation of software and related services, such as finding and resolving software-related issues
+  (10) Necessary for conducting legal news reporting
+  (11) Necessary for academic research conducted in the public interest, including anonymization of results
+  (12) Other circumstances stipulated by laws and regulations
+
+**Please note that if the information cannot be used alone or in combination with other information to identify your personal identity, it is not considered your personal information under the law. However, when the information can identify your personal identity either alone or in combination with other information, such information, when combined, will be treated and protected as your personal information according to our privacy policy.**
+
+### 5. How We Protect User Information Security
+
+We value the security of your user information and will take reasonable security measures (including technical and management measures) to protect your information to prevent its misuse or unauthorized access, disclosure, usage, modification, damage, loss, or leakage.
+
+  1. We will use industry-standard encryption techniques and other reasonable feasible methods to protect your information, and use safety protection mechanisms to minimize the risk of malicious attacks.
+  2. We will establish specific security departments, security systems, and data security processes to ensure your information security. We will use strict data use and access systems to ensure that only authorized personnel can access your information, and conduct regular security audits according to the company's internal systems.
+  3. **Please understand that despite the measures and compliance with standards of relevant laws, due to technical limitations and possible malicious means, it is impossible to ensure 100% security in the internet industry. We strive to ensure the security of the information you provide to us. You should be aware that system and communication networks may experience issues beyond our control. Thus, we strongly suggest you take proactive measures to protect your user information, such as using complex passwords, regularly changing passwords, and not disclosing your account and password information to others.**
+  4. We will develop emergency response plans and immediately activate them in the event of a user information security incident to minimize the impact and consequences. Once such a security incident occurs (leakage, loss, etc.), we will notify you of the basic situation and possible effects, the measures already taken or to be taken, recommendations for personal precautions to reduce risk, and remedial measures, in compliance with applicable laws. We will promptly inform you of the event-related situation via push notifications, emails, letters, or text messages, and when difficult to notify individually, we will publish a reasonable and effective notice. We will also report the handling of user information security incidents to relevant regulatory authorities.
+
+**We would like to particularly

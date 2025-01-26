@@ -1,44 +1,36 @@
-# 对话式 BI（Chat BI）
+# Conversational BI (Chat BI)
 
-AskTable ChatBI 是一款依托于先进的大型语言模型（LLM）的智能数据问答解决方案。
+AskTable ChatBI is an intelligent data querying solution based on advanced large language models (LLM).
 
-它集意图识别、知识检索、问题解析、数据查询和可视化输出等功能于一身。用户只需用自然语言提出问题，即可迅速获得数据分析结果，从而助力快速决策。
-
-
+It integrates functions such as intent recognition, knowledge retrieval, question parsing, data querying, and visual output. Users can quickly obtain data analysis results by simply posing natural language questions, thereby facilitating rapid decision-making.
 
 <div className="img-center large">
   <img src="/img/asktable/at_chat_bi_product_arch.png" alt="chatbi" />
 </div>
 
+## Solves What Problems
 
-## 解决什么问题
-
-- 企业高层
-  - 查数要找数据分析师，效率低，决策慢，不够灵活
-  - 比如在讨论一个新项目时，需要快速查数，如果通过数据分析师，时间太长，如果通过 ChatBI，可以快速给出答案
-- 业务一线
-  - 分析数据入门难，SQL门槛太高
-  - 需要懂业务，懂数据，懂技术，三者缺一不可
+- **Corporate Executives**
+  - Need to find data analysts to get data, which is inefficient and slows down decision-making, lacking flexibility.
+  - For example, when discussing a new project, quick data retrieval is necessary. If done through a data analyst, it takes too long. With ChatBI, answers can be provided quickly.
   
+- **Frontline Business Users**
+  - Data analysis is difficult to get started with; SQL has a high entry barrier.
+  - Requires understanding of business, data, and technology—all three are essential.
 
+## Product Value
 
-## 产品价值
-
-- 从“找人”改为“找系统“：即问即答，不依赖数据团队
+- **Shift from "Finding People" to "Finding the System":** Immediate responses without relying on the data team.
   
-- 取数更快：天 -> 分钟
+- **Faster Data Retrieval:** Days to minutes.
 
+## How to Integrate AskTable ChatBI with an Existing BI System
 
-
-
-## 已有一个 BI 系统，如何接入 AskTable ChatBI
-
-- 不用更换现有 BI 系统
-- 只需在现有 BI 系统中接入 AskTable ChatBI 的 [API](../api-overview/introduction.md) 即可
-- 任何基于 MySQL 等 AskTable [支持的数据库](../datasource-management/supported-databases.md)的 BI 系统都可以接入
-- 无需数据同步和复制，共享已有的数据库和数据仓库，自动识别数据库表，最快 1 周接入上线
+- No need to replace the existing BI system.
+- Simply integrate AskTable ChatBI’s [API](../api-overview/introduction.md) into your current BI system.
+- Any BI system based on databases like MySQL, which AskTable supports ([supported databases](../datasource-management/supported-databases.md)), can be integrated.
+- No need for data synchronization and replication; share existing databases and data warehouses, automatically identify database tables, and go live in as little as one week.
 
 <div className="img-center large">
   <img src="/img/asktable/at_chat_bi_case_1.png" alt="chatbi" />
 </div>
-

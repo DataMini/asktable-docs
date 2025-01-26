@@ -1,20 +1,20 @@
-# Excel 文件下载
+# Excel File Download
 
-在 AskTable 中，查询结果可以导出为 Excel 文件，方便用户进行进一步的数据处理和分析。
+In AskTable, the query results can be exported as an Excel file, making it convenient for users to perform further data processing and analysis.
 
-## 导出 Excel 文件
+## Exporting an Excel File
 
-使用返回的 `file_url`，用户可以下载包含查询结果的 Excel 文件。
+Using the returned `file_url`, users can download the Excel file containing the query results.
 
-## 示例
+## Example
 
-以下是一个返回包含 Excel 文件下载链接的示例响应：
+The following is an example response that returns a link to download the Excel file:
 
 ```json
 {
   "status": "OK",
   "elapsed_time": 7,
-  "text": "查询结果已导出为 Excel 文件。",
+  "text": "Query results have been exported as an Excel file.",
   "files": [
     {
       "file_type": "excel",
@@ -26,8 +26,8 @@
 }
 ```
 
-## 下载链接的有效性
+## Validity of the Download Link
 
-请注意，下载链接通常有时间限制。在指定时间内未下载的文件可能会失效，需要重新生成导出请求。
+Please note that download links usually have a time limit. Files not downloaded within the specified time may expire and require re-generating the export request.
 
-通过导出 Excel 文件，用户可以方便地获取查询结果，并在本地进行进一步的分析和处理。
+By exporting the Excel file, users can conveniently obtain the query results and perform further analysis and processing locally.

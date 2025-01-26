@@ -1,59 +1,56 @@
-# 在网站中集成聊天机器人示例
+# Example of Integrating a Chatbot in a Website
 
-在本教程中，我们将展示如何在您的网页或应用中嵌入 AskTable 提供的聊天机器人组件，并实现基本的对话功能。无论您的前端是基于 HTML5、React 还是其他框架，都可以按照以下步骤进行集成。
+In this tutorial, we will demonstrate how to embed the chatbot component provided by AskTable into your webpage or application and implement basic conversation functions. Whether your frontend is based on HTML5, React, or other frameworks, you can follow these steps for integration.
 
-## 前提条件
+## Prerequisites
 
-- 已经获取了 API-Key。具体步骤请参考 [聊天机器人组件简介](./chatbot-widget-introduction.md)。
+- You have obtained an API key. For specific steps, refer to the [Chatbot Component Introduction](./chatbot-widget-introduction.md).
 
-## 工作流程图
-
+## Workflow Diagram
 
 <div className="img-center xlarge">
   <img src="/img/asktable/at_embed_chatbot_flow.png" alt="at_embed_chatbot_flow" />
 </div>
 
-## 步骤
+## Steps
 
-### 1. 引入脚本
+### 1. Include the Script
 
-在您的 HTML 文件中，引入聊天机器人组件的脚本：
+In your HTML file, include the script for the chatbot component:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>示例网站</title>
-    <!-- 嵌入机器人 JS 代码到目标网站  BEGIN -->
+    <title>Example Website</title>
+    <!-- Embed the robot JS code into the target website BEGIN -->
     <script>
      window.chatbotConfig = {
        botId: 'YOUR_ASKTABLE_BOT_ID',
-       //  askTableAPIKey 和 reqTokenUrl 至少有一个必选
+       // Either askTableAPIKey or reqTokenUrl must be provided
        askTableAPIKey:  'YOUR_ASKTABLE_API_KEY',
-       //  如果有 askTableAPIKey ，则忽略 reqTokenUrl
+       // If askTableAPIKey is provided, ignore reqTokenUrl
        reqTokenUrl: '/api/asktable/temp_token',
-       //  主题色，默认黑色 black，其他可选：白色 white
+       // Theme color, default is black, other options include white
        themeColor: 'black'
      }
     </script>
     <script src="https://cloud.asktable.com/chatbot.js"></script>
-    <!-- 嵌入机器人 JS 代码到目标网站  END -->
+    <!-- Embed the robot JS code into the target website END -->
   </head>
   <body>
-    <h1>欢迎进入示例网站，该网站嵌入了 AskTable 聊天机器人，欢迎使用！</h1>
+    <h1>Welcome to the example website, which has integrated the AskTable chatbot. Feel free to use it!</h1>
     <div id="chatbot"></div>
   </body>
 </html>
 ```
 
-### 2. 配置组件
+### 2. Configure the Component
 
-在配置聊天机器人组件时，传入必要的参数，如 `botId`。
+When configuring the chatbot component, pass in necessary parameters such as `botId`.
 
+## Next Steps
 
+Now, you have successfully embedded the chatbot component in your webpage. Users can interact with AskTable through this component for intelligent conversations, data queries, or task execution. Continue reading the following documentation for more details:
 
-## 下一步
-
-现在，您已经成功地在网页中嵌入了聊天机器人组件。用户可以通过该组件与 AskTable 进行智能对话，查询数据或执行任务。接下来，请继续阅读以下文档，了解更多详细信息：
-
-- [AskTable 如何认证与用户身份](./server-get-temp-token-for-user.md)
+- [How AskTable Authenticates and Identifies Users](./server-get-temp-token-for-user.md)

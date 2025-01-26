@@ -1,77 +1,77 @@
-# 核心功能与优势
+# Core Features and Advantages
 
-AskTable 是一款专为企业设计的智能对话机器人，能够快速集成到现有系统，理解自然语言查询，提供精准的业务数据和自动化任务处理，大幅提升企业效率和客户满意度。
+AskTable is an intelligent conversational robot designed specifically for businesses. It can be quickly integrated into existing systems, understand natural language queries, provide precise business data, and automate tasks, significantly enhancing corporate efficiency and customer satisfaction.
 
-以下是其核心功能和产品优势的详细介绍：
+Here is a detailed introduction to its core features and product advantages:
 
-## 核心功能
+## Core Features
 
-### 智能对话
+### Intelligent Conversation
 
-AskTable 能够理解自然语言查询，通过与企业核心数据库的集成，返回精准的结果。用户可以通过聊天界面直接与 AskTable 互动，提出各种问题，得到及时的回答。
+AskTable can understand natural language queries and return accurate results by integrating with the enterprise's core database. Users can interact directly with AskTable through a chat interface, ask various questions, and receive timely responses.
 
-### 身份识别
+### Identity Recognition
 
-AskTable 能够识别用户的身份信息，根据用户的身份，提供个性化的服务。通过身份识别，AskTable 不仅可以根据用户的权限和角色，控制用户对数据的访问权限，确保数据的安全性和合规性，还能够根据用户的偏好和个人信息，提供更加个性化的服务。比如可以回应问题“我上个月的销售额是多少？”。
+AskTable can identify user identity information and provide personalized services based on the user's identity. Through identity recognition, AskTable not only controls user access to data according to their permissions and roles, ensuring data security and compliance, but also provides more personalized services based on user preferences and personal information. For example, it can respond to questions like "What was my sales last month?"
 
-### 多数据源支持
+### Multi-Data Source Support
 
-AskTable 支持多种常见的企业数据库，包括 MySQL、PostgreSQL、TiDB 和 Oceanbase。这种多数据源支持使得企业可以直接使用现有的数据库，无需额外的数据迁移和转换。
+AskTable supports multiple common enterprise databases, including MySQL, PostgreSQL, TiDB, and OceanBase. This multi-data source support allows enterprises to use their existing databases without additional data migration and conversion.
 
-### 数据可视化
+### Data Visualization
 
-AskTable 提供了多种数据可视化选项，以便用户更直观地理解数据。支持的展示形式包括：
-- 文本回复
-- 表格展示
-- 图表（如柱状图、饼图、折线图等）
-- Excel 文件下载
+AskTable offers various data visualization options to help users better understand the data intuitively. Supported display formats include:
+- Text replies
+- Table displays
+- Charts (such as bar charts, pie charts, line charts, etc.)
+- Excel file downloads
 
-用户可以根据需要选择最合适的展示形式，获取更丰富的信息。
+Users can choose the most suitable display form based on their needs to obtain richer information.
 
-### 任务自动化
+### Task Automation
 
-AskTable 拥有强大的任务自动化功能，能够在对话过程中自动完成用户交代的任务。无论是发微信、下订单还是触发其他工作流程，AskTable 都能准确无误地执行，让工作变得更加轻松和高效。
+AskTable has powerful task automation capabilities, allowing it to automatically complete user-assigned tasks during conversations. Whether it's sending WeChat messages, placing orders, or triggering other workflows, AskTable can execute them accurately and error-free, making work easier and more efficient.
 
-### 安全隧道
+### Secure Tunnel
 
-AskTable 通过安全隧道 (AskTable Secure Tunnel, ATST) 访问企业内网数据库，确保数据在传输过程中的安全性。安全隧道提供了强大的加密和认证机制，防止数据泄露和未经授权的访问。
+AskTable accesses the enterprise intranet database through a secure tunnel (AskTable Secure Tunnel, ATST), ensuring the security of data in transit. The secure tunnel provides robust encryption and authentication mechanisms to prevent data leaks and unauthorized access.
 
-### 角色和权限管理
+### Role and Permission Management
 
-AskTable 提供基于角色扮演的权限体系，允许企业定义灵活的访问控制策略。通过设置不同的角色和权限，可以实现数据的精细化管理，确保不同用户只能访问其权限范围内的数据。
+AskTable provides a role-based permission system, allowing enterprises to define flexible access control policies. By setting different roles and permissions, it can achieve fine-grained data management, ensuring that different users can only access data within their permission scope.
 
-### 易于集成
+### Easy Integration
 
-AskTable 提供了丰富的 API 和 SDK，支持 HTTP Restful API、Python SDK、Java SDK，以及前端可嵌入的 ChatBot widget。这些工具使得企业可以根据自身需求，灵活地将 AskTable 集成到现有业务流程中，快速部署和使用。
+AskTable provides rich APIs and SDKs, supporting HTTP RESTful API, Python SDK, Java SDK, and front-end embeddable ChatBot widgets. These tools allow enterprises to flexibly integrate AskTable into their existing business processes according to their own needs, enabling rapid deployment and usage.
 
-### 高效查询
+### Efficient Querying
 
-AskTable 直接连接企业核心数据库，进行实时查询。这意味着用户可以获取最新的、实时更新的数据，避免了数据同步带来的延迟问题，提升了决策的准确性和及时性。
+AskTable connects directly to the enterprise's core database for real-time querying. This means users can obtain the latest, up-to-date data, avoiding delays caused by data synchronization, thereby improving the accuracy and timeliness of decision-making.
 
-### 个性化定制
+### Customization
 
-AskTable 提供多种配置选项，可以根据不同企业的需求进行个性化定制。无论是界面风格还是查询逻辑，都可以进行调整，以更好地满足用户需求。
+AskTable offers multiple configuration options to enable customization based on different enterprise needs. Whether it's the interface style or query logic, adjustments can be made to better meet user requirements.
 
-## 产品优势
+## Product Advantages
 
-### 提升效率与准确性
+### Enhance Efficiency and Accuracy
 
-通过 AskTable 的智能对话功能，用户可以快速获取所需的信息和数据分析结果，极大地提升了工作效率。同时，AskTable 直接查询企业核心数据库，确保数据的准确性和及时性。
+Through AskTable's intelligent conversation feature, users can quickly obtain the required information and analytical results, greatly enhancing work efficiency. At the same time, AskTable directly queries the enterprise's core database, ensuring the accuracy and timeliness of the data.
 
-### 增强安全性
+### Improve Security
 
-AskTable 采用多层次的安全措施，保护企业数据的安全性。通过安全隧道 (ATST)，确保数据在传输过程中的安全，防止数据泄露和未经授权的访问。
+AskTable adopts multi-layered security measures to protect the security of enterprise data. Through the secure tunnel (ATST), it ensures the security of data in transit, preventing data leaks and unauthorized access.
 
-### 提高客户满意度
+### Increase Customer Satisfaction
 
-通过 AskTable，企业可以为客户提供自动化的信息查询服务，提升客户服务的效率和满意度。客户可以通过与 AskTable 的互动，快速获取所需的信息，减少等待时间和人工服务成本。
+Through AskTable, enterprises can provide automated information query services to customers, improving service efficiency and satisfaction. Customers can quickly obtain the information they need through interaction with AskTable, reducing wait times and manual service costs.
 
-### 灵活的权限管理
+### Flexible Permission Management
 
-AskTable 提供基于角色扮演的权限体系，企业可以定义灵活的访问控制策略，确保不同用户只能访问其权限范围内的数据。通过设置不同的角色和权限，实现数据的精细化管理，满足个性化的访问需求。
+AskTable provides a role-based permission system, allowing enterprises to define flexible access control policies, ensuring that different users can only access data within their permission scope. By setting different roles and permissions, it achieves fine-grained data management, meeting personalized access needs.
 
-### 多样化的数据展示
+### Diverse Data Presentation
 
-AskTable 提供了多种数据展示形式，包括文本回复、表格展示、图表展示和 Excel 文件下载。用户可以根据需要选择最合适的展示形式，获取更丰富和直观的信息。
+AskTable offers various data presentation formats, including text replies, table displays, chart displays, and Excel file downloads. Users can choose the most suitable presentation form based on their needs to obtain richer and more intuitive information.
 
-这些核心功能和优势使得 AskTable 成为企业数据查询和分析的首选工具，帮助企业在数字化转型过程中实现更高的效率和更优的服务。
+These core features and advantages make AskTable the preferred tool for enterprise data queries and analysis, helping enterprises achieve higher efficiency and better service during their digital transformation process.

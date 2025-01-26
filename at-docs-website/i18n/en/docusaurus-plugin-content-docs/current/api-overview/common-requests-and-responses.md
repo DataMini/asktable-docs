@@ -1,17 +1,16 @@
-# 常见请求与响应
+# Common Requests and Responses
 
-在使用 AskTable API 进行开发时，了解常见的请求和响应格式非常重要。本文将介绍若干常见的请求和响应示例，帮助您更好地理解和使用 AskTable API。
+Understanding common request and response formats is crucial when developing with the AskTable API. This article provides several common request and response examples to help you better understand and utilize the AskTable API.
 
-查看完整的 API 文档，请参考 [API 文档](https://api.asktable.com/)。
+For the complete API documentation, please refer to [API Documentation](https://api.asktable.com/).
 
+## Example Interfaces
 
-## 部分接口的示例
+### Retrieve List of Data Sources
 
-###  查询数据源列表
+Retrieve a list of all data sources.
 
-获取所有数据源的列表。
-
-- **请求**
+- **Request**
 
   ```http
   GET /v1/datasources
@@ -24,7 +23,7 @@
   }
   ```
 
-- **响应**
+- **Response**
 
   ```json
   {
@@ -69,11 +68,11 @@
   }
   ```
 
-### 添加数据源
+### Add Data Source
 
-添加一个新的数据源。
+Add a new data source.
 
-- **请求**
+- **Request**
 
   ```http
   POST /v1/datasources
@@ -88,7 +87,7 @@
 
   ```json
   {
-    "name": "新的数据源",
+    "name": "New Data Source",
     "engine": "mysql",
     "access_config": {
       "host": "localhost",
@@ -98,13 +97,11 @@
   }
   ```
 
+### Create AI Chat
 
+Create a new AI chat session.
 
-### 创建 AI 对话
-
-创建一个新的 AI 对话。
-
-- **请求**
+- **Request**
 
   ```http
   POST /v1/chats
@@ -124,7 +121,7 @@
   }
   ```
 
-- **响应**
+- **Response**
 
   ```json
   {
@@ -143,11 +140,11 @@
   }
   ```
 
-### 发送消息
+### Send Message
 
-在对话中发送消息。
+Send a message in the chat session.
 
-- **请求**
+- **Request**
 
   ```http
   POST /v1/chats/{chat_id}/messages
@@ -162,11 +159,11 @@
 
   ```json
   {
-    "question": "你好"
+    "question": "Hello"
   }
   ```
 
-- **响应**
+- **Response**
 
   ```json
   {
@@ -177,7 +174,7 @@
     "content": {
       "status": "OK",
       "elapsed_time": 1,
-      "text": "你好！有什么我可以帮助你的吗？",
+      "text": "Hello! Is there anything I can help you with?",
       "files": null,
       "charts": null,
       "query_insights": null,
@@ -187,12 +184,11 @@
   }
   ```
 
+## Error Handling
 
-## 错误处理
+When using the AskTable API, you may encounter the following errors:
 
-在使用 AskTable API 时，可能会遇到以下错误：
-
-- **400 Bad Request**：请求参数有误，请检查您的请求格式和参数。
+- **400 Bad Request**: There is an error in the request parameters. Please check your request format and parameters.
 
   ```json
   {
@@ -205,8 +201,8 @@
   }
   ```
 
-- **401 Unauthorized**：请求未通过身份验证，请检查您的 API-Key 是否正确。
-- **403 Forbidden**：请求被拒绝访问资源，请检查您的角色和策略配置。
-- **404 Not Found**：请求的资源不存在，请检查您的 URL 和资源 ID。
+- **401 Unauthorized**: The request authentication failed. Please check your API-Key for correctness.
+- **403 Forbidden**: The request is forbidden access to the resource. Please check your role and policy configuration.
+- **404 Not Found**: The requested resource does not exist. Please check your URL and resource ID.
 
-通过这些常见的请求和响应示例，您可以更好地理解如何使用 AskTable API 进行开发。如需更多详细信息，请参考 [API 文档](https://api.asktable.com/)。
+Through these common request and response examples, you can better understand how to use the AskTable API for development. For more detailed information, please refer to the [API Documentation](https://api.asktable.com/).

@@ -1,36 +1,33 @@
-# 创建数据
+# Creating Data
 
-在 AskTable 中创建数据是进行数据查询和分析的第一步。本文档将介绍如何在 AskTable 中创建和配置数据。
+Creating data in AskTable is the first step in performing data queries and analysis. This document will guide you on how to create and configure data in AskTable.
 
-## 步骤
+## Steps
 
-### 1. 打开数据管理页面
+### 1. Open the Data Management Page
 
-登录 AskTable 后，点击左侧菜单中的“数据”选项，进入数据管理页面。
+After logging into AskTable, click on the "Data" option in the left-hand menu to access the data management page.
 
-### 2. 添加新数据
+### 2. Add New Data
 
-点击页面右上角的“添加数据”按钮，开始配置新的数据。
+Click the "Add Data" button at the top right of the page to start configuring new data.
 
-### 3. 选择数据类型
+### 3. Select Data Type
 
-在弹出的对话框中，选择您要添加的数据类型，包括 MySQL、PostgreSQL、TiDB、OceanBase、Excel 文件和 CSV 文件等。
+In the pop-up dialog, choose the type of data you want to add, including MySQL, PostgreSQL, TiDB, OceanBase, Excel files, and CSV files.
 
-### 4. 配置数据连接信息
+### 4. Configure Data Connection Information
 
-根据选择的数据类型，填写相应的连接信息：
-- **数据库类型**: 填写数据库的主机地址、端口号、数据库名称、用户名和密码。如果是 PostgreSQL，数据库名称必填。
-- **文件类型**: 上传 Excel 或 CSV 文件。
+Based on the selected data type, fill in the corresponding connection information:
+- **Database Type**: Enter the host address, port number, database name, username, and password for the database. For PostgreSQL, the database name is required.
+- **File Type**: Upload an Excel or CSV file.
 
+### 5. Save Data
 
-### 5. 保存数据
+After successfully testing the connection, click the "Save" button to complete the creation of the data. Once created, AskTable will automatically retrieve metadata about the data, making it easier for subsequent data queries and analysis.
 
-连接测试成功后，点击“保存”按钮，完成数据的创建。创建之后，AskTable 将自动获取数据的元数据信息，方便后续的数据查询和分析。
+## Next Steps
 
+To learn more about managing and using this data, refer to the following documentation:
 
-
-## 后续步骤
-
-了解如何管理和使用这些数据，请参阅以下文档：
-
-- [管理数据](./manage-datasources.md)
+- [Managing Data Sources](./manage-datasources.md)

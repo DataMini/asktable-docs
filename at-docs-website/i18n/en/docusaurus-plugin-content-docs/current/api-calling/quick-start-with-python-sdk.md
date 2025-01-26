@@ -1,11 +1,10 @@
-# 使用 API（SDK）管理 API
+# Managing APIs with API (SDK)
 
-## API 说明
+## API Documentation
 
-**1. 创建 API Endpoint**
+**1. Create API Endpoint**
 
-在 AskTable API 中，使用 `extapi` 对象来管理 API Endpoint。要创建一个新的 API Endpoint，可以使用以下代码：
-
+In the AskTable API, use the `extapi` object to manage API Endpoints. To create a new API Endpoint, you can use the following code:
 
 ```python
 from asktable import AskTable
@@ -14,7 +13,7 @@ from atserver import config
 token = config.at_auth_by_default_token
 at = AskTable(token=token, api_url="https://your-api-url")
 
-# 创建新的 API Endpoint
+# Create a new API Endpoint
 extapi = at.extapis.create(
     name="Test API",
     base_url="https://api.example.com/v1",
@@ -23,27 +22,27 @@ extapi = at.extapis.create(
 print(extapi)
 ```
 
-**2. 更新 API Endpoint**
+**2. Update API Endpoint**
 
-您可以更新 API Endpoint 的名称、base_url 和 headers：
+You can update the name, base_url, and headers of the API Endpoint:
 
 ```python
-# 更新 API Endpoint 的名称
+# Update the API Endpoint name
 extapi = extapi.update(name="Updated Test API")
 print(extapi)
 
-# 更新 API Endpoint 的 headers
+# Update the API Endpoint headers
 extapi = extapi.update(headers={"Authorization": "Bearer newtoken"})
 print(extapi)
 
-# 更新 API Endpoint 的 base_url
+# Update the API Endpoint base_url
 extapi = extapi.update(base_url="https://api.example.com/v2")
 print(extapi)
 ```
 
-**3. 获取 API Endpoint**
+**3. Retrieve API Endpoint**
 
-可以通过名称或 ID 获取 API Endpoint：
+You can get an API Endpoint by name or ID:
 
 ```python
 extapi = at.extapis.get(name="Updated Test API")
@@ -53,18 +52,17 @@ extapi = at.extapis.get(id=extapi.id)
 print(extapi)
 ```
 
-**4.  删除 API Endpoint**
+**4. Delete API Endpoint**
 
-删除一个 API Endpoint：
+To delete an API Endpoint:
 
 ```python
 extapi.delete()
 ```
 
+**5. Create API Route**
 
-**5. 创建 API Route**
-
-在某个 API Endpoint 下创建新的 Route：
+Create a new Route under a certain API Endpoint:
 
 ```python
 route = extapi.routes.create(
@@ -78,27 +76,27 @@ route = extapi.routes.create(
 print(route)
 ```
 
-**6. 更新 API Route**
+**6. Update API Route**
 
-可以更新 Route 的名称、路径和查询参数等：
+You can update the name, path, and query parameters of the Route:
 
 ```python
-# 更新 Route 的名称
+# Update the Route name
 route = route.update(name="Updated Test Route")
 print(route)
 
-# 更新 Route 的路径
+# Update the Route path
 route = route.update(path="/test_updated")
 print(route)
 
-# 更新 Route 的查询参数
+# Update the Route query parameters
 route = route.update(query_params="{'filter': 'Updated filter condition'}")
 print(route)
 ```
 
-**7. 获取 API Route**
+**7. Retrieve API Route**
 
-可以通过名称或 ID 获取 Route：
+You can get a Route by name or ID:
 
 ```python
 route = extapi.routes.get(id=route.id)
@@ -108,16 +106,16 @@ route = extapi.routes.get(name="Updated Test Route")
 print(route)
 ```
 
-**8. 删除 API Route**
+**8. Delete API Route**
 
-删除一个 Route：
+To delete a Route:
 
 ```python
 route.delete()
 ```
 
-## 示例代码
-完整示例代码：
+## Sample Code
+Complete sample code:
 
 ```python
 from asktable import AskTable
@@ -126,17 +124,17 @@ from atserver import config
 token = config.at_auth_by_default_token
 at = AskTable(token=token, api_url="https://your-api-url")
 
-# 创建新的 API Endpoint
+# Create a new API Endpoint
 extapi = at.extapis.create(
     name="Test API",
     base_url="https://api.example.com/v1",
     headers={"Authorization": "Bearer testtoken"}
 )
 
-# 更新 API Endpoint 的名称
+# Update the API Endpoint name
 extapi = extapi.update(name="Updated Test API")
 
-# 创建新的 API Route
+# Create a new API Route
 route = extapi.routes.create(
     name="Test Route",
     path="/test",
@@ -146,14 +144,14 @@ route = extapi.routes.create(
     body_params="{'data': 'Data payload'}"
 )
 
-# 更新 Route 的名称
+# Update the Route name
 route = route.update(name="Updated Test Route")
 
-# 获取并打印 Route
+# Retrieve and print the Route
 route = extapi.routes.get(id=route.id)
 print(route)
 
-# 删除 Route 和 Endpoint
+# Delete the Route and Endpoint
 route.delete()
 extapi.delete()
 ```

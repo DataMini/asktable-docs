@@ -1,56 +1,53 @@
-# 架构解读：单轮问答
+# Architecture Overview: Single-Turn Question and Answering
 
-## 概述
-AskTable 是一款智能化的对话机器人，能够处理复杂的数据查询并提供个性化回答。本文档详细介绍了 AskTable 在处理用户单次对话时的完整流程，包括各个模块的功能和交互方式。
+## Overview
+AskTable is an intelligent conversational robot capable of handling complex data queries and providing personalized responses. This document provides a detailed description of the complete process that AskTable follows when processing a user's single conversation, including the functions and interaction methods of each module.
 
-## 架构解读
-以下是 AskTable 单次对话技术架构图：
-
+## Architecture Overview
+The following is a technical architecture diagram for AskTable's single-turn conversation:
 
 <div className="img-center xlarge">
   <img src="/img/asktable/at_database_query_via_natural_language.png" alt="at_database_query_via_natural_language" />
 </div>
 
-AskTable 将传统数据库与现代 AI 大语言模型（LLM）相结合，实现了智能、精准、个性化的数据检索与分析。
+AskTable combines traditional databases with modern AI large language models (LLMs) to achieve intelligent, precise, and personalized data retrieval and analysis.
 
-整个系统可划分为三大核心模块：Meta Brain、Meta Retrieval 和 Data Retrieval。
+The entire system can be divided into three core modules: Meta Brain, Meta Retrieval, and Data Retrieval.
 
+1. **AskTable Meta Brain: Constructing Metadata Graph**
 
-1. AskTable Meta Brain：构建元数据图谱
+   Meta Brain is the core module of AskTable, serving as the knowledge base for the entire data system. Meta Brain stores all metadata and necessary keyword data from the database, including database names, table names, field names, and their annotations. It is fully automated by AI to build a comprehensive metadata graph of the database. This enables AskTable to understand the data structures in different database systems (such as MySQL, Oracle, TiDB, etc.) and generate corresponding SQL query statements efficiently and accurately when needed.
 
-  Meta Brain 是 AskTable 的核心模块，它充当了整个数据系统的知识库。Meta Brain 存储了数据库中所有的元数据以及必要的关键词数据，包括库名、表名、字段名及其注释信息，完全由 AI 驱动自动化构建了一个全面的数据库元数据图谱。这使得 AskTable 能够理解不同数据库系统（如 MySQL、Oracle、TiDB 等）中的数据结构，并在需要时高效、准确地生成对应的 SQL 查询语句。
-
-  Meta Brain 同时也是 embedding 等多种相关/相似性搜索的存储与计算中心。所有的查询在这里进行搜索与计算，从而找到最符合用户查询意图的数据表、字段和数据值。向量搜索和图数据库技术的结合，使得 Meta Brain 能够在大规模数据中迅速定位目标数据，提高查询效率。
-  
-2. AskTable Meta Retrieval: 实体识别与元数据检索
+   Meta Brain also serves as the storage and computation center for various related/similarity search methods such as embeddings. All queries are searched and computed here to find the data tables, fields, and data values that best match the user's query intent. The combination of vector search and graph database technology allows Meta Brain to quickly locate target data in large-scale datasets, improving query efficiency.
    
-  当用户发起查询时，系统首先进入 Meta Retrieval 模块。这里，问句经过自然语言处理，从中提取出关键实体或关系，如地名、用户等。这一步骤通过实体识别技术，使系统能够识别并理解用户查询的核心内容。
-
-  接着，系统会调用 embedding 模型，将提取的实体转化为向量表示。这些向量表示在 Meta Brain 中进行查询，以找出与之最相关的数据库字段和表。向量的语义检索使得系统能够在复杂数据结构中高效匹配，确保查询的精准性，以及对口语化表达的识别。
-
-  同时，系统还会使用内置的专门针对 Meta Data 和 Short Value 结构优化的搜索算法，从 Meta Brain 中匹配真实实体名字，这样才能避免后续生成 SQL 时 Value Missing。
-
-  另外，Meta Retrieval 还负责查询权限的管理。根据用户的角色与权限，系统会过滤掉不符合访问要求的数据，这一过程同样通过 embedding 模型的权限过滤技术来实现。
-
-
-3. AskTable Data Retrieval：智能学习与动态纠错
+2. **AskTable Meta Retrieval: Entity Recognition and Metadata Retrieval**
    
-  Data Retrieval 模块负责执行生成的 SQL 查询并获取数据。不同于传统数据库查询，AskTable 在这个过程中加入了智能学习与纠错机制。当查询结果与预期不符时，系统会利用 AI 模型对 SQL 进行动态调整或重写，以优化查询结果。这种动态纠错机制显著提高了复杂查询场景下的响应准确性。同时，AskTable 还会通过对 Good/Bad Case 的分析，通过基于用户反馈的强化学习与训练等手段持续优化 SQL 在不同数据库方言、不同表结构下的生成效果，进一步提升查询准确性。
+   When a user initiates a query, the system first enters the Meta Retrieval module. Here, the question undergoes natural language processing to extract key entities or relationships, such as place names, users, etc. This step uses entity recognition technology to enable the system to identify and understand the core content of the user's query.
 
-  在数据查询前，系统还会进行进一步的权限校验。每一行数据在返回给用户前，都会根据权限规则再次过滤，确保数据的合规性与安全性。通过这一严密的多层过滤，AskTable 不仅保证了数据安全性，还在极大程度上减少了数据冗余。
+   Next, the system calls the embedding model to convert the extracted entities into vector representations. These vector representations are queried in Meta Brain to find the most relevant database fields and tables. Semantic vector retrieval allows the system to efficiently match in complex data structures, ensuring the accuracy of the query and recognizing colloquial expressions.
 
-## 技术复杂度与优势
-AskTable 的技术架构展示了现代数据库管理与 AI 技术深度融合的可能性。通过向量检索、RAG、Agent、动态权限管理、动态 SQL 重写等技术，系统实现了传统应用难以企及的智能与灵活性。
+   Additionally, the system uses built-in search algorithms optimized for Meta Data and Short Value structures to match real entity names from Meta Brain, thereby avoiding missing values during SQL generation.
 
-### 高效的元数据管理
-Meta Brain 中的元数据管理使得系统可以轻松适应多种不同的数据库结构，在查询时根据用户意图智能匹配相关数据。
+   Furthermore, Meta Retrieval is responsible for managing query permissions. Based on the user's role and permissions, the system filters out data that does not meet the access requirements. This process is achieved through permission filtering techniques using embedding models.
 
-### 智能查询优化
-通过 LLM 的嵌入表示和动态学习，系统能够对用户查询进行智能优化和定位，提供精确且相关的查询结果。
+3. **AskTable Data Retrieval: Intelligent Learning and Dynamic Error Correction**
+   
+   The Data Retrieval module is responsible for executing the generated SQL queries and retrieving data. Unlike traditional database queries, AskTable incorporates intelligent learning and error correction mechanisms during this process. When the query results do not match expectations, the system utilizes AI models to dynamically adjust or rewrite the SQL statements to optimize the query results. This dynamic error correction mechanism significantly improves response accuracy in complex query scenarios. Additionally, AskTable continuously optimizes SQL generation across different database dialects and table structures by analyzing Good/Bad Cases and leveraging reinforcement learning and training based on user feedback, further enhancing query accuracy.
 
-### 复杂权限控制
-通过多层权限过滤和嵌入模型的结合，系统能够在大规模数据访问场景中确保数据安全性和合规性。
+   Before performing data queries, the system also conducts further permission verification. Each row of data is filtered again according to permission rules before being returned to the user, ensuring compliance and security of the data. Through this rigorous multi-layer filtering, AskTable not only ensures data security but also greatly reduces data redundancy.
 
-这种架构使得 AskTable 在处理复杂查询和个性化回答时，展现出极高的效率和准确性。
+## Technical Complexity and Advantages
+AskTable's technical architecture demonstrates the possibility of deep integration between modern database management and AI technologies. By employing vector search, RAG, Agent, dynamic permission management, and dynamic SQL rewriting, the system achieves intelligence and flexibility that traditional applications find hard to match.
 
-如有更多疑问，请访问官网 [AskTable 网站](https://asktable.com) 联系我们获取详细信息。
+### Efficient Metadata Management
+Metadata management in Meta Brain allows the system to easily adapt to various different database structures, intelligently matching relevant data based on user intent during queries.
+
+### Intelligent Query Optimization
+Through the embedded representations and dynamic learning of LLMs, the system can intelligently optimize and locate user queries, providing accurate and relevant query results.
+
+### Complex Permission Control
+By combining multiple layers of permission filtering and embedding models, the system ensures data security and compliance in large-scale data access scenarios.
+
+This architecture enables AskTable to demonstrate high efficiency and accuracy when handling complex queries and providing personalized responses.
+
+For more questions, please visit our website at [AskTable](https://asktable.com) to contact us for detailed information.

@@ -1,44 +1,41 @@
-# 概述与定价
+# Overview and Pricing
 
+|  | [SaaS](https://cloud.asktable.com) | [Single-Node Experience Edition](./private-deployment-all-in-one.md) | [Local Deployment A: Online Model](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf) | [Local Deployment B: Local Model](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf) |
+| ------ | ---------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| Applicable Scenarios | Full functionality support, no deployment required, ready to use, suitable for small teams | Accuracy and performance not optimized, suitable for initial testing | Preferred by 80% of enterprises, emphasizes privacy, efficiency, and cost-effectiveness | Pursues high security, more customization, software and hardware budget over one million yuan |
+| Features | Full functionality | Basic functionality<sup>2️⃣</sup> | Full functionality | Full functionality |
+| Price | **99 CNY/month**<sup>1️⃣</sup> | Software free, compute power charged<sup>3️⃣</sup> | **9,000 CNY/year and up**<sup>4️⃣</sup> | Contact us |
+| Service Content | 5*12 hours online customer service | Community friendly support | Dedicated customer service group<br/>Accuracy optimization service package<sup>5️⃣</sup><br/>Product training<sup>6️⃣</sup><br/>Deployment guidance<sup>7️⃣</sup><br/>Software update guidance<sup>8️⃣</sup> | Negotiated per project |
+| Delivery Time | Self-service activation anytime | 1 hour | 3 days | Negotiated per project |
 
-|  | [SaaS](https://cloud.asktable.com) | [单机体验版](./private-deployment-all-in-one.md) | [本地部署A：线上模型](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf) | [本地部署B：本地模型](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf) |
-|------|------|--------|------------------------|--------------------------|
-| 适用场景 | 全功能支持，无需部署，开箱即用，适合小型团队 | 准确性和性能未优化，适合初步尝试 | 80% 企业选择，注重隐私、效率与性价比 | 追求高安全，更多定制，软硬件整体预算百万以上 |
-| 功能 | 全功能 | 基础功能<sup>2️⃣</sup> | 全功能 | 全功能 |
-| 价格 | **99元/月**<sup>1️⃣</sup> | 软件免费，算力收费<sup>3️⃣</sup> | **9000 元/年起**<sup>4️⃣</sup> | 联系我们  |
-| 服务内容 | 5*12 小时在线客服 | 社区友情支持 | 专属客服群<br/>准确率优化服务包<sup>5️⃣</sup><br/>产品培训<sup>6️⃣</sup><br/>部署指导<sup>7️⃣</sup><br/>软件更新指导<sup>8️⃣</sup> | 按项目谈 |
-| 交付周期 | 自助随时开通 | 1 小时 | 3 天 | 按项目谈 |
+:::note Notes
+1️⃣ **99 CNY/month** includes `500` queries, additional charges apply at **0.2 CNY/query**.
 
-
-
-:::note 注释
-1️⃣ **99 元/月** 含 `500` 次查询，超过按 **0.2 元/次** 收费。
-
-2️⃣ 因为资源有限，单机版只提供基础功能，无法支持 [AI 搜索](https://docs.asktable.com/docs/ai-search/introduction)，因此准确性未充分优化。
+2️⃣ Due to limited resources, the single-node edition only provides basic functionality and does not support [AI Search](https://docs.asktable.com/docs/ai-search/introduction), hence accuracy is not fully optimized.
    
-3️⃣ 单机体验版，**软件免费**，但会收取**算力费用**。
-   - 算力价格：
-     - 按实际使用量计费，每次查询都会消耗一定的算力。
-     - 你可以在 https://cloud.asktable.com/ 充值并查看费用消耗日志。
-     - 价格预估：**0.2-0.5 元/次**
+3️⃣ For the single-node experience edition, the **software is free**, but **compute power charges** will be applied.
+   - Compute power pricing:
+     - Charged based on actual usage, each query consumes some compute power.
+     - Recharge and view consumption logs at https://cloud.asktable.com/.
+     - Estimated price: **0.2-0.5 CNY/query**
 
-4️⃣ 本地部署A，价格包含 **软件** 和 **算力** 两部分。
-   - 软件价格：
-     - `10` 张表以内，**0.9 万元/年**
-     - `11-100` 张表，**5 万元/年**
-     - `101-1000` 张表，**10 万元/年**，更多表，请联系我们。
-   - 算力价格：
-     - 同时赠送与软件价格等额的 AskTable AI 算力。
-     - 超出部分，按单机版的算力价格计费。
+4️⃣ The price for Local Deployment A includes both **software** and **compute power**.
+   - Software pricing:
+     - Up to `10` tables, **9,000 CNY/year**
+     - `11-100` tables, **50,000 CNY/year**
+     - `101-1000` tables, **100,000 CNY/year**, for more tables, please contact us.
+   - Compute power pricing:
+     - Equal amount of AskTable AI compute power is provided as part of the software price.
+     - Additional charges apply based on the single-node compute power pricing.
 
-5️⃣ 准确率优化服务包：提供 AskTable 观测产品，可部署到本地，用于将 AskTable 内部执行过程可视化，让用户可以自助诊断并优化查询效果，确保结果准确、可信。
+5️⃣ Accuracy optimization service package: Provides AskTable observation product, deployable locally, used to visualize AskTable's internal execution process, allowing users to diagnose and optimize query results themselves, ensuring accurate and credible results.
 
-6️⃣ 产品培训：不限次数的线上培训（若付款金额超过 5 万，赠送 1 次现场培训）
+6️⃣ Product training: Unlimited online training (if payment exceeds 50,000 CNY, one on-site training is included)
 
-7️⃣ 部署指导：提供线上技术支持，确保 AskTable 服务按照最佳模式部署，以获得最佳的性能和准确率。
+7️⃣ Deployment guidance: Provides online technical support to ensure AskTable services are deployed optimally for best performance and accuracy.
 
-8️⃣ 软件更新指导：提供线上技术支持，确保 AskTable 服务可以与 SaaS 版本同步，持续享受最新的产品功能。
+8️⃣ Software update guidance: Provides online technical support to ensure AskTable services stay synchronized with the SaaS version, continuously enjoying the latest product features.
 
 :::
 
-其他需求，请[联系我们](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf)。
+For other requirements, please [contact us](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf).

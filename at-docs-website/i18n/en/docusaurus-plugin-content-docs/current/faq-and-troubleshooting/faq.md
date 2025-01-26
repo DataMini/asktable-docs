@@ -1,1 +1,1 @@
-# faq
+It seems like you want to translate the content "# faq" into English. The text "# faq" is already in English and it stands for "Frequently Asked Questions." If you have more content that needs translation, please provide it, and I'll be happy to assist!

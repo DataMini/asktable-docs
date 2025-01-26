@@ -1,40 +1,37 @@
-# 自定义 Bot
-欢迎来到 AskTable 的自定义 Bot 文档！ 本文档将向您介绍如何创建和管理您的智能聊天机器人（Bot），以及它们如何帮助您解决问题和提升用户体验。
+# Custom Bots
+Welcome to the AskTable Custom Bot documentation! This document will guide you on how to create and manage your intelligent chatbots, and how they can help resolve issues and enhance user experience.
 
-# 什么是 Bot？
-Bot，即聊天机器人，是一种能够与用户进行自然语言对话的程序。它们被设计用于模拟人类对话，可以执行各种任务和提供服务，从简单的信息查询到复杂的交互式操作。
+# What is a Bot?
+A bot, or chatbot, is a program capable of engaging in natural language conversations with users. It is designed to simulate human dialogue and can perform various tasks and provide services, ranging from simple information queries to complex interactive operations.
 
-在 AskTable 中，您可以定制和配置您的 Bot，使其适应您的业务需求和用户需求。每个 Bot 都有自己独特的身份和能力，可以根据设定的规则和数据源执行任务和回答用户的查询。
+In AskTable, you can customize and configure your bot to meet your business and user needs. Each bot has its unique identity and abilities, performing tasks and answering user queries based on set rules and data sources.
 
+# What Issues Can Bots Help Solve?
 
+* **Natural Language Communication**: Users can communicate with the bot using natural language without needing to learn complex commands or syntax.
+* **Multilingual Support**: Supports multiple languages, including Chinese and English, making your service more global.
+* **Conversation History and Contextual Memory**: The bot can remember previous conversation content and context, better understanding the user's intent and needs.
+* **ReAct (Reasoning and Acting) Capability**: It not only answers queries but also performs corresponding actions based on user requests, such as placing orders or booking services.
+* **Identity Recognition**: Can recognize user identity and roles, performing different actions based on varied permissions, like employees ordering food or customers querying product information.
 
-# Bot 可以帮助解决什么问题？
+# How to Create and Use Bots?
 
-* **自然语言对话**： 用户可以通过自然语言与 Bot 进行交流，无需学习复杂的指令或语法。
-* **多语言支持**： 支持多种语言，包括中文和英文，使您的服务更加全球化。
-* **对话历史和上下文记忆**： Bot 可以记住之前的对话内容和上下文，从而更好地理解用户的意图和需求。
-* **ReAct（Reasoning and Acting）能力**： 不仅可以回答查询，还可以根据用户的请求执行相应的操作，如下订单或预订服务。
-* **身份识别**： 可以识别用户的身份和角色，根据不同的权限执行不同的操作，例如员工订餐或顾客查询产品信息。
+## Creating a Bot
 
-# 如何创建和使用 Bot？
+1. Log in to the AskTable console.
+2. Navigate to the Bot Management page.
+3. Click the “Create Bot” button.
+4. Enter the bot's name and configuration details, including accessible data sources and callable interfaces.
+5. Configure other bot attributes as needed, such as maximum rows, debug mode, and FAQs.
+6. Click the “Save” button to complete creation.
 
-## 创建 Bot
+## Using a Bot
 
-1. 登录到 AskTable 控制台。
-2. 转到 Bot 管理页面。
-3. 点击“创建 Bot”按钮。
-4. 输入 Bot 的名称和配置信息，包括可以访问的数据源和可以调用的接口。
-5. 根据需要配置 Bot 的其他属性，如最大行数、调试模式和常见问题。
-6. 点击“保存”按钮完成创建。
+1. Embed the AskTable ChatBot widget in your website or application. For specific steps, refer to the [Embedding Chatbot Widget Example](../integration/website/embed-chatbot-widget-example.md).
+2. When users visit your site, the ChatBot will appear on the page.
+3. Users can obtain information, perform actions, or resolve issues by conducting natural language conversations with the ChatBot.
 
-## 使用 Bot
+# Conclusion
+By customizing and using AskTable’s bots, you can offer smarter and more personalized user experiences, helping users quickly obtain information and complete tasks. Whether it be simple queries or complex interactions, bots will become a powerful assistant for your business.
 
-1. 在您的网站或应用中嵌入 AskTable 的 ChatBot Widget，具体步骤请参考[嵌入聊天机器人组件示例](../integration/website/embed-chatbot-widget-example.md)。
-2. 用户访问您的网站时，ChatBot 将显示在页面上。
-3. 用户可以通过与 ChatBot 进行自然语言交流来获取信息、执行操作或解决问题。
-
-# 结语
-通过定制和使用 AskTable 的 Bot，您可以提供更加智能和个性化的用户体验，帮助用户快速获取信息并完成任务。无论是简单的查询还是复杂的交互，Bot 都将成为您业务的有力助手。
-
-现在，您可以开始创建和配置您的第一个 Bot，并为您的用户带来全新的体验！
-
+Now, you can start creating and configuring your first bot and bring a new experience to your users!

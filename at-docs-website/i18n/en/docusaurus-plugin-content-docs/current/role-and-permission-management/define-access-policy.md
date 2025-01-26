@@ -1,39 +1,36 @@
-# 定义访问策略
+# Defining Access Policies
 
-访问策略是角色和权限管理的核心，通过定义访问策略，可以控制用户对特定资源的访问权限。在 AskTable 中，您可以根据业务需求灵活定义访问策略。
+Access policies are at the core of role and permission management, allowing you to control user access permissions to specific resources. In AskTable, you can flexibly define access policies according to your business needs.
 
-## 访问策略的工作原理
+## How Access Policies Work
 
-访问策略的工作原理是通过一系列的规则来确定用户对数据的访问权限。这些规则可以基于数据源、表、字段，甚至是数据行。访问策略如何工作的详细解释如下：
+Access policies work by determining user data access permissions through a series of rules. These rules can be based on data sources, tables, fields, or even rows of data. The detailed explanation of how access policies work is as follows:
 
-- **数据源级别控制**：策略可以指定哪些数据源用户可以访问。
-- **表级别控制**：通过正则表达式匹配表名，策略可以控制用户对特定表的访问。
-- **字段级别控制**：策略可以指定用户是否可以访问特定字段，例如敏感信息字段。
-- **行级别控制**：通过行过滤器，策略可以控制用户对表中特定行数据的访问，通常与用户属性相关联，如用户ID。
-
+- **Data Source Level Control**: Policies can specify which data sources users can access.
+- **Table Level Control**: By matching table names with regular expressions, policies can control user access to specific tables.
+- **Field Level Control**: Policies can specify whether users can access specific fields, such as sensitive information fields.
+- **Row Level Control**: Through row filters, policies can control user access to specific rows of data in a table, often associated with user attributes like user ID.
 
 <div className="img-center large">
-  <img src="/img/asktable/at_auth_how_policy_works.png" alt="Logo" />
+  <img src="/img/asktable/at_auth_how_policy_works.png" alt="How Access Policies Work" />
 </div>
 
-## 创建访问策略
+## Creating Access Policies
 
-1. **登录 AskTable 管理控制台**。
-2. **导航到“权限管理”页面**。
-3. **点击“创建策略”按钮**。
+1. **Log in to the AskTable Management Console**.
+2. **Navigate to the “Permission Management” page**.
+3. **Click the “Create Policy” button**.
 
-### 访问策略的基本要素
+### Basic Elements of an Access Policy
 
-1. **策略名称**：为策略指定一个名称，以便识别和管理。
-2. **权限规则**：定义具体的权限规则，包括允许或拒绝的操作类型和资源。
+1. **Policy Name**: Assign a name to the policy for identification and management.
+2. **Permission Rules**: Define specific permission rules, including the types of operations allowed or denied and the resources involved.
 
+### Examples of Permission Rules
 
+Here is an example code snippet for creating an access policy via API:
 
-### 权限规则示例
-
-以下是通过 API 创建访问策略的示例代码：
-
-#### 允许访问所有数据
+#### Allow Access to All Data
 
 ```python
 policies.create(
@@ -45,7 +42,7 @@ policies.create(
 )
 ```
 
-#### 拒绝访问 salaries 表
+#### Deny Access to the Salaries Table
 
 ```python
 policies.create(
@@ -60,7 +57,7 @@ policies.create(
 )
 ```
 
-#### 拒绝访问 employees 表的 phone_number 字段
+#### Deny Access to the Employees Table’s Phone Number Field
 
 ```python
 policies.create(
@@ -76,7 +73,7 @@ policies.create(
 )
 ```
 
-#### 允许用户访问自己的数据
+#### Allow Users to Access Their Own Data
 
 ```python
 policies.create(
@@ -93,25 +90,23 @@ policies.create(
 )
 ```
 
-### 创建策略的 UI 界面
+### User Interface for Creating Policies
 
-在创建策略的 UI 界面中，您需要提供以下信息：
+In the user interface for creating policies, you need to provide the following information:
 
-1. **名称**：策略的名称，例如 `allow_myself`。
-2. **允许访问以下数据**：选择数据源。
-3. **选择库表**：
-    - 用于匹配数据库名的正则表达式：为空则匹配全部。
-    - 用于匹配表名的正则表达式：为空则匹配全部。
-    - 用于匹配字段名的正则表达式：为空则匹配全部。
-4. **行过滤器**：定义行过滤条件，例如 `public.*.id = {{user_id}}`。
+1. **Name**: The name of the policy, e.g., `allow_myself`.
+2. **Allow Access to the Following Data**: Select the data source.
+3. **Select Database Tables**:
+   - Regular expression for matching database names: leave blank to match all.
+   - Regular expression for matching table names: leave blank to match all.
+   - Regular expression for matching field names: leave blank to match all.
+4. **Row Filters**: Define row filter conditions, e.g., `public.*.id = {{user_id}}`.
 
+## Assigning Policies to Roles
 
+1. **After creating a policy**, you need to assign it to the corresponding roles.
+2. **Navigate to the “Role Management” page**.
+3. **Select a role** and edit its permission configuration.
+4. **Assign the policy to the role** to control the role's access permissions to specific resources.
 
-## 分配策略给角色
-
-1. **创建策略后**，您需要将策略分配给相应的角色。
-2. **导航到“角色管理”页面**。
-3. **选择一个角色**，并编辑其权限配置。
-4. **将策略分配给角色**，以控制该角色对特定资源的访问权限。
-
-通过定义和分配访问策略，您可以确保不同角色的用户在系统中具有适当的权限，从而保护敏感数据并提高系统的安全性和合规性。
+By defining and assigning access policies, you can ensure that users in different roles have appropriate permissions within the system, thereby protecting sensitive data and enhancing the security and compliance of the system.

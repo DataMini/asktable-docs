@@ -1,14 +1,14 @@
-# 使用 Cloud 控制台
+# Using the Cloud Console
 
-AskTable 提供了一个功能丰富的 Cloud 控制台，方便用户管理数据源、执行查询和配置系统。以下是使用 Cloud 控制台的指南：
+AskTable provides a feature-rich Cloud Console that allows users to manage data sources, execute queries, and configure the system. Below is a guide on how to use the Cloud Console:
 
-## 登录 Cloud 控制台
+## Logging In to the Cloud Console
 
-1. **访问 AskTable 官网**：打开浏览器，访问 [AskTable 云控制台](https://cloud.asktable.com)。
-2. **登录账户**：微信扫码登录。
+1. **Access the AskTable Website**: Open your browser and visit the [AskTable Cloud Console](https://cloud.asktable.com).
+2. **Log in to Your Account**: Log in by scanning with WeChat.
 
-## 导航和功能
+## Navigation and Features
 
-Cloud 控制台主要功能包括 AI 聊天对话、数据管理和速查。
+The main features of the Cloud Console include AI chat dialogues, data management, and quick lookups.
 
-如果您在使用过程中有任何问题，请随时与我们联系。
+If you have any questions while using it, please feel free to contact us.

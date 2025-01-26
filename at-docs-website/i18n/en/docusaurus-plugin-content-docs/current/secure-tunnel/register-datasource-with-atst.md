@@ -1,35 +1,35 @@
-# 使用 ATST 注册数据源
+# Registering a Data Source Using ATST
 
-在安装和配置 ATST 后，下一步是通过 ATST 注册数据源。以下步骤将指导您如何进行数据源注册。
+After installing and configuring ATST, the next step is to register a data source through ATST. The following steps will guide you on how to register a data source.
 
-## 步骤 1：访问 AskTable 管理控制台
+## Step 1: Access the AskTable Management Console
 
-登录 AskTable 管理控制台，导航到“数据源”页面。
+Log in to the AskTable management console and navigate to the "Data Sources" page.
 
-## 步骤 2：创建数据源
+## Step 2: Create a Data Source
 
-点击“添加数据源”按钮，填写数据源信息，包括数据库类型、连接地址、用户名和密码等。
+Click the "Add Data Source" button, fill in the data source information, including database type, connection address, username, and password.
 
-## 步骤 3：选择安全隧道
+## Step 3: Select the Secure Tunnel
 
-在数据源配置页面，选择使用安全隧道进行连接。选择之前配置的安全隧道 ID。
+On the data source configuration page, choose to use a secure tunnel for the connection. Select the previously configured secure tunnel ID.
 
-## 步骤 4：测试连接
+## Step 4: Test the Connection
 
-填写完数据源信息后，点击“测试连接”按钮，确保 AskTable 能够通过安全隧道成功连接到数据库。
+After filling out the data source information, click the "Test Connection" button to ensure that AskTable can successfully connect to the database via the secure tunnel.
 
-### 示例配置
+### Example Configuration
 
-以下是一个 MySQL 数据源的示例配置：
+Here is an example configuration for a MySQL data source:
 
-- **数据库类型**：MySQL
-- **连接地址**：localhost:3306
-- **用户名**：root
-- **密码**：password
-- **安全隧道 ID**：your_securetunnel_id
+- **Database Type**: MySQL
+- **Connection Address**: localhost:3306
+- **Username**: root
+- **Password**: password
+- **Secure Tunnel ID**: your_securetunnel_id
 
-## 步骤 5：保存数据源
+## Step 5: Save the Data Source
 
-测试连接成功后，点击“保存”按钮，完成数据源的注册。
+Once the connection test is successful, click the "Save" button to complete the registration of the data source.
 
-通过以上步骤，您已经成功通过 ATST 注册了一个数据源。现在，您可以使用 AskTable 安全地访问和查询内网数据库的数据。
+With these steps, you have successfully registered a data source using ATST. Now, you can securely access and query the data in your internal network database using AskTable.

@@ -1,50 +1,47 @@
-# 图表展示
+# Chart Display
 
-在 AskTable 中，查询结果可以以多种图表形式展示，包括雷达图、散点图、柱状图、折线图和饼图。图表能够帮助用户更直观地理解数据。
+In AskTable, query results can be displayed in various chart formats, including radar charts, scatter plots, bar charts, line graphs, and pie charts. Charts help users understand data more intuitively.
 
-## 支持的图表类型
+## Supported Chart Types
 
-### 1. 雷达图
+### 1. Radar Chart
 
-雷达图适用于展示多维数据，例如多个指标的对比。
+Radar charts are suitable for displaying multidimensional data, such as comparisons between multiple indicators.
 
-
-<div className="img-center large">
+<div class="img-center large">
   <img src="/img/asktable/at_chart_radar.png" alt="rader" />
 </div>
 
+### 2. Scatter Plot
 
-### 2. 散点图
+Scatter plots are suitable for showing the distribution and correlation of data points.
 
-散点图适用于展示数据点的分布和相关性。
-
-<div className="img-center large">
+<div class="img-center large">
   <img src="/img/asktable/at_chart_scatter.png" alt="scatter" />
 </div>
 
-### 3. 柱状图
+### 3. Bar Chart
 
-柱状图适用于展示分类数据的对比。
-<div className="img-center large">
+Bar charts are suitable for comparing categorical data.
+
+<div class="img-center large">
   <img src="/img/asktable/at_chart_bar.png" alt="bar" />
 </div>
 
+### 4. Line Graph
 
-### 4. 折线图
+Line graphs are suitable for showing trends in data changes.
 
-折线图适用于展示数据的趋势变化。
-<div className="img-center large">
+<div class="img-center large">
   <img src="/img/asktable/at_chart_line.png" alt="line" />
 </div>
 
+### 5. Pie Chart
 
-### 5. 饼图
+Pie charts are suitable for showing the composition ratios of data.
 
-饼图适用于展示数据的组成比例。
-
-
-<div className="img-center large">
+<div class="img-center large">
   <img src="/img/asktable/at_chart_pie.png" alt="pie" />
 </div>
 
-通过使用这些图表，用户可以更直观地分析和理解数据。
+By using these charts, users can analyze and understand data more intuitively.

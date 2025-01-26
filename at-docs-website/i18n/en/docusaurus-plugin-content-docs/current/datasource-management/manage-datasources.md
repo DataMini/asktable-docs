@@ -1,39 +1,36 @@
-# 管理数据
+# Managing Data
 
-在 AskTable 中，您可以方便地管理已经创建的数据，包括查看详情、编辑配置和删除数据等操作。本文档将介绍如何管理数据。
+In AskTable, you can conveniently manage the data you have created, including viewing details, editing configurations, and deleting data. This document will introduce how to manage your data.
 
-## 查看数据详情
+## Viewing Data Details
 
-### 1. 打开数据管理页面
+### 1. Open the Data Management Page
 
-登录 AskTable 后，点击左侧菜单中的“数据”选项，进入数据管理页面。
+After logging into AskTable, click on the "Data" option in the left-hand menu to access the data management page.
 
-### 2. 查看数据列表
+### 2. View the Data List
 
-在数据管理页面，您可以看到所有已创建的数据列表，包括数据的名称、类型、状态和创建时间等信息。
+On the data management page, you can see a list of all the data you have created, including information such as the name, type, status, and creation time.
 
-### 3. 查看数据详情
+### 3. View Data Details
 
-点击某个数据的名称，进入数据详情页面。您可以查看该数据的连接信息和元数据信息。
+Click on the name of a specific data entry to enter the data details page. Here, you can view the connection information and metadata information for that data.
 
-## 编辑数据配置
+## Editing Data Configuration
 
-### 1. 进入数据详情页面
+### 1. Access the Data Details Page
 
-在数据管理页面，点击某个数据的名称，进入数据详情页面。
+On the data management page, click on the name of the data you want to edit to access the data details page.
 
-### 2. 编辑数据名称
+### 2. Edit the Data Name
 
-点击页面右上角的“改名”按钮，修改数据的名称。完成编辑后，点击“保存”按钮，更新数据名称。
+Click the "Rename" button at the top right corner of the page to change the data's name. After making the changes, click the "Save" button to update the data name.
 
-## 删除数据
+## Deleting Data
 
-### 1. 打开数据管理页面
+### 1. Open the Data Management Page
 
-登录 AskTable 后，点击左侧菜单中的“数据”选项，进入数据管理页面。
+After logging into AskTable, click on the "Data" option in the left-hand menu to access the data management page.
 
-### 2. 删除数据
-点击需要删除的数据旁边的“删除”按钮，确认删除操作。请注意，删除数据将无法恢复，且所有与该数据相关的配置和元数据信息都将丢失。如果是是数据库数据，删除数据不会删除数据库中的数据。
-
-
-
+### 2. Delete Data
+Click the "Delete" button next to the data you wish to remove, and confirm the deletion operation. Please note that deleting data is irreversible, and all related configurations and metadata information will be lost. If it is database data, deleting the data from AskTable will not delete the actual data in the database.

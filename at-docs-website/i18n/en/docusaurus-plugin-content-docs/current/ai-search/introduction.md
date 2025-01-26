@@ -1,62 +1,55 @@
-# AI 搜索
+# AI Search
 
+## Function Overview:
 
-## 功能简介：
+This feature is designed to help the AskTable AI better understand user queries and accurately extract relevant information from the database.
 
-这个功能是为了帮助 AskTable AI 更好地理解用户提出的问题，并从数据库中准确提取相关的信息。
+Its core purpose is to generate 'AI Search Indexes' for specific fields in the database, allowing the AskTable AI to more intelligently identify and match user queries, thereby providing more precise answers.
 
-它的核心作用是：通过在数据库中对特定字段生成“AI 搜索索引”，让 AskTable AI 更加智能地识别并匹配用户的问题，提供更加精确的答案。
+For example, if a user asks, "Where are the service outlets of the Industrial and Commercial Bank of China?" The database has a field that records "bank name", which might store **Industrial and Commercial Bank of China**, but the user's query uses **ICBC**. If this feature is enabled, the AI will be able to understand that **ICBC** refers to **Industrial and Commercial Bank of China**, not just the exact match for **Industrial and Commercial Bank of China**, thus improving the accuracy and flexibility of the search.
 
-举个例子：假设用户询问“工商银行的服务网点在哪里”。数据库中有一个字段记录了“银行名称”信息，字段可能存储的是 **工商银行** 而用户提问的是 **工行**。如果开启了该功能，AI 将能够理解 **工行** 指的是 **工商银行**，而不仅仅是查询完全匹配 **工商银行** 的数据，从而提高搜索的准确性和灵活性。
+## What is AI Search Index?
+In the database, data in some fields might have different forms of expression. For instance, "ICBC" and "Industrial and Commercial Bank of China" may look similar but are written differently. To enable the AI to better understand such differences, we create "AI Search Indexes" for specific fields.
 
+The role of indexing: It allows the AskTable AI to use "fuzzy matching" to find the most relevant data, rather than only strict matches. This is like adding an intelligent "understanding" layer to the database.
 
-## AI搜索索引是什么？
+## How to Use This Feature:
+- **Default Settings:** The system automatically enables AI Search Index for some fields by default. These are fields of string type with an average data length of no more than 30 characters. These fields help the AI match user queries more accurately.
+- **Manual Configuration:** If you wish to turn on or off fuzziness for other fields, you can do so using the toggle button. Simply click the switch next to the field you want to adjust, and select either enable or disable.
 
-在数据库中，某些字段的数据可能会有不同的表现形式，比如“工行”和“工商银行”看起来类似，但它们的具体表达方式不同。为了让 AI 能够更好地理解这种差异，我们为特定的字段创建了“AI 搜索索引”。
-
-索引功能的作用： 它允许 AskTable AI 在查询时，使用“模糊匹配”来找到最相关的数据，而不仅仅是严格匹配。这就像是给数据库添加了一层智能“理解”能力。
-
-
-## 如何使用该功能：
-- **默认设置：** 系统会自动为某些字段启用AI 搜索索引。默认启用的字段是：字符串类型的字段，且字段中的数据平均长度不超过 30 个字符。这些字段会帮助 AI 更准确地匹配用户问题。
-- **手动配置：** 如果您希望针对其他字段开启或关闭模糊搜索功能，可以通过开关按钮进行设置。只需点击您想要调整的字段旁边的开关，选择启用或禁用即可。
-
+```html
 <div className="img-center xlarge">
-  <img src="/img/asktable/ai_search_1.png" alt="AI 搜索索引" />
+  <img src="/img/asktable/ai_search_1.png" alt="AI Search Index" />
 </div>
+```
 
-## 为什么需要开关按钮？
+## Why is There a Toggle Switch?
 
-在某些情况下，开启过多的索引会影响系统的性能。因为每个索引都需要消耗一定的计算资源。所以我们为您提供了一个控制开关，让您可以根据实际需求开启或关闭某些字段的索引功能。
-- **开启 AI 搜索：** AI 将能更智能地理解和匹配您的问题，提高查询准确性。
-- **关闭 AI 搜索：** 可以提高系统的性能，但可能牺牲一些查询的准确性。
+Enabling too many indexes can impact system performance as each index consumes computational resources. We provide a toggle switch, letting you turn on or off indexing for certain fields based on your needs.
+- **Enable AI Search:** The AI can understand and match your queries more intelligently, improving query accuracy.
+- **Disable AI Search:** This can improve system performance but may reduce query accuracy.
 
+## How to Determine If Fuzzy Search Needs to Be Activated?
 
-## 如何判断是否需要启用模糊搜索？
+If you want to ensure the AskTable AI can handle queries in various forms and provide more precise answers, you might consider enabling fuzzy search. This is particularly useful when data in a field can be expressed in multiple ways, as it enhances the user experience.
 
-如果您想要确保 AskTable AI 能够处理各种形式的用户提问，并提供更精准的答案，您可以考虑启用模糊搜索。特别是当字段中存储的数据可能具有多种不同表达方式时，启用模糊搜索会带来更好的用户体验。
+For example, if a field records names of different banks, a user might ask about "ICBC service outlets" or "Industrial and Commercial Bank of China service outlets." If fuzzy search is enabled for this field, AskTable AI can understand both queries and provide accurate answers based on the actual data, without having to configure a large set of synonyms.
 
-例如，若有一个字段记录了不同的银行名称，用户可能会问“工行的服务网点”或“工商银行的服务网点”。如果该字段开启了模糊搜索，AskTable AI 就能理解这两种问法，并根据实际数据给出准确答案，而不需要再去配置大量繁琐的同义词。
+## What's the Difference Between AI Search and Terms (Synonyms)?
 
+Both can improve the accuracy of AI queries, but they are used in different scenarios:
+- **AI Search (Fuzziness):** AI Search identifies similar queries through fuzzy matching, useful for common abbreviations or synonyms like "ICBC" and "Industrial and Commercial Bank of China." It is recommended to use AI Search for regular, common words, which do not require manual synonym configuration.
+- **Adding Terms (Synonyms):** For handling specific, custom terms or jargon (such as proprietary names within an enterprise). For example, setting "iron box" as a synonym for "engine." It is recommended to use the term feature for personalized or organization-specific vocabulary.
 
-## AI 搜索和术语（同义词）的区别是什么？
+## Summary:
+- **Default Activation:** Suitable for most scenarios, the system automatically enables fuzziness for certain fields.
+- **User Configuration:** You can manually enable or disable fuzzy search for fields, adjusting as needed.
+- **Optimizing Performance:** Too many indexes can affect system performance; it is recommended to configure as needed.
 
-两者都可以用来提高 AI 的查询准确性，但是它们的使用场景不同：
+By configuring fuzzy search, you can enhance the AI query's flexibility and accuracy, optimizing system performance according to actual requirements.
 
-- **AI 搜索（模糊搜索）：** AI 搜索通过模糊匹配来识别类似的查询，适用于常见的缩写或同义词（如“工行”和“工商银行”）。对于一般性常见的词汇，建议使用 AI 搜索，无需手动配置同义词。
-- **添加术语（同义词）：** 用于处理特定的、自定义的术语（如企业内部的专有名称）。例如，将“铁盒子”设为“发动机”的同义词。对于个性化或特定组织使用的词汇，建议使用术语功能。
+## User Notices:
+- Enabling fuzzy search can increase the computational load on the system, so it is suggested to enable it only when necessary.
+- The default-enabled fields have been optimized for most user scenarios.
 
-
-## 总结：
-- **默认开启：** 适用于大多数场景，系统会自动开启某些字段的模糊搜索功能。
-- **用户配置：** 您可以手动开启或关闭字段的模糊搜索，灵活调整。
-- **优化性能：** 过多的索引可能会影响系统性能，建议根据需要进行配置。
-
-通过配置模糊搜索功能，您可以提高 AI 查询的灵活性和准确性，同时根据实际需求优化系统性能。
-
-## 用户注意事项：
-- 开启模糊搜索功能可能会增加系统的计算负担，建议仅在必要时启用。
-- 默认启用的字段已经过优化，适合大部分用户场景。
-
-
-这个功能旨在让您的对话 AI 更加智能，并能够准确理解和回应各种用户提问。
+This feature aims to make your conversational AI more intelligent, allowing it to accurately understand and respond to a variety of user queries.

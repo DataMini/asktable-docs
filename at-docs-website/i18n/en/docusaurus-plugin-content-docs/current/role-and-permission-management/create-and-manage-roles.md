@@ -1,24 +1,24 @@
-# 创建和管理角色
+# Creating and Managing Roles
 
-角色是权限管理的关键部分，通过为不同的用户分配不同的角色，可以控制用户对系统中资源的访问权限。在 AskTable 中，您可以灵活创建和管理角色，以满足各种业务需求。
+Roles are a critical component of permission management, allowing you to control user access to resources within the system by assigning different roles to different users. In AskTable, you can flexibly create and manage roles to meet various business needs.
 
-## 创建角色
+## Creating a Role
 
-1. **登录 AskTable 管理控制台**。
-2. **导航到“角色管理”页面**。
-3. **点击“创建角色”按钮**。
+1. **Log in to the AskTable Management Console**.
+2. **Navigate to the "Role Management" page**.
+3. **Click the "Create Role" button**.
 
-### 角色的基本要素
+### Basic Elements of a Role
 
-1. **角色名称**：为角色指定一个名称，以便识别和管理。
-2. **描述**：为角色提供简要描述，说明其用途和适用范围。
-3. **分配策略**：将一个或多个访问策略分配给角色，以定义角色的权限。
+1. **Role Name**: Assign a name to the role for identification and management purposes.
+2. **Description**: Provide a brief description of the role to explain its purpose and scope.
+3. **Assignment Policy**: Assign one or more access policies to the role to define its permissions.
 
-### 创建角色的 API 示例
+### API Example for Creating a Role
 
-以下是通过 API 创建角色的示例代码：
+Here is an example code snippet for creating a role via API:
 
-#### 创建管理员角色，允许访问所有数据
+#### Create an Admin Role with Access to All Data
 ```python
 role_admin = asktable.roles.create(
     name='role_admin',
@@ -26,7 +26,7 @@ role_admin = asktable.roles.create(
 )
 ```
 
-#### 创建经理角色，不允许访问薪水表和手机号字段
+#### Create a Manager Role with No Access to Salary Tables and Phone Number Fields
 ```python
 role_manager = asktable.roles.create(
     name='role_manager',
@@ -38,9 +38,7 @@ role_manager = asktable.roles.create(
 )
 ```
 
-
-#### 创建普通用户角色，只能访问自己的数据，且不能访问薪水表和手机号字段
-
+#### Create a Regular User Role with Access Only to Their Own Data, and No Access to Salary Tables and Phone Number Fields
 ```python
 role_comm = asktable.roles.create(
     name='role_comm',
@@ -50,23 +48,21 @@ role_comm = asktable.roles.create(
         policy_oa_deny_phone_num.id,
     ]
 )
-
-
 ```
 
-## 管理角色
+## Managing Roles
 
-1. **编辑角色**：
-    - 在“角色管理”页面，选择一个角色并点击“编辑”按钮。
-    - 修改角色的名称、描述或分配的策略。
-    - 点击“保存”按钮，保存更改。
+1. **Edit a Role**:
+    - On the "Role Management" page, select a role and click the "Edit" button.
+    - Modify the role's name, description, or assigned policies.
+    - Click the "Save" button to save the changes.
 
-2. **删除角色**：
-    - 在“角色管理”页面，选择一个角色并点击“删除”按钮。
-    - 确认删除操作。
+2. **Delete a Role**:
+    - On the "Role Management" page, select a role and click the "Delete" button.
+    - Confirm the deletion operation.
 
-3. **查看角色详情**：
-    - 在“角色管理”页面，选择一个角色并点击“详情”按钮。
-    - 查看角色的名称、描述和分配的策略。
+3. **View Role Details**:
+    - On the "Role Management" page, select a role and click the "Details" button.
+    - View the role's name, description, and assigned policies.
 
-通过创建和管理角色，您可以灵活控制系统中不同用户的访问权限，从而确保数据的安全性和合规性。
+By creating and managing roles, you can flexibly control access permissions for different users within the system, ensuring data security and compliance.

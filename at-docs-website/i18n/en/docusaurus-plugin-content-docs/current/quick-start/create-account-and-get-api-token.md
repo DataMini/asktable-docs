@@ -1,11 +1,9 @@
-# 创建账户并获取 API-Key
+# Create an Account and Obtain an API Key
 
-要开始使用 AskTable，首先需要创建一个账户并获取 API-Key。以下是详细的步骤说明：
+To get started with AskTable, you first need to create an account and obtain an API key. Here are the detailed steps:
 
+1. **Visit the AskTable Website**: Open your browser and go to the [AskTable website](https://www.asktable.com).
+2. **Register or Log In Using WeChat**: Click the "Get Started" button in the top right corner of the page, then use WeChat to scan the QR code for registration or login.
+3. **Obtain Your API Key**: After logging in, locate the project selector just below the logo in the top left corner. Next to the project selector, there is a gear-shaped icon. Click on the gear icon to open the settings page, where you will find "API Key." Click the "Create API Key" button to generate a new API key.
 
-1. **访问 AskTable 官网**：打开浏览器，访问 [AskTable 官网](https://www.asktable.com)。
-2. **使用微信注册或登录**：点击页面右上角的“立即使用”按钮，使用微信扫描二维码注册或登录。
-3. **获取 API-Key**：登录后，在页面左上角的 Logo 下面有一个项目选择器，在选择项目的旁边有一个齿轮形状的图标，点击齿轮图标，在弹出的设置页面中找到“API-Key”，然后点击“创建 API-Key”按钮，即可获取一个新的 API-Key。
-
-
-通过以上步骤，您已经成功创建了账户并获取了 API-Key，现在可以开始使用 AskTable 提供的各种功能了。
+Following these steps will allow you to successfully create an account and obtain an API key, enabling you to start using all the features provided by AskTable.

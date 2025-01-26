@@ -1,41 +1,41 @@
-# 安装和配置 ATST
+# Installation and Configuration of ATST
 
-## ATST 技术架构
+## ATST Technical Architecture
 
-在 AskTable 中，安全隧道（ATST）是连接内网数据库和 AskTable 的桥梁。ATST 通过 Docker 容器化部署，并使用 AskTable 提供的 API 密钥进行身份验证。
+In AskTable, the Secure Tunnel (ATST) serves as the bridge connecting an internal network database with AskTable. The ATST is deployed using Docker containers and authenticates using the API key provided by AskTable.
+
 <div className="img-center large">
   <img src="/img/asktable/at_atst_2.png" alt="Logo" />
 </div>
 
+Before using the AskTable Secure Tunnel (ATST), you need to install and configure it. The following steps will guide you through the installation and configuration process.
 
-在使用 AskTable 安全隧道（ATST）之前，需要进行安装和配置。以下步骤将指导您如何安装和配置 ATST。
+## Step 1: Obtain ATST
 
-## 步骤 1：获取 ATST
+ATST is a Docker image that can be obtained from Docker Hub or the Alibaba Cloud Image Repository.
 
-ATST 是一个 Docker 镜像，您可以从 Docker Hub 或者阿里云镜像仓库获取。
+### For Domestic Users
 
-### 国内用户
-
-使用以下命令从阿里云镜像仓库拉取 ATST 镜像：
+Use the following command to pull the ATST image from the Alibaba Cloud Image Repository:
 
 ```docker pull registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel```
 
-### 海外用户
+### For Overseas Users
 
-使用以下命令从 Docker Hub 拉取 ATST 镜像：
+Use the following command to pull the ATST image from Docker Hub:
 
 ```docker pull datamini/asktable-secure-tunnel```
 
-## 步骤 2：配置 ATST
+## Step 2: Configure ATST
 
-在启动 ATST 容器之前，需要配置一些环境变量：
+Before starting the ATST container, you need to configure some environment variables:
 
-- `API_KEY`：您的 AskTable API 密钥。
-- `ATST_ID`：安全隧道 ID，可以在 AskTable 管理控制台创建。
+- `API_KEY`: Your AskTable API key.
+- `ATST_ID`: The Secure Tunnel ID, which can be created in the AskTable management console.
 
-### 配置示例
+### Example Configuration
 
-以下是一个示例配置：
+Here is an example configuration:
 
 ```docker
 docker run -d -P \
@@ -44,9 +44,9 @@ docker run -d -P \
   registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel
 ```
 
-## 步骤 3：启动 ATST
+## Step 3: Start ATST
 
-使用上面的配置命令启动 ATST 容器。启动后，ATST 会自动建立一个加密的隧道，允许 AskTable 访问内网数据库。
+Use the above configuration command to start the ATST container. Once started, ATST will automatically establish an encrypted tunnel, allowing AskTable to access the internal network database.
 
 ```
 ➜  $ docker run -d -P -e API_KEY=asktable_api_key -e ATST_ID=atst_1e9PisC2 registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel
@@ -76,21 +76,18 @@ f2765dcf8eb9   registry.cn-shanghai.aliyuncs.com/datamini/asktable-secure-tunnel
 
 ```
 
+### Check Container Status
 
-### 检查容器状态
-
-使用以下命令查看容器状态：
+Use the following command to check the container status:
 
 ```docker ps```
 
-确保 ATST 容器正在运行，并且状态正常。
+Ensure that the ATST container is running and in a normal state.
 
-
-在启动 ATST 之后，您可以在 AskTable 管理控制台中看到 ATST 的状态。
+After starting ATST, you can see the ATST status in the AskTable management console.
 
 <div className="img-center medium">
   <img src="/img/asktable/at_atst_card.png" alt="Logo" />
 </div>
 
-
-通过以上步骤，您已经成功安装并配置了 ATST。接下来，您可以注册数据源并通过安全隧道进行访问。
+With these steps, you have successfully installed and configured ATST. Next, you can register a data source and access it via the secure tunnel.

@@ -1,39 +1,40 @@
-# 案例二:Excel/CSV 问答助手
+### Case Study Two: Excel/CSV Q&A Assistant
 
-### 背景
+### Background
 
-在日常使用 Excel/CSV 进行数据查询时,需要记忆多种复杂函数(如 VLOOKUP、HLOOKUP、INDEX+MATCH 等)。我们可以创建一个智能体,用户只需上传 Excel/CSV 表格并与智能体对话,即可轻松查询所需数据。
+In daily use of Excel/CSV for data queries, it is necessary to memorize various complex functions (such as VLOOKUP, HLOOKUP, INDEX+MATCH, etc.). We can create an agent where users only need to upload Excel/CSV tables and converse with the agent to easily query the required data.
 
-### 开发步骤
-1. 创建智能体
-2. 添加插件到你的智能体技能中
-3. 设置变量
-4. 开始问答
+### Development Steps
+1. Create the Agent
+2. Add plugins to your agent's skills
+3. Set variables
+4. Start Q&A
 
-#### 1. 创建智能体
+#### 1. Create the Agent
 
-#### 2. 添加插件到你的智能体技能中
+#### 2. Add plugins to your agent's skills
 
-- 智能体添加插件中搜索：Excel查询，添加add_Excel_or_CSV和question_to_answer插件
+- In the agent's plugin addition, search for: Excel query, and add the add_Excel_or_CSV and question_to_answer plugins.
+  
 ---
-
+ 
 <div className="img-center full-width">
-  <img src="/img/asktable/coze_add_plugin_2.png" alt="添加插件" />
+  <img src="/img/asktable/coze_add_plugin_2.png" alt="Add Plugin" />
 </div>
 
-#### 3. 设置变量
-- 变量名称为：datasource_id
-- 默认值：不需要填写
-- 描述：add_data上传excel后返回的id值
+#### 3. Set Variables
+- Variable name: datasource_id
+- Default value: No need to fill in
+- Description: The ID value returned after uploading Excel via add_data
 ---
 <div className="img-center full-width">
-  <img src="/img/asktable/coze_set_variable_2.png" alt="设置变量" />
+  <img src="/img/asktable/coze_set_variable_2.png" alt="Set Variable" />
 </div>
 
-#### 4. 上传并问答
+#### 4. Upload and Q&A
 
 <div className="img-center medium">
-  <img src="/img/asktable/coze_bot_result_2.png" alt="问答结果" />
+  <img src="/img/asktable/coze_bot_result_2.png" alt="Q&A Result" />
 </div>
 
-这有我们已经创建好的[Excel/CSV 问答助手智能体](https://www.coze.cn/s/iDJR6joR/)供您参考。
+Here is a [Excel/CSV Q&A Assistant Agent](https://www.coze.cn/s/iDJR6joR/) that we have already created for your reference.

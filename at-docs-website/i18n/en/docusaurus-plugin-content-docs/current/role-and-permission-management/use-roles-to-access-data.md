@@ -1,22 +1,22 @@
-# 使用角色访问数据
+# Using Roles to Access Data
 
-在 AskTable 中，角色和策略的结合为用户提供了精细化的访问控制。通过在创建对话（chat）时指定角色（role）和角色变量（role variables），您可以确保用户只能访问被允许的数据。
+In AskTable, the combination of roles and policies provides fine-grained access control for users. By specifying roles and role variables when creating a chat, you can ensure that users can only access the data they are permitted to see.
 
-## 使用角色查询数据
+## Using Roles to Query Data
 
 <div className="img-center large">
   <img src="/img/asktable/at_auth_play_role.png" alt="Logo" />
 </div>
 
-以下是一个示例，说明普通用户如何通过角色查询属于自己的数据。
+The following example illustrates how an ordinary user can query their own data through a role.
 
-### 示例：普通用户查询自己的数据
+### Example: Ordinary User Queries Their Own Data
 
-1. **创建角色和策略**
+1. **Create Role and Policy**
 
-   创建一个策略 `allow_myself`，仅允许用户访问属于自己的数据。
+   Create a policy named `allow_myself`, which allows users to access only their own data.
 
-   `policies.create` 函数的调用如下：
+   The call to the `policies.create` function is as follows:
 
    ```python
    policies.create(
@@ -31,48 +31,48 @@
            }
        }
    )
-    ```
+   ```
+
+   Create a role called `comm_user` and associate the `allow_myself` policy with this role.
+
+   ```python
+   roles.create(
+       name='comm_user',
+       policy_ids=['allow_myself_policy_id']
+   )
+   ```
    
-    创建一个角色 comm_user，并将 allow_myself 策略关联到该角色。
+2. **Create Chat and Specify Role**
 
-    ```python
-    roles.create(
-        name='comm_user',
-        policy_ids=['allow_myself_policy_id']
-    )
-    ```
-2. **创建对话并指定角色**
+   When creating a chat, specify the `comm_user` role and fill in the `employee_id` variable.
+   ```python
+   chat = at.chats.create(
+       datasource_ids=['your_datasource_id'],
+       role_name='comm_user',
+       role_variables={'employee_id': 2}  # For instance, Li Na's employee_id is 2
+   )
+   ```
 
-    在创建对话时，指定角色 comm_user 并填充 employee_id 变量。
-    ```python
-    chat = at.chats.create(
-        datasource_ids=['your_datasource_id'],
-        role_name='comm_user',
-        role_variables={'employee_id': 2}  # 例如，李娜的 employee_id 为 2
-    )
-    ```
+   Now, users can use the specified role and variables to query data, ensuring they can only access their own data.
 
-    现在，用户可以使用指定的角色和变量进行查询，确保他们只能访问属于自己的数据。
+3. **Query Data Visible to Themselves**
 
-3. **查询对自己可见的数据**
+   In the chat, users can ask questions such as:
 
-    在对话中，用户可以提出查询请求，例如：
-
-    ```python
-    question = "李娜24年五月份是否有请过假"
-    response = chat.ask(question)
-    print(response['text'])  # 输出：是，请过假。
-    ```
+   ```python
+   question = "Did Li Na take any leave in May 2024?"
+   response = chat.ask(question)
+   print(response['text'])  # Output: Yes, she took leave.
+   ```
    
-4. **查询对自己不可见的数据**
+4. **Query Data Not Visible to Themselves**
 
-    如果用户尝试查询其他用户的数据，将会收到拒绝访问的错误提示。
+   If a user tries to query another user’s data, they will receive an error message indicating access is denied.
 
-    ```python
-    question = "张三24年五月份是否有请过假"
-    response = chat.ask(question)
-    print(response['text'])  # 输出：对不起，没有相关信息。
-    ```
+   ```python
+   question = "Did Zhang San take any leave in May 2024?"
+   response = chat.ask(question)
+   print(response['text'])  # Output: Sorry, there is no relevant information.
+   ```
    
-通过这种方式，您可以确保用户在查询数据时，严格按照分配的角色和策略进行访问控制。
-
+Through this method, you can ensure that users access data strictly according to the assigned roles and policies.

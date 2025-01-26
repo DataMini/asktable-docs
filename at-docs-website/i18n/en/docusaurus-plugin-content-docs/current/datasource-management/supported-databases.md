@@ -1,41 +1,38 @@
-# 支持的数据类型
+# Supported Data Types
 
-AskTable 支持多种类型的数据库和文件，方便您灵活地集成不同的数据进行查询和分析。以下是目前支持的类型：
+AskTable supports multiple types of databases and files, making it convenient for you to flexibly integrate different data for queries and analysis. Below is a list of the currently supported types:
 
-## 支持的数据库或文件类型
+## Supported Database or File Types
 
 <div className="img-center xlarge">
   <img src="/img/asktable/at_datasource_supported_1.png" alt="Logo" />
 </div>
 
+| Type           | Supported Versions | Description                          |
+|----------------|--------------------|--------------------------------------|
+| MySQL          | 5.7/8.0            | Popular open-source database         |
+| PostgreSQL     | 14/15/16           | Popular open-source database         |
+| PolarDB MySQL  | 5.7/8.0            | Alibaba Cloud - Cloud-native Database (MySQL-compatible) |
+| PolarDB PostgreSQL | 14/15/16 | Alibaba Cloud - Cloud-native Database (PostgreSQL-compatible) |
+| Oracle         | 18c                | Mainstream commercial relational database |
+| OceanBase      | 4.2 and above      | Distributed relational database (MySQL-compatible) |
+| TiDB           | 8.1.0 and above    | Distributed relational database      |
+| ClickHouse     | 22.12 and above    | Distributed columnar database        |
+| StarRocks      | 3.x                | Distributed analytical database      |
+| Hive           | 3.x                | Distributed analytical database      |
+| Excel Files    | .xlsx/.xls         | -                                    |
+| CSV Files      | .csv               | Supports common delimiters including comma, tab, etc |
 
-| 类型 | 支持版本 | 说明 |
-|------------|----------|------|
-| MySQL | 5.7/8.0  | 流行的开源数据库 |
-| PostgreSQL | 14/15/16 | 流行的开源数据库 |
-| PolarDB MySQL | 5.7/8.0 | 阿里云-云原生数据库（MySQL 兼容） |
-| PolarDB PostgreSQL | 14/15/16 | 阿里云-云原生数据库（PostgreSQL 兼容） |
-| Oracle | 18c  | 主流商用关系型数据库 |
-| OceanBase | 4.2 及以上 | 分布式关系型数据库（MySQL 兼容） |
-| TiDB | 8.1.0 及以上 | 分布式关系型数据库 |
-| ClickHouse | 22.12 及以上 | 分布式列式数据库 |
-| StarRocks | 3.x | 分布式分析型数据库 |
-| Hive | 3.x | 分布式分析型数据库 |
-| Excel 文件 | .xlsx/.xls | - |
-| CSV 文件 | .csv | 支持常见分割符包括逗号、制表符等 |
+If your database is not on the above list, please inform us via [Contact Us](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf). We will add support as soon as possible.
 
+## Basic Requirements for Data Sources
 
+- For Databases: You need to provide connection information for the database, including host address, port number, database name, username, and password.
+- For Files: You need to upload the file and ensure that the file format is correct.
 
-如果您的数据库不在上述列表中，请通过 [联系我们](https://datamini.feishu.cn/share/base/form/shrcnN0w5jjFDQ40GSuE8XHVRMf) 告知我们，我们将尽快添加支持。
+## Next Steps
 
-## 数据源的基本要求
+To learn how to create and manage these data sources, refer to the following documentation:
 
-- 对于数据库：需要提供数据库的连接信息，包括主机地址、端口号、数据库名称、用户名和密码。
-- 对于文件：需要上传文件，并保证文件格式正确。
-
-## 后续步骤
-
-了解如何创建和管理这些数据，请参阅以下文档：
-
-- [创建数据](./create-datasource.md)
-- [管理数据](./manage-datasources.md)
+- [Create Data](./create-datasource.md)
+- [Manage Data](./manage-datasources.md)

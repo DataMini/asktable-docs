@@ -1,26 +1,22 @@
-# 企业级智能Excel档案一体机
+# Enterprise Smart Excel Archive Appliance
 
-**产品定位：** 面向现代企业，提供高效、智能、本地安全的Excel数据管理和查询解决方案。
+**Product Positioning:** Targeted at modern enterprises, it offers efficient, intelligent, and locally secure solutions for Excel data management and querying.
 
-**核心价值：**
-- **智能搜索：** 利用AI技术，快速定位Excel文件中的数据。
-- **即时反馈：** 员工提问，即刻得到准确回答，支持文字、图表、数据表等多种格式。
-- **数据安全：** 本地存储，保障企业数据安全。
-- **高效协作：** 支持团队协作，提升工作效率。
+**Core Values:**
+- **Intelligent Search:** Utilizes AI technology to quickly locate data within Excel files.
+- **Instant Feedback:** Employees receive accurate answers instantly, supporting text, charts, data tables, and more.
+- **Data Security:** Local storage ensures enterprise data safety.
+- **Efficient Collaboration:** Supports team collaboration, enhancing work efficiency.
 
-**功能亮点：**
-- **一键备份：** 轻松拖拽，实现Excel文件快速备份和存储。
-- **多维度查询：** 支持对数据的多维度搜索和分析。
-- **用户友好：** 简洁的客户端界面，无需专业培训即可上手。
+**Feature Highlights:**
+- **One-click Backup:** Easily drag-and-drop to quickly back up and store Excel files.
+- **Multi-dimensional Querying:** Supports multi-dimensional search and analysis of data.
+- **User-friendly:** Simple client interface requires no specialized training to use.
 
+**Pricing Information:**
 
-**价格信息：**
-
-| 版本     | 价格（人民币） | 用户数 | 文件数  |
-|----------|----------------|--------|---------|
-| 基础版   | *万            | 20     | 3,000   |
-| 专业版   | **万           | 100    | 10,000  |
-| 企业版   | **万           | 1,000  | 100,000 |
-
-
-
+| Version    | Price (RMB) | Number of Users | Number of Files |
+|------------|-------------|-----------------|-----------------|
+| Basic      | * ten thousand | 20              | 3,000           |
+| Professional | ** ten thousand | 100             | 10,000          |
+| Enterprise | ** ten thousand | 1,000           | 100,000         |

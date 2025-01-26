@@ -1,49 +1,46 @@
-# 本地私有部署
+# Local Private Deployment
 
-为了满足对数据隐私和安全有更高要求的企业，AskTable 提供灵活的私有化部署服务。企业可以选择将 AskTable 部署在自己的服务器上，确保数据不离开企业内网，或者使用在线的大模型来满足不同的业务需求。
+To meet the needs of enterprises with higher requirements for data privacy and security, AskTable provides flexible private deployment services. Enterprises can choose to deploy AskTable on their own servers, ensuring that data does not leave the internal network, or use online large models to meet different business needs.
 
-## 私有化部署架构图
+## Private Deployment Architecture Diagram
 
-- **本地部署A：线上模型**：
+- **Local Deployment A: Online Model**:
 <div className="img-center medium">
   <img src="/img/asktable/at_deployment_offline_1.png" alt="Logo" />
 </div>
 
-- **本地部署B：本地模型**：
+- **Local Deployment B: Local Model**:
 <div className="img-center medium">
   <img src="/img/asktable/at_deployment_offline_2.png" alt="Logo" />
 </div>
 
-## 私有化部署配置需求
+## Private Deployment Configuration Requirements
 
-| 规格 | 可支撑的数据规模 | AskTable 服务器配置 |
-|------|-----------------|------------|
-| 试用版 | - 表数量：20张<br/>- 数据量：0.5T<br/>- 同时并发查询：1 个 | - 主机：4核 16G / 500G<br/>- 数量：1台 |
-| 规格一 | - 表数量：500张<br/>- 数据量：1T<br/>- 同时并发查询：20 个 | - 主机：8核 64G / 2T SSD<br/>- 数量：2台 |
-| 规格二 | - 表数量：5000张<br/>- 数据量：10T<br/>- 同时并发查询：100 个 | - 主机：32核 256G / 5T SSD<br/>- 数量：2台 |
+| Specification | Supported Data Scale | AskTable Server Configuration |
+|---------------|----------------------|-------------------------------|
+| Trial Version  | - Number of Tables: 20<br>- Data Volume: 0.5TB<br>- Concurrent Queries: 1 | - Host: 4 cores 16GB / 500GB<br>- Quantity: 1 unit |
+| Specification One | - Number of Tables: 500<br>- Data Volume: 1TB<br>- Concurrent Queries: 20 | - Host: 8 cores 64GB / 2TB SSD<br>- Quantity: 2 units |
+| Specification Two | - Number of Tables: 5000<br>- Data Volume: 10TB<br>- Concurrent Queries: 100 | - Host: 32 cores 256GB / 5TB SSD<br>- Quantity: 2 units |
 
-:::tip 配置说明
-- 以上配置仅为推荐配置，具体配置需要根据实际业务场景进行评估
-- 规格一和规格二采用主备架构以确保高可用性
-- SSD 存储建议采用企业级SSD以获得更好的 I/O性能
-- 若有其他特殊需求，联系我们的销售顾问，我们将提供专业的咨询和服务
+:::tip Configuration Notes
+- The above configurations are recommended only; specific configurations need to be assessed based on actual business scenarios.
+- Specifications One and Two adopt a primary-backup architecture to ensure high availability.
+- It is recommended to use enterprise-grade SSDs for better I/O performance.
+- For any special requirements, contact our sales consultants, and we will provide professional consultation and services.
 :::
 
+## Contents of Private Deployment Services
 
-## 私有化部署服务内容
+- **Deployment Support**: Provide guidance and technical support for deploying AskTable on enterprise servers, including two options: online large models and private deployment large models.
+- **Customization Services**: Offer customized feature development and optimization services based on enterprise needs to adapt to different business scenarios.
+- **Security Assurance**: Provide comprehensive security measures to ensure the safety and privacy of enterprise data.
 
-- **部署支持**：提供 AskTable 在企业服务器上的部署指导和技术支持，包括在线大模型和私有部署大模型两种选项。
-- **定制化服务**：根据企业需求，提供定制化的功能开发和优化服务，以适应不同的业务场景。
-- **安全保障**：提供全面的安全保障措施，确保企业数据的安全和隐私。
+## How to Get More Information
 
+If you have any questions about AskTable's private deployment options or need detailed quotation information, please contact us through the following methods:
+- **Email**: hi@datamini.ai
+- **Website**: [www.asktable.com](https://www.asktable.com)
 
+Our sales team will provide you with professional consultation and services to help you choose the most suitable private deployment solution.
 
-## 如何获取更多信息
-
-如果您对 AskTable 的私有化部署选项有任何疑问或需要获取详细的报价信息，请通过以下方式联系我们：
-- **电子邮件**：hi@datamini.ai
-- **官网**：[www.asktable.com](https://www.asktable.com)
-
-我们的销售团队将竭诚为您提供专业的咨询和服务，帮助您选择最适合的私有化部署方案。
-
-通过灵活的部署选项，AskTable 致力于为不同规模和需求的企业提供高效、可靠的数据查询和分析服务，助力企业实现数字化转型和业务增长。
+Through flexible deployment options, AskTable is dedicated to providing efficient and reliable data query and analysis services for enterprises of all sizes and needs, helping them achieve digital transformation and business growth.

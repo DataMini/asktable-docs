@@ -1,35 +1,35 @@
-# 文本响应
+# Text Response
 
-在 AskTable 中，查询结果可以以文本形式返回，并支持使用 Markdown 格式进行展示。这样可以更好地组织和美化文本内容。
+In AskTable, query results can be returned in text form and support the use of Markdown formatting for better organization and presentation of the text content.
 
-## 示例
+## Example
 
-以下是一个返回文本响应的示例：
+The following is an example of returning a text response:
 
 ```json
 {
   "status": "OK",
   "elapsed_time": 7,
-  "text": "最晚入职的员工是**陈敏**，员工编号为`5`，联系电话为`13800000001`。",
+  "text": "The latest employee to join is **Chen Min**, with employee ID `5`, and contact number `13800000001`.",
   "files": null,
   "charts": null,
   "query_insights": []
 }
 ```
 
-在这个示例中，返回的文本使用了 Markdown 格式来加粗姓名，并使用反引号来展示员工编号和联系电话。
+In this example, the returned text uses Markdown formatting to bold the name and enclose the employee ID and contact number in backticks.
 
-## 支持的 Markdown 语法
+## Supported Markdown Syntax
 
-以下是 AskTable 支持的 Markdown 语法：
+The following is the Markdown syntax supported by AskTable:
 
-- **标题**：使用 `#` 表示标题，例如 `# 一级标题`。
-- **加粗**：使用 `**` 包围加粗的文本，例如 `**加粗**`。
-- **斜体**：使用 `*` 包围斜体的文本，例如 `*斜体*`。
-- **代码**：使用反引号 `\``` 包围代码片段，例如 ```代码```。
-- **链接**：使用 `[链接文本](链接地址)` 表示链接，例如 `[AskTable](https://www.asktable.com)`。
-- **列表**：使用 `-` 表示无序列表，使用数字和点表示有序列表，例如：
-  - 无序列表项
-  1. 有序列表项
+- **Headings**: Use `#` to indicate headings, e.g., `# Level 1 Heading`.
+- **Bold**: Enclose bold text with `**`, e.g., `**bold**`.
+- **Italic**: Enclose italic text with `*`, e.g., `*italic*`.
+- **Code**: Enclose code snippets with backticks `` ` `` , e.g., ```code```.
+- **Links**: Represent links using `[link text](link address)`, e.g., `[AskTable](https://www.asktable.com)`.
+- **Lists**: Use `-` for unordered lists and numbers followed by periods for ordered lists, e.g.,
+  - Unordered list item
+  1. Ordered list item
 
-通过使用这些 Markdown 语法，可以使返回的文本内容更加清晰和美观。
+By using these Markdown syntaxes, the returned text content can be clearer and more aesthetically pleasing.

@@ -1,83 +1,79 @@
-# 众享教育 & AskTable
+# JoyShare Education & AskTable
 
-发布日期：2024年12月
+Release Date: December 2024
 
+## Customer Background
 
-## 客户背景
+JoyShare Education is a well-known education group in Henan Province, owning multiple brand businesses including the JoyShare Smart Campus Management Platform, JoyShare Garden, and JoyShare Customized Services. Leveraging artificial intelligence technology, the company is dedicated to providing comprehensive solutions for teaching and learning for schools, teachers, and students.
 
-众享教育是河南省的一家知名教育集团，旗下拥有 众享智慧校园管理平台、众享园地、众享定制化等多个品牌业务。公司依托人工智能技术，致力于为学校、老师和学生提供教与学的全场景解决方案。
+In daily operations, JoyShare Education frequently needs to query and analyze massive amounts of data, such as national yearbook statistics, educational statistics, internal business operation data, etc.
 
-在日常运营中，众享教育需要频繁查询和分析海量数据，比如全国年鉴统计数据、教育统计数据、内部业务运营数据等等。
+However, faced with a large volume of data and diverse business needs, traditional manual query methods are inefficient and have high thresholds, especially making it difficult to meet immediate query requirements in mobile scenarios. These pain points limit the efficient use of data and affect decision-making efficiency.
 
-然而，面对庞大的数据量和多样化的业务需求，传统的人工查询方式效率低、门槛高，尤其在移动场景下难以满足即时查询的需求。这些痛点限制了数据的高效利用，也对决策效率造成了影响。
+## Customer Value
 
+In October of this year, JoyShare Education began introducing AskTable to address these issues and achieve intelligent upgrades in data query methods:
 
-## 客户价值
+### 1. Instant Queries, Enhanced Decision Efficiency
 
-今年 10 月份，众享教育开始引入 AskTable，期望解决以上痛点，实现数据查询方式的智能化升级：
+AskTable's natural language query function allows business personnel to ask questions through voice or text anytime and anywhere, quickly obtaining the required data without relying on data analysts. Queries that used to take over 30 minutes of multiple rounds of communication can now be completed in just one minute.
 
-### 1. 即时查询，决策效率提升
-
-AskTable 的自然语言查询功能，使业务人员能够随时随地通过语音或文本提问，快速获取所需数据，从而不再依赖数据分析师。过去需要 30 分钟多轮沟通才能完成的查询，现在只需 1 分钟即可完成。
-
-- 例如："分析河南各地市里小初高的在校学生分布"
+- For example: "Analyze the distribution of primary and secondary school students across various cities in Henan Province."
 
 <div className="img-center large">
   <img src="/img/asktable/use_case_educational_2.png" alt="educational_2" />
 </div>
 
-- 例如：“对比查看各科的平均分“
+- For example: "Compare the average scores of each subject."
 <div className="img-center large">
   <img src="/img/asktable/use_case_educational_3.png" alt="educational_3" />
 </div>
 
+### 2. Reduced Data Acquisition Costs
 
-### 2. 降低数据获取成本
+Traditional query methods require complex reporting systems and significant human resources, while AskTable only requires simple configuration to access local databases such as MySQL and Hive, eliminating the need for additional system development. With support from online large model APIs, companies do not need to purchase GPU hardware, directly reducing computational costs.
 
-传统查询方式需要制作复杂报表系统并投入大量人力，而 AskTable 只需简单配置即可访问本地 MySQL 、Hive 等数据库，无需额外开发系统。通过在线大模型 API 的支持，企业无需购买 GPU 硬件，直接降低了算力成本。
+### 3. Increased Data Utilization
 
-### 3. 提升数据利用率
+Through AskTable, JoyShare Education has achieved full utilization of its data assets. Business personnel no longer abandon queries due to technical barriers, allowing massive educational data to be used more efficiently, providing solid decision support for business growth.
 
-通过 AskTable，众享教育实现了数据资产的充分利用。业务人员不再因技术门槛限制而放弃查询，海量教育数据得到了更高效的使用，为业务增长提供了坚实的决策支持。
+## Usage Cost
 
-## 使用成本
+### 1. Quick Deployment, Easy Setup
 
-### 1. 快速部署，轻松上手
-
-只用了半个小时，就在一台 4 核 16G 的机器上完成了 AskTable 的部署。数据完全在本地访问，无需担心外泄风险。
-- 配置简单：只需输入数据库地址，AI 自动构建和识别数据模型，无需人工干预。
+It took only half an hour to deploy AskTable on a 4-core 16GB machine. Data is accessed locally, eliminating concerns about data leakage.
+- Simple Configuration: Just input the database address, and AI automatically builds and recognizes data models, requiring no manual intervention.
 
 <div className="img-center large">
   <img src="/img/asktable/use_case_educational_1.png" alt="educational_1" />
 </div>
 
-### 2. 零硬件升级成本
+### 2. Zero Hardware Upgrade Costs
 
-AskTable 提供的在线大模型 API，避免了公司购买 GPU 的高昂成本。即使在普通配置的机器上，也能运行流畅，直接降低了一整数量级的使用成本。
+AskTable’s online large model API avoids the high cost of purchasing GPUs by the company. Even on ordinary-configured machines, it runs smoothly, directly reducing usage costs by an order of magnitude.
 
-### 3. 低学习曲线
+### 3. Low Learning Curve
 
-无需额外的技术培训，业务人员和运营人员可以直接通过自然语言查询，无需掌握 SQL 或复杂工具即可获得结果。
+No additional technical training is required; business and operational personnel can directly perform natural language queries and obtain results without mastering SQL or complex tools.
 
-## 产品亮点
+## Product Highlights
 
-### 1. 自然语言查询，提升查询体验
+### 1. Natural Language Query, Improved Query Experience
 
-通过自然语言直接提问，AskTable 自动生成精准查询指令并返回答案。无论是简单数据提取，还是复杂统计分析，都能快速完成，极大简化了数据访问流程。
+By asking questions directly through natural language, AskTable automatically generates precise query commands and returns answers. Whether for simple data extraction or complex statistical analysis, tasks can be completed quickly, greatly simplifying the data access process.
 
-### 2. 高性能支持多种数据库
+### 2. High Performance Supporting Multiple Databases
 
-AskTable 支持连接多种数据库（如 MySQL 和 Hive），能够快速处理多表关联查询，轻松应对众享教育的多源海量数据需求。
+AskTable supports connections to multiple databases (such as MySQL and Hive), capable of quickly handling multi-table join queries, easily meeting JoyShare Education’s demand for multi-source massive data.
 
-### 3. 便携性与实时性兼备
+### 3. Portability and Real-Time Capabilities Combined
 
-支持移动端嵌入，业务人员可以在手机上随时查询关键数据，无论身处何地，都能作出高效决策。
+Supports embedding on mobile devices, allowing business personnel to query key data anytime and anywhere on their phones, enabling efficient decision-making regardless of location.
 
-### 4. 数据安全保障
+### 4. Data Security Assurance
 
-AskTable 的私有化部署能力，确保数据访问均在本地运行，符合教育行业对数据安全的高标准要求。
+AskTable’s private deployment capability ensures that all data access runs locally, meeting the high standards for data security in the education industry.
 
+## Customer Feedback
 
-## 客户声音
-
-“AskTable 改变了我们获取数据的方式，语音问一句就能得到答案，再也不用排队等数据分析师了。部署简单，成本低，真的非常高效！”
+“AskTable has changed our way of accessing data. We can get answers by simply asking a question through voice, no longer needing to wait in line for data analysts. The deployment is simple and cost-effective, truly very efficient!”

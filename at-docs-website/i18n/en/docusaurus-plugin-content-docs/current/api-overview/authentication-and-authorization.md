@@ -1,51 +1,46 @@
-# 身份验证与授权
+# Authentication and Authorization
 
-使用 AskTable API 需要进行身份验证和授权，以确保只有经过授权的用户和应用程序才能访问和操作数据。本文将介绍如何进行身份验证和授权。
+Authentication and authorization are required when using the AskTable API to ensure that only authorized users and applications can access and manipulate data. This article will guide you through the process of authentication and authorization.
 
-## 身份验证
+## Authentication
 
-身份验证是确保请求来自合法用户的过程。在使用 AskTable API 时，您需要提供 API-Key 或 Temp-Token 进行身份验证。
+Authentication is the process of verifying that a request comes from a legitimate user. When using the AskTable API, you need to provide an API-Key or a Temp-Token for authentication.
 
-API-Key 是一种提供给应用程序用于访问 AskTable API 的密钥。Temp-Token 是一种临时的身份验证令牌，用于在一段时间内访问 API。
+An API-Key is a secret key issued to applications to access the AskTable API. A Temp-Token is a temporary authentication token used to access the API for a certain period.
 
-本文将详细介绍 API-Key 和 Temp-Token 的用途、获取方式、适用场景以及如何使用它们进行身份验证和授权。
+This document will provide detailed information on the use cases, acquisition methods, scenarios, and how to use API-Keys and Temp-Tokens for authentication and authorization.
 
-###  API-Key  
+### API-Key
 
-AskTable 提供两种不同类型的 API-Key ，用于不同的访问需求和权限控制。
+AskTable offers two different types of API-Keys for various access needs and permission control.
 
-| API-Key  类型    | 用途                      | 获取方式                                             | 可访问的 API 列表                   | 有效期      |
-|---------------|-------------------------|--------------------------------------------------|-----------------------------------|-------------|
-| `admin`    | 用于管理项目内的全部资源，具有最高权限。    | 通过 [AskTable SaaS](https://cloud.asktable.com) 创建 | 全部 API                          | 长期        |
-| `asker`    | 用于查询公开数据，适用于公开访问场景。 | 通过 [AskTable SaaS](https://cloud.asktable.com) 创建   | 见下文                             | 长期        |
+| API-Key Type   | Purpose                | Acquisition Method                                    | API List Available        | Validity Period |
+|---------------|------------------------|------------------------------------------------------|--------------------------|-----------------|
+| `admin`       | Used to manage all resources within a project, with the highest permissions. | Created through [AskTable SaaS](https://cloud.asktable.com) | All APIs         | Long-term       |
+| `asker`       | Used for querying public data, suitable for public access scenarios.         | Created through [AskTable SaaS](https://cloud.asktable.com) | See below        | Long-term       |
 
+The list of APIs available for the `asker` API-Key:
 
-
-其中 `asker` API-Key 可访问的 API 列表：
-
-| API 路径 | 方法 | 描述 |
-|---------|------|------|
-| `/auth/me` | GET | 获取当前认证用户的信息 |
-| `/auth/tokens` | POST | 创建新的认证令牌 |
-| `/datasource` | POST | 创建数据源 |
-| `/datasource/upload_file` | POST | 上传文件 |
-| `/single-turn/q2a` | POST | 发起查询请求 |
-| `/single-turn/q2s` | POST | 发起生成sql请求 |
-|`/bots/<bot_id>` | GET | 获取指定机器人的信息 |
-|  `/chats`  | POST | 创建新的聊天对话 |
-| `/chats/<chat_id>` | GET | 获取指定对话 |
-| `/chats/<chat_id>`/messages | GET | 获取指定聊天的消息列表 |
-| `/chats/{chat_id}/messages/{message_id}` | GET | 查询某条消息 |
-| `/chats/{chat_id}` | DELETE |删除某个对话(包含消息) |
-
-
-
+| API Path                                                | Method | Description                          |
+|--------------------------------------------------------|--------|--------------------------------------|
+| `/auth/me`                                              | GET    | Retrieve information of the current authenticated user |
+| `/auth/tokens`                                          | POST   | Create new authentication tokens    |
+| `/datasource`                                           | POST   | Create a data source                 |
+| `/datasource/upload_file`                               | POST   | Upload a file                        |
+| `/single-turn/q2a`                                      | POST   | Initiate a query request             |
+| `/single-turn/q2s`                                      | POST   | Initiate a request to generate SQL  |
+| `/bots/<bot_id>`                                        | GET    | Retrieve information of a specified bot |
+| `/chats`                                                | POST   | Create a new chat session            |
+| `/chats/<chat_id>`                                      | GET    | Retrieve a specified chat session   |
+| `/chats/<chat_id>/messages`                             | GET    | Retrieve a list of messages for a specified chat |
+| `/chats/<chat_id>/messages/<message_id>`                | GET    | Query a specific message            |
+| `/chats/<chat_id>`                                      | DELETE | Delete a specific chat (including messages) |
 
 ### Temp-Token
 
-Temp-Token 是一种临时的身份验证令牌，用于在一段时间内访问 API。Temp-Token 是由 API-Key 生成的，用于在一段时间内访问 API。
+A Temp-Token is a temporary authentication token used for API access for a certain period. The Temp-Token is generated from an API-Key.
 
-生成 Temp-Token 的 API 如下：
+The API for generating a Temp-Token is as follows:
 
 ```http
 POST /auth/tokens
@@ -61,22 +56,20 @@ Authorization: Bearer <API_KEY>
     }
   },
   "user_profile": {
-    "name": "张三"
+    "name": "Zhang San"
   },
   "token_ttl": 900
 }
 ```
 
+## Configuring Request Headers
 
-## 配置请求头
+In each request, you need to include the following information in the request headers:
 
-在每次请求中，您需要在请求头中包含以下信息：
+- `Authorization`: `Bearer <Your API-Key or Temp-Token>`
+- `Content-Type`: `application/json`
 
-- `Authorization`: `Bearer <您的 API-Key 或 Temp-Token>`
-- `Content-Type`: application/json
-
-
-以下是一个使用 Python 的示例：
+Here is an example using Python:
 
 ```python
 import requests
@@ -90,14 +83,13 @@ response = requests.get(url, headers=headers)
 print(response.json())
 ```
 
+## Error Handling
 
-## 错误处理
+During the authentication and authorization process, you may encounter the following errors:
 
-在身份验证和授权过程中，可能会遇到以下错误：
+- **401 Unauthorized**: Indicates that the request has not been authenticated. Please check if your API-Key is correct.
+- **403 Forbidden**: Indicates that the request has been denied access to the resource. Please check your role and policy configuration.
 
-- **401 Unauthorized**：表示请求未通过身份验证。请检查您的 API-Key 是否正确。
-- **403 Forbidden**：表示请求被拒绝访问资源。请检查您的角色和策略配置。
+## Next Steps
 
-## 下一步
-
-现在，您已经了解了如何进行身份验证和授权。接下来，请继续阅读 [常见请求与响应](./common-requests-and-responses.md) 文档，了解更多详细信息。
+You now understand how to perform authentication and authorization. Proceed to read the [Common Requests and Responses](./common-requests-and-responses.md) document for more detailed information.
