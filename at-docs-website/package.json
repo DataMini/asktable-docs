@@ -14,8 +14,8 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.5.2",
-    "@docusaurus/preset-classic": "^3.5.2",
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
     "@mdx-js/react": "^3.1.0",
     "async": "^3.2.6",
     "cli-progress": "^3.12.0",
@@ -29,8 +29,8 @@
     "yargs": "^17.7.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.4.0",
-    "@docusaurus/types": "3.4.0"
+    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@docusaurus/types": "^3.7.0"
   },
   "browserslist": {
     "production": [

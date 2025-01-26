@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "Product Documentation",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "AskTable",
+    "description": "The alt text of navbar logo"
+  }
+}

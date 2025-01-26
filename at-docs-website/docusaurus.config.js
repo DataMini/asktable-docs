@@ -45,7 +45,6 @@ const config = {
       },
     },
   },
-
   presets: [
     [
       'classic',
@@ -60,13 +59,6 @@ const config = {
           editUrl:
             'https://github.com/DataMini/asktable-docs/tree/main/at-docs-website',
         },
-//        blog: {
-//          showReadingTime: true,
-//          // Please change this to your repo.
-//          // Remove this to remove the "edit this page" links.
-//          editUrl:
-//            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-//        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -88,7 +80,7 @@ const config = {
         items: [
           {
             type: 'localeDropdown', // 启用语言切换下拉菜单
-            position: 'right',
+            position: 'left',
           },
 //          {
 //            type: 'docSidebar',

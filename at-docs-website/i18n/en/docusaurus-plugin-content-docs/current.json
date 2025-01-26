@@ -1,0 +1,90 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.简介": {
+    "message": "Introduction",
+    "description": "The label for category 简介 in sidebar docs"
+  },
+  "sidebar.docs.category.客户案例": {
+    "message": "Customer Cases",
+    "description": "The label for category 客户案例 in sidebar docs"
+  },
+  "sidebar.docs.category.解决方案": {
+    "message": "Solutions",
+    "description": "The label for category 解决方案 in sidebar docs"
+  },
+  "sidebar.docs.category.快速开始": {
+    "message": "Quick Start",
+    "description": "The label for category 快速开始 in sidebar docs"
+  },
+  "sidebar.docs.category.数据管理": {
+    "message": "Data Management",
+    "description": "The label for category 数据管理 in sidebar docs"
+  },
+  "sidebar.docs.category.对话机器人": {
+    "message": "Chatbot",
+    "description": "The label for category 对话机器人 in sidebar docs"
+  },
+  "sidebar.docs.category.问数 AI": {
+    "message": "AskTable AI",
+    "description": "The label for category 问数 AI in sidebar docs"
+  },
+  "sidebar.docs.category.数据访问权限": {
+    "message": "Data Access Permissions",
+    "description": "The label for category 数据访问权限 in sidebar docs"
+  },
+  "sidebar.docs.category.数据可视化": {
+    "message": "Data Visualization",
+    "description": "The label for category 数据可视化 in sidebar docs"
+  },
+  "sidebar.docs.category.业务知识": {
+    "message": "Business Knowledge",
+    "description": "The label for category 业务知识 in sidebar docs"
+  },
+  "sidebar.docs.category.AI 搜索": {
+    "message": "AI Search",
+    "description": "The label for category AI 搜索 in sidebar docs"
+  },
+  "sidebar.docs.category.安全隧道": {
+    "message": "Secure Tunnel",
+    "description": "The label for category 安全隧道 in sidebar docs"
+  },
+  "sidebar.docs.category.外部插件": {
+    "message": "External Plugins",
+    "description": "The label for category 外部插件 in sidebar docs"
+  },
+  "sidebar.docs.category.定价与部署": {
+    "message": "Pricing and Deployment",
+    "description": "The label for category 定价与部署 in sidebar docs"
+  },
+  "sidebar.docs.category.API 和 SDK": {
+    "message": "API and SDK",
+    "description": "The label for category API 和 SDK in sidebar docs"
+  },
+  "sidebar.docs.category.RestfulAPI": {
+    "message": "RestfulAPI",
+    "description": "The label for category RestfulAPI in sidebar docs"
+  },
+  "sidebar.docs.category.Python SDK": {
+    "message": "Python SDK",
+    "description": "The label for category Python SDK in sidebar docs"
+  },
+  "sidebar.docs.category.集成AskTable": {
+    "message": "Integrate AskTable",
+    "description": "The label for category 集成AskTable in sidebar docs"
+  },
+  "sidebar.docs.category.网站": {
+    "message": "Website",
+    "description": "The label for category 网站 in sidebar docs"
+  },
+  "sidebar.docs.category.扣子（Coze）": {
+    "message": "Coze",
+    "description": "The label for category 扣子（Coze） in sidebar docs"
+  },
+  "sidebar.docs.category.附录": {
+    "message": "Appendix",
+    "description": "The label for category 附录 in sidebar docs"
+  }
+}

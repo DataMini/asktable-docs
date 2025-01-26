@@ -18,9 +18,9 @@ To meet the needs of enterprises with higher requirements for data privacy and s
 
 | Specification | Supported Data Scale | AskTable Server Configuration |
 |---------------|----------------------|-------------------------------|
-| Trial Version  | - Number of Tables: 20<br>- Data Volume: 0.5TB<br>- Concurrent Queries: 1 | - Host: 4 cores 16GB / 500GB<br>- Quantity: 1 unit |
-| Specification One | - Number of Tables: 500<br>- Data Volume: 1TB<br>- Concurrent Queries: 20 | - Host: 8 cores 64GB / 2TB SSD<br>- Quantity: 2 units |
-| Specification Two | - Number of Tables: 5000<br>- Data Volume: 10TB<br>- Concurrent Queries: 100 | - Host: 32 cores 256GB / 5TB SSD<br>- Quantity: 2 units |
+| Trial Version  | - Number of Tables: 20<br/>- Data Volume: 0.5TB<br/>- Concurrent Queries: 1 | - Host: 4 cores 16GB / 500GB<br/>- Quantity: 1 unit |
+| Specification One | - Number of Tables: 500<br/>- Data Volume: 1TB<br/>- Concurrent Queries: 20 | - Host: 8 cores 64GB / 2TB SSD<br/>- Quantity: 2 units |
+| Specification Two | - Number of Tables: 5000<br/>- Data Volume: 10TB<br/>- Concurrent Queries: 100 | - Host: 32 cores 256GB / 5TB SSD<br/>- Quantity: 2 units |
 
 :::tip Configuration Notes
 - The above configurations are recommended only; specific configurations need to be assessed based on actual business scenarios.

@@ -1,5 +1,5 @@
 const sidebars = {
-  zhSidebar: [
+  docs: [
     {
       type: 'category',
       label: '简介',
